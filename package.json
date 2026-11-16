@@ -1,0 +1,16 @@
+{
+  "author": "",
+  "description": "Gundam Manga \u2014 English-language Gundam manga releases available in Canada and the USA, with buy links verified daily.",
+  "keywords": [
+    "gundam",
+    "manga",
+    "manga-dashboard"
+  ],
+  "license": "MIT",
+  "name": "gundam-manga-dashboard",
+  "scripts": {
+    "start": "python -m http.server 3000",
+    "update": "python sort_catalog.py"
+  },
+  "version": "1.0.0"
+}

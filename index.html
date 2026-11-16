@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gundam Manga — English Gundam Manga for Canada &amp; the USA</title>
+  <meta name="description" content="Every in-print English-language Gundam manga release available in Canada and the USA, with buy links verified daily.">
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    :root {
+      --bg-space: #0d0f14;
+      --card-bg: rgba(23, 27, 36, 0.85);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --card-border-hover: rgba(239, 68, 68, 0.5);
+      --accent-red: #ef4444;
+      --accent-amber: #f59e0b;
+    }
+    body {
+      background-color: var(--bg-space);
+      background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+      background-size: 24px 24px;
+      color: #e2e8f0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    .space-glass {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--card-border);
+    }
+    .space-glass:hover {
+      border-color: var(--card-border-hover);
+    }
+    .badge-pub {
+      background: linear-gradient(135deg, rgba(239, 68, 68, 0.2), rgba(245, 158, 11, 0.2));
+      border: 1px solid rgba(248, 113, 113, 0.35);
+      color: #fca5a5;
+    }
+    .badge-compact {
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: #6ee7b7;
+    }
+    .badge-upcoming {
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      color: #fcd34d;
+    }
+    /* Scrollbar styling */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.2);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-red-600 selection:text-white">
+
+  <!-- TOP HEADER -->
+  <header class="sticky top-0 z-40 border-b border-white/10 bg-[#0d0f14]/90 backdrop-blur-md px-4 lg:px-8 py-3">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
+
+      <!-- Brand -->
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-red-600 to-amber-500 flex items-center justify-center font-black text-white text-lg shadow-lg shadow-red-500/20">
+          GM
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="text-base font-bold text-white tracking-tight">Gundam Manga</h1>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 font-mono">Live Dashboard</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sister site & Live Actions -->
+      <div class="flex items-center gap-2">
+        <a href="https://dc-compact-live-dashboard.vercel.app" target="_blank" rel="noopener noreferrer" title="Sister site: DC Compact Comics dashboard" class="px-3 py-1.5 rounded-lg bg-slate-800/80 border border-white/10 text-slate-300 hover:text-white text-xs font-medium transition">DC Compact Comics ↗</a>
+        <button onclick="checkLiveUpdates()" title="Check for the latest catalog data" class="px-3 py-1.5 rounded-lg bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/25 text-xs font-medium flex items-center gap-1.5 transition">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          Live Sync
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- CONTROLS & FILTER BAR -->
+  <section class="border-b border-white/5 bg-slate-900/40 px-4 lg:px-8 py-3">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 text-xs">
+
+      <!-- Search Bar -->
+      <div class="relative w-full md:w-80">
+        <svg class="w-4 h-4 text-slate-400 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        <input id="searchInput" type="text" placeholder="Search series, volume, creator, publisher, ISBN..." oninput="filterTitles()" class="w-full pl-9 pr-3 py-2 bg-slate-800/80 border border-white/10 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-red-500 text-xs">
+      </div>
+
+      <!-- Filters: Series, Status & Sort -->
+      <div class="flex flex-wrap items-center gap-2 w-full md:w-auto">
+
+        <!-- Status Filter -->
+        <div class="flex items-center bg-slate-800/80 rounded-xl p-0.5 border border-white/10">
+          <button onclick="setStatusFilter('all')" id="statusAll" class="px-2.5 py-1 rounded-lg bg-red-600 text-white">All (<span id="countAll">58</span>)</button>
+          <button onclick="setStatusFilter('Released')" id="statusReleased" class="px-2.5 py-1 rounded-lg text-slate-400 hover:text-white">Released (<span id="countReleased">55</span>)</button>
+          <button onclick="setStatusFilter('Upcoming')" id="statusUpcoming" class="px-2.5 py-1 rounded-lg text-slate-400 hover:text-white">Upcoming (<span id="countUpcoming">3</span>)</button>
+        </div>
+
+        <!-- Series Filter (options populated from the catalog) -->
+        <select id="seriesSelect" onchange="filterTitles()" class="bg-slate-800/80 border border-white/10 text-slate-300 rounded-xl px-3 py-1.5 focus:outline-none focus:border-red-500">
+          <option value="all">All Series</option>
+        </select>
+
+        <!-- Sort Select (Default: Release Date Newest First) -->
+        <select id="sortSelect" onchange="filterTitles()" class="bg-slate-800/80 border border-red-500/40 text-red-300 rounded-xl px-3 py-1.5 focus:outline-none font-medium">
+          <option value="release-desc" selected>Release Date: Newest First</option>
+          <option value="release-asc">Release Date: Oldest First</option>
+          <option value="title-asc">Title: A → Z</option>
+          <option value="series-vol">Series, then Volume</option>
+        </select>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- STATS HEADER BAR -->
+  <section class="max-w-7xl mx-auto w-full px-4 lg:px-8 py-3">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+      <div class="space-glass p-3 rounded-2xl flex items-center justify-between">
+        <div>
+          <p class="text-slate-400">Total Catalog Volumes</p>
+          <p id="statTotal" class="text-xl font-bold text-white mt-0.5">58</p>
+        </div>
+        <div class="w-8 h-8 rounded-xl bg-red-500/20 text-red-400 flex items-center justify-center font-bold">📚</div>
+      </div>
+      <div class="space-glass p-3 rounded-2xl flex items-center justify-between">
+        <div>
+          <p class="text-slate-400">Series</p>
+          <p id="statSeries" class="text-xl font-bold text-amber-400 mt-0.5">7</p>
+        </div>
+        <div class="w-8 h-8 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">🤖</div>
+      </div>
+      <div class="space-glass p-3 rounded-2xl flex items-center justify-between">
+        <div>
+          <p class="text-slate-400">Ongoing Series</p>
+          <p id="statOngoing" class="text-xl font-bold text-emerald-400 mt-0.5">3</p>
+        </div>
+        <div class="w-8 h-8 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">⏳</div>
+      </div>
+      <div class="space-glass p-3 rounded-2xl flex items-center justify-between">
+        <div>
+          <p class="text-slate-400">Publishers</p>
+          <p id="statPublishers" class="text-xl font-bold text-sky-400 mt-0.5">4</p>
+        </div>
+        <div class="w-8 h-8 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center font-bold">🏷️</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN DISPLAY SPACE -->
+  <main class="flex-1 max-w-7xl mx-auto w-full px-4 lg:px-8 py-4">
+
+    <!-- GRID MATRIX VIEW -->
+    <div id="gridSpace" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- Cards dynamically injected -->
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="mt-auto border-t border-white/5 py-8 px-4 flex items-center justify-center text-center">
+    <p class="text-xs text-slate-400 font-medium tracking-wide">
+      Gundam Manga · English-language Gundam manga for Canada &amp; the USA · Buy links verified daily
+    </p>
+  </footer>
+
+  <!-- DETAIL MODAL SLIDEOUT -->
+  <div id="detailModal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="space-glass max-w-xl w-full rounded-3xl p-6 relative shadow-2xl border border-white/20" style="overflow:hidden">
+      <button onclick="closeModal()" style="z-index:1" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- SCRIPT LOGIC -->
+  <script>
+    let catalogData = [];
+    let currentStatus = 'all';
+
+    // Robust live loader with automatic background sync & zero-fail fallback
+    async function loadCatalog() {
+      // 1. Check local storage first for instant render
+      const local = localStorage.getItem('gundam_manga_data');
+      if (local) {
+        try {
+          catalogData = JSON.parse(local);
+          populateSeriesFilter();
+          updateCounts();
+          filterTitles();
+        } catch(e) {}
+      }
+
+      // 2. Fetch live data from Vercel Serverless API (/api/manga) or static JSON with cache-busting
+      try {
+        let fetchedData = null;
+        try {
+          const apiRes = await fetch('/api/manga', { cache: 'no-store' });
+          if (apiRes.ok) {
+            const json = await apiRes.json();
+            if (json && json.volumes && json.volumes.length > 0) {
+              fetchedData = json.volumes;
+            }
+          }
+        } catch(e) {}
+
+        if (!fetchedData) {
+          const res = await fetch(`data/gundam_manga.json?v=${Date.now()}`);
+          if (res.ok) {
+            fetchedData = await res.json();
+          }
+        }
+
+        if (fetchedData && fetchedData.length > 0) {
+          catalogData = fetchedData;
+          localStorage.setItem('gundam_manga_data', JSON.stringify(catalogData));
+          populateSeriesFilter();
+          updateCounts();
+          filterTitles();
+        }
+      } catch (err) {
+        console.warn('Network sync notice:', err);
+      }
+
+      // 3. Ensure counts and filters are updated
+      populateSeriesFilter();
+      updateCounts();
+      filterTitles();
+    }
+
+    async function checkLiveUpdates() {
+      const btn = document.querySelector('button[onclick="checkLiveUpdates()"]');
+      if (btn) btn.innerHTML = `<span class="animate-spin inline-block mr-1">↻</span> Syncing...`;
+
+      try {
+        let liveVolumes = null;
+        try {
+          const res = await fetch('/api/manga', { cache: 'no-store' });
+          if (res.ok) {
+            const data = await res.json();
+            liveVolumes = data.volumes;
+          }
+        } catch(e) {}
+
+        if (!liveVolumes) {
+          const res = await fetch(`data/gundam_manga.json?v=${Date.now()}`);
+          if (res.ok) liveVolumes = await res.json();
+        }
+
+        if (liveVolumes && liveVolumes.length > 0) {
+          catalogData = liveVolumes;
+          localStorage.setItem('gundam_manga_data', JSON.stringify(catalogData));
+          populateSeriesFilter();
+          updateCounts();
+          filterTitles();
+        }
+
+        if (btn) btn.innerHTML = `<span class="w-2 h-2 rounded-full bg-emerald-400"></span> Live Synced (${catalogData.length})`;
+      } catch (e) {
+        if (btn) btn.innerHTML = `<span class="w-2 h-2 rounded-full bg-emerald-400"></span> Synced (${catalogData.length})`;
+      }
+    }
+
+    function populateSeriesFilter() {
+      const sel = document.getElementById('seriesSelect');
+      const series = [...new Map(catalogData.map(c => [c.seriesId, c.series])).entries()]
+        .sort((a, b) => a[1].localeCompare(b[1]));
+      const current = sel.value;
+      sel.innerHTML = '<option value="all">All Series</option>' +
+        series.map(([id, name]) => `<option value="${id}">${name}</option>`).join('');
+      if ([...sel.options].some(o => o.value === current)) sel.value = current;
+    }
+
+    function updateCounts() {
+      const seriesId = document.getElementById('seriesSelect').value;
+      const seriesList = seriesId === 'all' ? catalogData : catalogData.filter(c => c.seriesId === seriesId);
+      document.getElementById('countAll').innerText = seriesList.length;
+      document.getElementById('countReleased').innerText = seriesList.filter(c => c.status === 'Released').length;
+      document.getElementById('countUpcoming').innerText = seriesList.filter(c => c.status === 'Upcoming').length;
+      document.getElementById('statTotal').innerText = catalogData.length;
+      document.getElementById('statSeries').innerText = new Set(catalogData.map(c => c.seriesId)).size;
+      document.getElementById('statOngoing').innerText = new Set(catalogData.filter(c => c.status === 'Upcoming').map(c => c.seriesId)).size;
+      document.getElementById('statPublishers').innerText = new Set(catalogData.map(c => c.publisher)).size;
+    }
+
+    function setStatusFilter(status) {
+      currentStatus = status;
+      ['all', 'Released', 'Upcoming'].forEach(s => {
+        const btn = document.getElementById('status' + s.charAt(0).toUpperCase() + s.slice(1));
+        if (s === status) {
+          btn.className = "px-2.5 py-1 rounded-lg bg-red-600 text-white font-medium";
+        } else {
+          btn.className = "px-2.5 py-1 rounded-lg text-slate-400 hover:text-white";
+        }
+      });
+      filterTitles();
+    }
+
+    // Buy links verified daily by check_buy_links.py (stored in c.links as
+    // an array: one entry per store that carries the volume). A store with
+    // status "unavailable" is hidden; "available"/"unknown" links are
+    // shown. No fallback URLs are invented here: absence from the array
+    // means the store does not carry this volume.
+
+    // Amazon storefront by visitor location: amazon.ca for visitors in
+    // Canada, amazon.com everywhere else. Timezone is the primary
+    // signal (browser language is often en-US even in Canada); an
+    // en-CA/fr-CA language is the fallback.
+    const CANADIAN_TIMEZONES = new Set(['America/Atikokan', 'America/Blanc-Sablon', 'America/Cambridge_Bay', 'America/Creston', 'America/Dawson', 'America/Dawson_Creek', 'America/Edmonton', 'America/Fort_Nelson', 'America/Glace_Bay', 'America/Goose_Bay', 'America/Halifax', 'America/Inuvik', 'America/Iqaluit', 'America/Moncton', 'America/Montreal', 'America/Nipigon', 'America/Pangnirtung', 'America/Rainy_River', 'America/Rankin_Inlet', 'America/Regina', 'America/Resolute', 'America/St_Johns', 'America/Swift_Current', 'America/Thunder_Bay', 'America/Toronto', 'America/Vancouver', 'America/Whitehorse', 'America/Winnipeg', 'America/Yellowknife', 'Canada/Atlantic', 'Canada/Central', 'Canada/Eastern', 'Canada/Mountain', 'Canada/Newfoundland', 'Canada/Pacific', 'Canada/Saskatchewan', 'Canada/Yukon']);
+    function isCanadianVisitor() {
+      try {
+        const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        if (tz && CANADIAN_TIMEZONES.has(tz)) return true;
+      } catch (e) { /* Intl unavailable: fall through to language */ }
+      const lang = (navigator.language || '').toLowerCase();
+      return lang === 'en-ca' || lang === 'fr-ca' || lang.endsWith('-ca');
+    }
+    const AMAZON_HOST = isCanadianVisitor() ? 'www.amazon.ca' : 'www.amazon.com';
+    function localizeAmazon(url) {
+      return (url || '').replace(/www\.amazon\.(com|ca)/, AMAZON_HOST);
+    }
+
+    // Per-store display: label + full button class strings (kept literal
+    // so the Tailwind browser build picks them up). Unknown stores fall
+    // back to slate with the data's label.
+    const STORE_META = {
+      amazon: { label: 'Amazon', card: 'px-2.5 py-1 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/40 text-amber-200 text-xs font-semibold transition' },
+      indigo: { label: 'Indigo', card: 'px-2.5 py-1 rounded-lg bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-500/30 text-indigo-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-indigo-500/20 hover:bg-indigo-500/30 border border-indigo-500/40 text-indigo-200 text-xs font-semibold transition' },
+      viz: { label: 'VIZ', card: 'px-2.5 py-1 rounded-lg bg-red-500/15 hover:bg-red-500/25 border border-red-500/30 text-red-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-red-500/20 hover:bg-red-500/30 border border-red-500/40 text-red-200 text-xs font-semibold transition' },
+      prh: { label: 'Penguin', card: 'px-2.5 py-1 rounded-lg bg-orange-500/15 hover:bg-orange-500/25 border border-orange-500/30 text-orange-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-orange-500/20 hover:bg-orange-500/30 border border-orange-500/40 text-orange-200 text-xs font-semibold transition' },
+      bookshop: { label: 'Bookshop', card: 'px-2.5 py-1 rounded-lg bg-teal-500/15 hover:bg-teal-500/25 border border-teal-500/30 text-teal-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-teal-500/20 hover:bg-teal-500/30 border border-teal-500/40 text-teal-200 text-xs font-semibold transition' },
+      'barnes-noble': { label: 'Barnes & Noble', card: 'px-2.5 py-1 rounded-lg bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/30 text-emerald-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-500/40 text-emerald-200 text-xs font-semibold transition' },
+      denpa: { label: 'Denpa', card: 'px-2.5 py-1 rounded-lg bg-sky-500/15 hover:bg-sky-500/25 border border-sky-500/30 text-sky-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-sky-500/20 hover:bg-sky-500/30 border border-sky-500/40 text-sky-200 text-xs font-semibold transition' },
+      yen: { label: 'Yen Press', card: 'px-2.5 py-1 rounded-lg bg-violet-500/15 hover:bg-violet-500/25 border border-violet-500/30 text-violet-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-violet-500/20 hover:bg-violet-500/30 border border-violet-500/40 text-violet-200 text-xs font-semibold transition' },
+      kodansha: { label: 'Kodansha', card: 'px-2.5 py-1 rounded-lg bg-blue-500/15 hover:bg-blue-500/25 border border-blue-500/30 text-blue-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-blue-500/20 hover:bg-blue-500/30 border border-blue-500/40 text-blue-200 text-xs font-semibold transition' }
+    };
+    const STORE_FALLBACK = { card: 'px-2.5 py-1 rounded-lg bg-slate-500/15 hover:bg-slate-500/25 border border-slate-500/30 text-slate-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-slate-500/20 hover:bg-slate-500/30 border border-slate-500/40 text-slate-200 text-xs font-semibold transition' };
+    function getBuyLinks(c) {
+      const out = [];
+      for (const entry of (c.links || [])) {
+        if (!entry || entry.status === 'unavailable' || !entry.url) continue;
+        const meta = STORE_META[entry.store] || STORE_FALLBACK;
+        let url = entry.url;
+        if (entry.store === 'amazon') url = localizeAmazon(url);
+        out.push({ label: entry.label || (STORE_META[entry.store] || {}).label || entry.store, url, cardClass: meta.card, modalClass: meta.modal });
+      }
+      return out;
+    }
+
+    function filterTitles() {
+      const query = document.getElementById('searchInput').value.toLowerCase().trim();
+      const seriesId = document.getElementById('seriesSelect').value;
+      const sort = document.getElementById('sortSelect').value;
+      updateCounts();
+
+      let list = catalogData.filter(c => {
+        if (currentStatus !== 'all' && c.status !== currentStatus) return false;
+        if (seriesId !== 'all' && c.seriesId !== seriesId) return false;
+        if (query) {
+          const hay = `${c.title} ${c.series} ${c.creators} ${c.publisher} ${c.isbn} ${c.format} ${c.subtitle || ''}`.toLowerCase();
+          if (!hay.includes(query)) return false;
+        }
+        return true;
+      });
+
+      list.sort((a, b) => {
+        if (sort === 'release-desc') return b.releaseDate.localeCompare(a.releaseDate);
+        if (sort === 'release-asc') return a.releaseDate.localeCompare(b.releaseDate);
+        if (sort === 'title-asc') return a.title.localeCompare(b.title);
+        if (sort === 'series-vol') return a.series.localeCompare(b.series) || (a.volume || 0) - (b.volume || 0);
+        return 0;
+      });
+
+      renderGrid(list);
+    }
+
+    function renderGrid(items) {
+      const container = document.getElementById('gridSpace');
+      if (items.length === 0) {
+        container.innerHTML = `<div class="col-span-full py-16 text-center text-slate-500 text-sm">No volumes matching your filter criteria.</div>`;
+        return;
+      }
+      container.innerHTML = items.map(c => {
+        const links = getBuyLinks(c);
+        const buyBtns = links.map(l => `<a href="${l.url}" target="_blank" rel="noopener noreferrer" class="${l.cardClass}">${l.label}</a>`).join('');
+        const buyRow = buyBtns ? `<div class="mt-4 pt-3 border-t border-white/5 flex items-center gap-1.5 flex-wrap" onclick="event.stopPropagation()"><span class="text-[10px] uppercase font-bold text-slate-400 mr-0.5">Buy:</span>${buyBtns}</div>` : '';
+        const coverBg = c.coverUrl ? `<div aria-hidden="true" style="position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden"><img src="${c.coverUrl}" alt="" loading="lazy" decoding="async" onerror="this.parentElement.style.display='none'" style="width:100%;height:100%;object-fit:cover;object-position:center 75%;transform:scale(1.25);filter:blur(4px)"><div style="position:absolute;inset:0;background:rgba(15,18,26,0.72)"></div></div>` : '';
+        const volBadge = c.volume ? `Vol. ${c.volume}` : 'One-shot';
+        return `
+        <div onclick="showDetail('${c.id}')" style="position:relative;overflow:hidden" class="space-glass p-5 rounded-3xl hover:shadow-xl hover:shadow-red-500/5 transition cursor-pointer flex flex-col justify-between group">
+          ${coverBg}
+          <div style="position:relative;z-index:1">
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="badge-pub px-2.5 py-1 rounded-xl text-xs font-black tracking-wider shadow-sm">
+                ${volBadge}
+              </span>
+              <span class="${c.status === 'Released' ? 'badge-compact' : 'badge-upcoming'} px-2.5 py-0.5 rounded-full text-[11px] font-semibold">
+                ${c.status === 'Released' ? '✓ Released' : '⏳ ' + c.releaseDate.slice(0,7)}
+              </span>
+            </div>
+
+            <h3 class="text-base font-bold text-white group-hover:text-red-400 transition leading-snug">${c.series}</h3>
+            <p class="text-xs text-slate-400 mt-1">${c.creators}</p>
+
+            <div class="mt-3.5 p-2.5 rounded-xl bg-slate-950/60 border border-white/5 text-xs text-slate-300">
+              <div class="flex flex-wrap gap-x-4 gap-y-1">
+                <span><span class="text-slate-400">Format:</span> ${c.format}</span>
+                ${c.pageCount ? `<span><span class="text-slate-400">Pages:</span> ${c.pageCount}</span>` : ''}
+              </div>
+              <div class="font-mono text-[11px] text-red-200 mt-1">ISBN ${c.isbn}</div>
+            </div>
+          </div>
+
+          <div style="position:relative;z-index:1">
+            ${buyRow}
+
+            <div class="pt-2 mt-2 border-t border-white/5 flex items-center justify-between text-[11px] text-slate-400">
+              <span class="flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-400"></span>
+                ${c.publisher}
+              </span>
+              <span class="font-mono text-slate-400">Release: ${c.releaseDate}</span>
+            </div>
+          </div>
+        </div>
+      `;
+      }).join('');
+    }
+
+    function showDetail(id) {
+      const c = catalogData.find(item => item.id === id);
+      if (!c) return;
+      const links = getBuyLinks(c);
+      const buyBtns = links.map(l => `<a href="${l.url}" target="_blank" rel="noopener noreferrer" class="${l.modalClass}">${l.label} ↗</a>`).join('');
+      const buySection = buyBtns
+        ? `<div class="flex flex-wrap gap-2 pt-1">${buyBtns}</div>`
+        : `<div class="text-xs text-slate-500 pt-1">No purchase links currently verified for this volume — check back soon.</div>`;
+      const notesSection = (c.notes && c.notes.length)
+        ? `<div class="p-3.5 rounded-2xl bg-amber-500/10 border border-amber-500/20 space-y-1.5">
+            <div class="text-xs uppercase font-bold text-amber-300">Research notes:</div>
+            ${c.notes.map(n => `<p class="text-xs text-amber-100/80 leading-relaxed">${n}</p>`).join('')}
+          </div>`
+        : '';
+      const modal = document.getElementById('detailModal');
+      const content = document.getElementById('modalContent');
+      const modalCoverBg = c.coverUrl ? `<div aria-hidden="true" style="position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden"><img src="${c.coverUrl}" alt="" decoding="async" onerror="this.parentElement.style.display='none'" style="width:100%;height:100%;object-fit:cover;object-position:center 75%;transform:scale(1.25);filter:blur(4px)"><div style="position:absolute;inset:0;background:rgba(15,18,26,0.72)"></div></div>` : '';
+      content.innerHTML = `
+        ${modalCoverBg}
+        <div class="space-y-4" style="position:relative;z-index:1">
+          <div class="flex items-center justify-between pr-6">
+            <span class="badge-pub px-3 py-1 rounded-xl text-sm font-black">${c.publisher}</span>
+            <span class="${c.status === 'Released' ? 'badge-compact' : 'badge-upcoming'} px-3 py-1 rounded-full text-xs font-semibold">
+              ${c.status} (${c.releaseDate})
+            </span>
+          </div>
+
+          <h2 class="text-xl font-bold text-white">${c.title}</h2>
+          <p class="text-xs text-slate-300"><strong class="text-white">Creators:</strong> ${c.creators}</p>
+
+          <div class="p-3.5 rounded-2xl bg-slate-900 border border-white/10 space-y-2">
+            <div class="text-xs uppercase font-bold text-slate-400">Details:</div>
+            <div class="text-xs text-slate-400 pt-1 flex flex-wrap gap-4 border-t border-white/5">
+              <span><strong>Series:</strong> ${c.series}</span>
+              <span><strong>Volume:</strong> ${c.volume ? c.volume : 'One-shot'}</span>
+              <span><strong>Format:</strong> ${c.format}</span>
+              <span><strong>Pages:</strong> ${c.pageCount || '—'}</span>
+              <span><strong>ISBN:</strong> ${c.isbn || 'TBA'}</span>
+            </div>
+          </div>
+
+          <!-- Where to Buy Links -->
+          <div class="p-3.5 rounded-2xl bg-slate-900/90 border border-white/10 space-y-2">
+            <div class="text-xs uppercase font-bold text-slate-400">Where to Buy:</div>
+            ${buySection}
+          </div>
+
+          ${notesSection}
+
+          <div class="pt-3 border-t border-white/10 flex items-center justify-between">
+            <span class="text-xs text-slate-400">English-language release · Canada &amp; the USA</span>
+            <button onclick="closeModal()" class="px-4 py-1.5 rounded-xl bg-red-600 hover:bg-red-500 text-white text-xs font-medium">Close</button>
+          </div>
+        </div>
+      `;
+      modal.classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('detailModal').classList.add('hidden');
+    }
+
+    // Initialize on page load
+    loadCatalog();
+  </script>
+</body>
+</html>
