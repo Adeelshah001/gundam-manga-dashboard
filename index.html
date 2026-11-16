@@ -351,6 +351,10 @@
       yen: { label: 'Yen Press', card: 'px-2.5 py-1 rounded-lg bg-violet-500/15 hover:bg-violet-500/25 border border-violet-500/30 text-violet-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-violet-500/20 hover:bg-violet-500/30 border border-violet-500/40 text-violet-200 text-xs font-semibold transition' },
       kodansha: { label: 'Kodansha', card: 'px-2.5 py-1 rounded-lg bg-blue-500/15 hover:bg-blue-500/25 border border-blue-500/30 text-blue-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-blue-500/20 hover:bg-blue-500/30 border border-blue-500/40 text-blue-200 text-xs font-semibold transition' }
     };
+    // Cover-art crop: PRH serves retail covers (with title text), so each
+    // series gets a vertical window over its art band, zoomed to crop edge
+    // text. Values are object-position Y percentages, tuned per series.
+    const COVER_POS = { thunderbolt: '10%', origin: '0%', 'origin-deluxe': '40%', 'cucuruz-doans-island': '55%', 'vanadis-heart': '20%', 'beltorchikas-children': '50%', 'men-who-created-gundam': '40%' };
     const STORE_FALLBACK = { card: 'px-2.5 py-1 rounded-lg bg-slate-500/15 hover:bg-slate-500/25 border border-slate-500/30 text-slate-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-slate-500/20 hover:bg-slate-500/30 border border-slate-500/40 text-slate-200 text-xs font-semibold transition' };
     function getBuyLinks(c) {
       const out = [];
@@ -401,7 +405,7 @@
         const links = getBuyLinks(c);
         const buyBtns = links.map(l => `<a href="${l.url}" target="_blank" rel="noopener noreferrer" class="${l.cardClass}">${l.label}</a>`).join('');
         const buyRow = buyBtns ? `<div class="mt-4 pt-3 border-t border-white/5 flex items-center gap-1.5 flex-wrap" onclick="event.stopPropagation()"><span class="text-[10px] uppercase font-bold text-slate-400 mr-0.5">Buy:</span>${buyBtns}</div>` : '';
-        const coverBg = c.coverUrl ? `<div aria-hidden="true" style="position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden"><img src="${c.coverUrl}" alt="" loading="lazy" decoding="async" onerror="this.parentElement.style.display='none'" style="width:100%;height:100%;object-fit:cover;object-position:center 75%;transform:scale(1.25);filter:blur(4px)"><div style="position:absolute;inset:0;background:rgba(15,18,26,0.72)"></div></div>` : '';
+        const coverBg = c.coverUrl ? `<div aria-hidden="true" style="position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden"><img src="${c.coverUrl}" alt="" loading="lazy" decoding="async" onerror="this.parentElement.style.display='none'" style="width:100%;height:100%;object-fit:cover;object-position:center ${COVER_POS[c.seriesId] || '40%'};transform:scale(1.5);filter:blur(4px)"><div style="position:absolute;inset:0;background:rgba(15,18,26,0.72)"></div></div>` : '';
         const volBadge = c.volume ? `Vol. ${c.volume}` : 'One-shot';
         return `
         <div onclick="showDetail('${c.id}')" style="position:relative;overflow:hidden" class="space-glass p-5 rounded-3xl hover:shadow-xl hover:shadow-red-500/5 transition cursor-pointer flex flex-col justify-between group">
@@ -460,7 +464,7 @@
         : '';
       const modal = document.getElementById('detailModal');
       const content = document.getElementById('modalContent');
-      const modalCoverBg = c.coverUrl ? `<div aria-hidden="true" style="position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden"><img src="${c.coverUrl}" alt="" decoding="async" onerror="this.parentElement.style.display='none'" style="width:100%;height:100%;object-fit:cover;object-position:center 75%;transform:scale(1.25);filter:blur(4px)"><div style="position:absolute;inset:0;background:rgba(15,18,26,0.72)"></div></div>` : '';
+      const modalCoverBg = c.coverUrl ? `<div aria-hidden="true" style="position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden"><img src="${c.coverUrl}" alt="" decoding="async" onerror="this.parentElement.style.display='none'" style="width:100%;height:100%;object-fit:cover;object-position:center ${COVER_POS[c.seriesId] || '40%'};transform:scale(1.5);filter:blur(4px)"><div style="position:absolute;inset:0;background:rgba(15,18,26,0.72)"></div></div>` : '';
       content.innerHTML = `
         ${modalCoverBg}
         <div class="space-y-4" style="position:relative;z-index:1">

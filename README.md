@@ -9,6 +9,7 @@ Live site: https://gundam-manga-dashboard.vercel.app
 - **Per-volume catalog:** every in-print English Gundam manga volume across 7 series, with ISBNs, publishers, and release dates.
 - **Flexible buy links:** each volume links to whichever stores carry it — Amazon, Indigo, VIZ, and more — verified daily; a store's link is hidden when the volume is confirmed unavailable there (see `check_buy_links.py`).
 - **Series & status filters:** filter by series or Released/Upcoming, and search by title, creator, publisher, or ISBN.
+- **Cover art backgrounds:** each card and the detail view show the volume's official cover art, cropped to its art band and blurred behind the text.
 - **Daily automated updates:** new volumes are detected and buy links re-verified every day (see `.github/workflows/update-solicitations.yml`).
 
 ## Data

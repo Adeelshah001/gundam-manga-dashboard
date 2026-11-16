@@ -1,10 +1,10 @@
 [
   {
     "id": "beltorchikas-children-vol-1",
-    "series": "Mobile Suit Gundam: Char's Counterattack — Beltorchika's Children",
+    "series": "Mobile Suit Gundam: Char's Counterattack \u2014 Beltorchika's Children",
     "seriesId": "beltorchikas-children",
     "volume": 1,
-    "title": "Mobile Suit Gundam: Char's Counterattack — Beltorchika's Children, Vol. 1",
+    "title": "Mobile Suit Gundam: Char's Counterattack \u2014 Beltorchika's Children, Vol. 1",
     "creators": "Uroaki Sabisi (manga), Takayuki Yanase (mechanical design)",
     "publisher": "Denpa Books",
     "releaseDate": "2023-11-14",
@@ -38,14 +38,15 @@
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
     "notes": [
       "Print/digital ISBN ambiguity in research: print ISBN 9781634428095 (14 Nov 2023); Denpa's own page lists digital ISBN 9781634427999."
-    ]
+    ],
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781634428095"
   },
   {
     "id": "beltorchikas-children-vol-2",
-    "series": "Mobile Suit Gundam: Char's Counterattack — Beltorchika's Children",
+    "series": "Mobile Suit Gundam: Char's Counterattack \u2014 Beltorchika's Children",
     "seriesId": "beltorchikas-children",
     "volume": 2,
-    "title": "Mobile Suit Gundam: Char's Counterattack — Beltorchika's Children, Vol. 2",
+    "title": "Mobile Suit Gundam: Char's Counterattack \u2014 Beltorchika's Children, Vol. 2",
     "creators": "Uroaki Sabisi (manga), Takayuki Yanase (mechanical design)",
     "publisher": "Denpa Books",
     "releaseDate": "2024-07-16",
@@ -76,14 +77,15 @@
         "label": "Denpa"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781634428101"
   },
   {
     "id": "beltorchikas-children-vol-3",
-    "series": "Mobile Suit Gundam: Char's Counterattack — Beltorchika's Children",
+    "series": "Mobile Suit Gundam: Char's Counterattack \u2014 Beltorchika's Children",
     "seriesId": "beltorchikas-children",
     "volume": 3,
-    "title": "Mobile Suit Gundam: Char's Counterattack — Beltorchika's Children, Vol. 3",
+    "title": "Mobile Suit Gundam: Char's Counterattack \u2014 Beltorchika's Children, Vol. 3",
     "creators": "Uroaki Sabisi (manga), Takayuki Yanase (mechanical design)",
     "publisher": "Denpa Books",
     "releaseDate": "2024-12",
@@ -115,14 +117,15 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "datePrecision": "month"
+    "datePrecision": "month",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781634428651"
   },
   {
     "id": "beltorchikas-children-vol-4",
-    "series": "Mobile Suit Gundam: Char's Counterattack — Beltorchika's Children",
+    "series": "Mobile Suit Gundam: Char's Counterattack \u2014 Beltorchika's Children",
     "seriesId": "beltorchikas-children",
     "volume": 4,
-    "title": "Mobile Suit Gundam: Char's Counterattack — Beltorchika's Children, Vol. 4",
+    "title": "Mobile Suit Gundam: Char's Counterattack \u2014 Beltorchika's Children, Vol. 4",
     "creators": "Uroaki Sabisi (manga), Takayuki Yanase (mechanical design)",
     "publisher": "Denpa Books",
     "releaseDate": "2026-11-24",
@@ -149,14 +152,15 @@
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
     "notes": [
       "Release date slipped repeatedly in solicitations before settling on 24 Nov 2026 (US)."
-    ]
+    ],
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781634428828"
   },
   {
     "id": "cucuruz-doans-island-vol-1",
-    "series": "Mobile Suit Gundam: The Origin MSD — Cucuruz Doan's Island",
+    "series": "Mobile Suit Gundam: The Origin MSD \u2014 Cucuruz Doan's Island",
     "seriesId": "cucuruz-doans-island",
     "volume": 1,
-    "title": "Mobile Suit Gundam: The Origin MSD — Cucuruz Doan's Island, Vol. 1",
+    "title": "Mobile Suit Gundam: The Origin MSD \u2014 Cucuruz Doan's Island, Vol. 1",
     "creators": "Junji Ohno",
     "publisher": "Kodansha USA (Vertical)",
     "releaseDate": "2024-10-01",
@@ -187,14 +191,15 @@
         "label": "Penguin"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647293901"
   },
   {
     "id": "cucuruz-doans-island-vol-2",
-    "series": "Mobile Suit Gundam: The Origin MSD — Cucuruz Doan's Island",
+    "series": "Mobile Suit Gundam: The Origin MSD \u2014 Cucuruz Doan's Island",
     "seriesId": "cucuruz-doans-island",
     "volume": 2,
-    "title": "Mobile Suit Gundam: The Origin MSD — Cucuruz Doan's Island, Vol. 2",
+    "title": "Mobile Suit Gundam: The Origin MSD \u2014 Cucuruz Doan's Island, Vol. 2",
     "creators": "Junji Ohno",
     "publisher": "Kodansha USA (Vertical)",
     "releaseDate": "2024-12-03",
@@ -225,14 +230,15 @@
         "label": "Penguin"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647293918"
   },
   {
     "id": "cucuruz-doans-island-vol-3",
-    "series": "Mobile Suit Gundam: The Origin MSD — Cucuruz Doan's Island",
+    "series": "Mobile Suit Gundam: The Origin MSD \u2014 Cucuruz Doan's Island",
     "seriesId": "cucuruz-doans-island",
     "volume": 3,
-    "title": "Mobile Suit Gundam: The Origin MSD — Cucuruz Doan's Island, Vol. 3",
+    "title": "Mobile Suit Gundam: The Origin MSD \u2014 Cucuruz Doan's Island, Vol. 3",
     "creators": "Junji Ohno",
     "publisher": "Kodansha USA (Vertical)",
     "releaseDate": "2025-02-04",
@@ -263,14 +269,15 @@
         "label": "Penguin"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647293925"
   },
   {
     "id": "cucuruz-doans-island-vol-4",
-    "series": "Mobile Suit Gundam: The Origin MSD — Cucuruz Doan's Island",
+    "series": "Mobile Suit Gundam: The Origin MSD \u2014 Cucuruz Doan's Island",
     "seriesId": "cucuruz-doans-island",
     "volume": 4,
-    "title": "Mobile Suit Gundam: The Origin MSD — Cucuruz Doan's Island, Vol. 4",
+    "title": "Mobile Suit Gundam: The Origin MSD \u2014 Cucuruz Doan's Island, Vol. 4",
     "creators": "Junji Ohno",
     "publisher": "Kodansha USA (Vertical)",
     "releaseDate": "2025-04-01",
@@ -301,14 +308,15 @@
         "label": "Penguin"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647293932"
   },
   {
     "id": "cucuruz-doans-island-vol-5",
-    "series": "Mobile Suit Gundam: The Origin MSD — Cucuruz Doan's Island",
+    "series": "Mobile Suit Gundam: The Origin MSD \u2014 Cucuruz Doan's Island",
     "seriesId": "cucuruz-doans-island",
     "volume": 5,
-    "title": "Mobile Suit Gundam: The Origin MSD — Cucuruz Doan's Island, Vol. 5",
+    "title": "Mobile Suit Gundam: The Origin MSD \u2014 Cucuruz Doan's Island, Vol. 5",
     "creators": "Junji Ohno",
     "publisher": "Kodansha USA (Vertical)",
     "releaseDate": "2025-06-03",
@@ -339,7 +347,8 @@
         "label": "Penguin"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647293949"
   },
   {
     "id": "men-who-created-gundam",
@@ -378,7 +387,8 @@
         "label": "Denpa"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781634429740"
   },
   {
     "id": "origin-vol-1",
@@ -417,7 +427,8 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "subtitle": "Activation"
+    "subtitle": "Activation",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781935654872"
   },
   {
     "id": "origin-vol-2",
@@ -456,7 +467,8 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "subtitle": "Garma"
+    "subtitle": "Garma",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781935654889"
   },
   {
     "id": "origin-vol-3",
@@ -495,7 +507,8 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "subtitle": "Ramba Ral"
+    "subtitle": "Ramba Ral",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781935654971"
   },
   {
     "id": "origin-vol-4",
@@ -534,7 +547,8 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "subtitle": "Jaburo"
+    "subtitle": "Jaburo",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781935654988"
   },
   {
     "id": "origin-vol-5",
@@ -573,7 +587,8 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "subtitle": "Char & Sayla"
+    "subtitle": "Char & Sayla",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781939130198"
   },
   {
     "id": "origin-vol-6",
@@ -612,7 +627,8 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "subtitle": "To War"
+    "subtitle": "To War",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781939130204"
   },
   {
     "id": "origin-vol-7",
@@ -651,7 +667,8 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "subtitle": "Battle of Loum"
+    "subtitle": "Battle of Loum",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781939130679"
   },
   {
     "id": "origin-vol-8",
@@ -690,7 +707,8 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "subtitle": "Operation Odessa"
+    "subtitle": "Operation Odessa",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781939130686"
   },
   {
     "id": "origin-vol-9",
@@ -729,7 +747,8 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "subtitle": "Lalah"
+    "subtitle": "Lalah",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781941220153"
   },
   {
     "id": "origin-vol-10",
@@ -768,7 +787,8 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "subtitle": "Solomon"
+    "subtitle": "Solomon",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781941220160"
   },
   {
     "id": "origin-vol-11",
@@ -807,7 +827,8 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "subtitle": "A Cosmic Glow"
+    "subtitle": "A Cosmic Glow",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781941220467"
   },
   {
     "id": "origin-vol-12",
@@ -846,7 +867,8 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "subtitle": "Encounters"
+    "subtitle": "Encounters",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781941220474"
   },
   {
     "id": "origin-deluxe-vol-1",
@@ -885,7 +907,8 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "pageCount": 880
+    "pageCount": 880,
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647294854"
   },
   {
     "id": "origin-deluxe-vol-2",
@@ -924,7 +947,8 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "pageCount": 976
+    "pageCount": 976,
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647294861"
   },
   {
     "id": "origin-deluxe-vol-3",
@@ -962,7 +986,8 @@
         "label": "Penguin"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647294878"
   },
   {
     "id": "origin-deluxe-vol-4",
@@ -1001,7 +1026,8 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "pageCount": 904
+    "pageCount": 904,
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647295523"
   },
   {
     "id": "origin-deluxe-vol-5",
@@ -1040,7 +1066,8 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "pageCount": 856
+    "pageCount": 856,
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647295530"
   },
   {
     "id": "origin-deluxe-vol-6",
@@ -1079,7 +1106,8 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "pageCount": 784
+    "pageCount": 784,
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647295547"
   },
   {
     "id": "thunderbolt-vol-1",
@@ -1117,7 +1145,8 @@
         "label": "VIZ"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421590554"
   },
   {
     "id": "thunderbolt-vol-2",
@@ -1155,7 +1184,8 @@
         "label": "VIZ"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421592602"
   },
   {
     "id": "thunderbolt-vol-3",
@@ -1193,7 +1223,8 @@
         "label": "VIZ"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421592619"
   },
   {
     "id": "thunderbolt-vol-4",
@@ -1231,7 +1262,8 @@
         "label": "VIZ"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421593029"
   },
   {
     "id": "thunderbolt-vol-5",
@@ -1269,7 +1301,8 @@
         "label": "VIZ"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421593036"
   },
   {
     "id": "thunderbolt-vol-6",
@@ -1307,7 +1340,8 @@
         "label": "VIZ"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421593043"
   },
   {
     "id": "thunderbolt-vol-7",
@@ -1345,7 +1379,8 @@
         "label": "VIZ"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421595054"
   },
   {
     "id": "thunderbolt-vol-8",
@@ -1383,7 +1418,8 @@
         "label": "VIZ"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421595061"
   },
   {
     "id": "thunderbolt-vol-9",
@@ -1421,7 +1457,8 @@
         "label": "VIZ"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421599151"
   },
   {
     "id": "thunderbolt-vol-10",
@@ -1459,7 +1496,8 @@
         "label": "VIZ"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974701070"
   },
   {
     "id": "thunderbolt-vol-11",
@@ -1497,7 +1535,8 @@
         "label": "VIZ"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974706464"
   },
   {
     "id": "thunderbolt-vol-12",
@@ -1535,7 +1574,8 @@
         "label": "VIZ"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974707461"
   },
   {
     "id": "thunderbolt-vol-13",
@@ -1573,7 +1613,8 @@
         "label": "VIZ"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974711987"
   },
   {
     "id": "thunderbolt-vol-14",
@@ -1611,7 +1652,8 @@
         "label": "VIZ"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974715329"
   },
   {
     "id": "thunderbolt-vol-15",
@@ -1649,7 +1691,8 @@
         "label": "VIZ"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974720729"
   },
   {
     "id": "thunderbolt-vol-16",
@@ -1687,7 +1730,8 @@
         "label": "VIZ"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974722952"
   },
   {
     "id": "thunderbolt-vol-17",
@@ -1725,7 +1769,8 @@
         "label": "VIZ"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974726530"
   },
   {
     "id": "thunderbolt-vol-18",
@@ -1763,7 +1808,8 @@
         "label": "VIZ"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974732487"
   },
   {
     "id": "thunderbolt-vol-19",
@@ -1801,7 +1847,8 @@
         "label": "VIZ"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974736164"
   },
   {
     "id": "thunderbolt-vol-20",
@@ -1839,7 +1886,8 @@
         "label": "VIZ"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974740444"
   },
   {
     "id": "thunderbolt-vol-21",
@@ -1877,7 +1925,8 @@
         "label": "VIZ"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974743735"
   },
   {
     "id": "thunderbolt-vol-22",
@@ -1915,7 +1964,8 @@
         "label": "VIZ"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974749324"
   },
   {
     "id": "thunderbolt-vol-23",
@@ -1953,7 +2003,8 @@
         "label": "VIZ"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974754960"
   },
   {
     "id": "thunderbolt-vol-24",
@@ -1991,7 +2042,8 @@
         "label": "VIZ"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974752928"
   },
   {
     "id": "thunderbolt-vol-25",
@@ -2029,7 +2081,8 @@
         "label": "VIZ"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974760961"
   },
   {
     "id": "thunderbolt-vol-26",
@@ -2067,7 +2120,8 @@
         "label": "VIZ"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974766475"
   },
   {
     "id": "thunderbolt-vol-27",
@@ -2101,14 +2155,15 @@
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
     "notes": [
       "Final volume of the series."
-    ]
+    ],
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974769179"
   },
   {
     "id": "vanadis-heart-vol-1",
-    "series": "Mobile Suit Gundam: The Witch from Mercury — Vanadis Heart",
+    "series": "Mobile Suit Gundam: The Witch from Mercury \u2014 Vanadis Heart",
     "seriesId": "vanadis-heart",
     "volume": 1,
-    "title": "Mobile Suit Gundam: The Witch from Mercury — Vanadis Heart, Vol. 1",
+    "title": "Mobile Suit Gundam: The Witch from Mercury \u2014 Vanadis Heart, Vol. 1",
     "creators": "Chika Tojo (art), Kou Yoneyama & HISADAKE (story)",
     "publisher": "Yen Press",
     "releaseDate": "2026-08-25",
@@ -2143,14 +2198,15 @@
     "pageCount": 192,
     "notes": [
       "Release date conflict in research: Yen Press lists 25 Aug 2026; Anime News Network listed 14 Jul 2026. Yen's date is used."
-    ]
+    ],
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9798855437102"
   },
   {
     "id": "vanadis-heart-vol-2",
-    "series": "Mobile Suit Gundam: The Witch from Mercury — Vanadis Heart",
+    "series": "Mobile Suit Gundam: The Witch from Mercury \u2014 Vanadis Heart",
     "seriesId": "vanadis-heart",
     "volume": 2,
-    "title": "Mobile Suit Gundam: The Witch from Mercury — Vanadis Heart, Vol. 2",
+    "title": "Mobile Suit Gundam: The Witch from Mercury \u2014 Vanadis Heart, Vol. 2",
     "creators": "Chika Tojo (art), Kou Yoneyama & HISADAKE (story)",
     "publisher": "Yen Press",
     "releaseDate": "2026-09-22",
@@ -2185,14 +2241,15 @@
     "pageCount": 208,
     "notes": [
       "Release date conflict in research: Yen Press lists 22 Sep 2026; a Hachette order form lists 24 Nov 2026. Yen's date is used."
-    ]
+    ],
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9798855438758"
   },
   {
     "id": "vanadis-heart-vol-3",
-    "series": "Mobile Suit Gundam: The Witch from Mercury — Vanadis Heart",
+    "series": "Mobile Suit Gundam: The Witch from Mercury \u2014 Vanadis Heart",
     "seriesId": "vanadis-heart",
     "volume": 3,
-    "title": "Mobile Suit Gundam: The Witch from Mercury — Vanadis Heart, Vol. 3",
+    "title": "Mobile Suit Gundam: The Witch from Mercury \u2014 Vanadis Heart, Vol. 3",
     "creators": "Chika Tojo (art), Kou Yoneyama & HISADAKE (story)",
     "publisher": "Yen Press",
     "releaseDate": "2027-02-23",
