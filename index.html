@@ -949,7 +949,7 @@
       content.innerHTML = `
         ${modalCoverBg}
         <div class="space-y-4" style="position:relative;z-index:1">
-          <div class="flex items-center justify-between pr-6">
+          <div class="flex flex-wrap items-center gap-2 justify-between pr-6">
             <span class="badge-pub px-3 py-1 rounded-xl text-sm font-black">${escapeHtml(c.publisher || c.distributor || CATALOGS[currentCatalog].label)}</span>
             <span class="${c.status === 'Released' ? 'badge-compact' : 'badge-upcoming'} px-3 py-1 rounded-full text-xs font-semibold">
               ${c.status}${c.releaseDate ? ' (' + formatDate(c.releaseDate, c.datePrecision) + ')' : ''}
