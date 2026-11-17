@@ -53,6 +53,27 @@
         "url": "https://www.amazon.com/s?k=Gundam+Breaker+4+game",
         "status": "unknown",
         "reason": "unverifiable"
+      },
+      {
+        "store": "steam",
+        "label": "Steam",
+        "url": "https://store.steampowered.com/app/1672500/GUNDAM_BREAKER_4/",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "playstation",
+        "label": "PlayStation Store",
+        "url": "https://store.playstation.com/en-us/product/UP0700-PPSA08065_00-GUNDAMBREAKER4P1/",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "nintendo",
+        "label": "Nintendo eShop",
+        "url": "https://www.nintendo.com/store/products/gundam-breaker-4-switch",
+        "status": "unknown",
+        "reason": "unverifiable"
       }
     ],
     "availability": "unknown",
@@ -63,7 +84,8 @@
     "unverified": [
       "Whether a North American PS4 physical disc exists is UNVERIFIED — Bandai's page names only PS5/Switch physical pre-orders.",
       "Online co-op activity not independently verified; no shutdown announced as of 16 Nov 2026."
-    ]
+    ],
+    "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1672500/header.jpg"
   },
   {
     "id": "rogue-orbit",
@@ -86,6 +108,27 @@
         "url": "https://www.amazon.com/s?k=Gundam+Rogue+Orbit+game",
         "status": "unknown",
         "reason": "unverifiable"
+      },
+      {
+        "store": "steam",
+        "label": "Steam",
+        "url": "https://store.steampowered.com/app/1963680/GUNDAM_ROGUE_ORBIT/",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "playstation",
+        "label": "PlayStation Store",
+        "url": "https://www.playstation.com/en-us/games/gundam-rogue-orbit/",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "xbox",
+        "label": "Xbox Store",
+        "url": "https://www.xbox.com/en-us/games/store/productid/9PND4CGSV9SX",
+        "status": "unknown",
+        "reason": "unverifiable"
       }
     ],
     "availability": "unknown",
@@ -99,7 +142,8 @@
       "Steam US displays 4 Mar 2027 (timezone artifact).",
       "A single retailer's social post claimed a Switch 2 logo — UNVERIFIED / likely erroneous.",
       "Physical/digital split per platform UNVERIFIED."
-    ]
+    ],
+    "coverUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202605/2502/84dce1a62f92c2df911d171b79a819defd8ec5e1d0b69f81.png"
   },
   {
     "id": "gundam-versus",
@@ -118,6 +162,13 @@
         "store": "amazon",
         "label": "Amazon",
         "url": "https://www.amazon.com/s?k=Gundam+Versus+game",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "playstation",
+        "label": "PlayStation Store",
+        "url": "https://store.playstation.com/en-us/product/UP0700-CUSA08790_00-GUNDAMVSPKG00001",
         "status": "unknown",
         "reason": "unverifiable"
       }
@@ -153,6 +204,20 @@
         "url": "https://www.amazon.com/s?k=Mobile+Suit+Gundam+SEED+Battle+Destiny+Remastered+game",
         "status": "unknown",
         "reason": "unverifiable"
+      },
+      {
+        "store": "steam",
+        "label": "Steam",
+        "url": "https://store.steampowered.com/app/1857740/MOBILE_SUIT_GUNDAM_SEED_BATTLE_DESTINY_REMASTERED/",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "nintendo",
+        "label": "Nintendo eShop",
+        "url": "https://www.nintendo.com/us/store/products/mobile-suit-gundam-seed-battle-destiny-remastered-switch/",
+        "status": "unknown",
+        "reason": "unverifiable"
       }
     ],
     "availability": "unknown",
@@ -165,7 +230,8 @@
       "Whether the Japan physical edition includes English text is UNVERIFIED.",
       "Some listings show 21 May 2025 (timezone/unlock artifact).",
       "A Switch 2 compatibility note seen in one forum snippet is UNVERIFIED."
-    ]
+    ],
+    "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1857740/header.jpg"
   },
   {
     "id": "uc-engage",
@@ -185,6 +251,20 @@
         "store": "amazon",
         "label": "Amazon",
         "url": "https://www.amazon.com/s?k=Mobile+Suit+Gundam+U.C.+ENGAGE+game",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "apple",
+        "label": "App Store",
+        "url": "https://apps.apple.com/us/app/mobile-suit-gundam-u-c-engage/id6448015376",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "google",
+        "label": "Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.bandainamcoent.gundamucengage_ww",
         "status": "unknown",
         "reason": "unverifiable"
       }
@@ -220,6 +300,20 @@
         "url": "https://www.amazon.com/s?k=Mobile+Suit+Gundam%3A+Battle+Operation+2+game",
         "status": "unknown",
         "reason": "unverifiable"
+      },
+      {
+        "store": "steam",
+        "label": "Steam",
+        "url": "https://store.steampowered.com/app/1367080/MOBILE_SUIT_GUNDAM_BATTLE_OPERATION_2/",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "playstation",
+        "label": "PlayStation Store",
+        "url": "https://store.playstation.com/en-us/concept/231363/",
+        "status": "unknown",
+        "reason": "unverifiable"
       }
     ],
     "availability": "unknown",
@@ -232,7 +326,8 @@
     "unverified": [
       "PS5 release date (Jan 2021) UNVERIFIED from a primary storefront.",
       "No cross-play between PlayStation and Steam versions — widely reported, UNVERIFIED from a primary source."
-    ]
+    ],
+    "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1367080/header.jpg"
   },
   {
     "id": "battle-operation-3",
@@ -252,6 +347,20 @@
         "store": "amazon",
         "label": "Amazon",
         "url": "https://www.amazon.com/s?k=Mobile+Suit+Gundam%3A+Battle+Operation+3+game",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "steam",
+        "label": "Steam",
+        "url": "https://store.steampowered.com/app/2303000/MOBILE_SUIT_GUNDAM_BATTLE_OPERATION_3/",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "playstation",
+        "label": "PlayStation Store",
+        "url": "https://store.playstation.com/en-us/concept/10011044",
         "status": "unknown",
         "reason": "unverifiable"
       }
@@ -287,6 +396,13 @@
         "url": "https://www.amazon.com/s?k=Mobile+Suit+Gundam%3A+Battle+Operation+Code+Fairy+game",
         "status": "unknown",
         "reason": "unverifiable"
+      },
+      {
+        "store": "playstation",
+        "label": "PlayStation Store",
+        "url": "https://www.playstation.com/en-us/games/mobile-suit-gundam-battle-operation-code-fairy/",
+        "status": "unknown",
+        "reason": "unverifiable"
       }
     ],
     "availability": "unknown",
@@ -297,7 +413,8 @@
     ],
     "unverified": [
       "Whether the Deluxe Edition is currently purchasable on the US PlayStation Store is UNVERIFIED (conflicting evidence) — needs a live storefront check."
-    ]
+    ],
+    "coverUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202110/1516/E9KUroj85R1W0N86rHqs8mtd.png"
   },
   {
     "id": "maxiboost-on",
@@ -316,6 +433,13 @@
         "store": "amazon",
         "label": "Amazon",
         "url": "https://www.amazon.com/s?k=Mobile+Suit+Gundam%3A+Extreme+Vs.+Maxiboost+ON+game",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "playstation",
+        "label": "PlayStation Store",
+        "url": "https://store.playstation.com/en-us/product/UP0700-CUSA18758_00-EXTREMEVSMBONPKG",
         "status": "unknown",
         "reason": "unverifiable"
       }
@@ -348,6 +472,13 @@
         "store": "amazon",
         "label": "Amazon",
         "url": "https://www.amazon.com/s?k=Mobile+Suit+Gundam%3A+Silver+Phantom+game",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "meta",
+        "label": "Meta Quest Store",
+        "url": "https://www.meta.com/experiences/6811683248909506/",
         "status": "unknown",
         "reason": "unverifiable"
       }
@@ -384,6 +515,20 @@
         "url": "https://www.amazon.com/s?k=New+Gundam+Breaker+game",
         "status": "unknown",
         "reason": "unverifiable"
+      },
+      {
+        "store": "steam",
+        "label": "Steam",
+        "url": "https://store.steampowered.com/app/738530/New_Gundam_Breaker/",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "playstation",
+        "label": "PlayStation Store",
+        "url": "https://store.playstation.com/en-us/product/UP0700-CUSA11566_00-NGUNDAMBREAKER1M",
+        "status": "unknown",
+        "reason": "unverifiable"
       }
     ],
     "availability": "unknown",
@@ -394,7 +539,8 @@
     ],
     "unverified": [
       "Current PlayStation Store US listing UNVERIFIED — no direct PS Store page was fetched."
-    ]
+    ],
+    "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/738530/header.jpg"
   },
   {
     "id": "battle-alliance",
@@ -420,6 +566,34 @@
         "url": "https://www.amazon.com/s?k=SD+Gundam+Battle+Alliance+game",
         "status": "unknown",
         "reason": "unverifiable"
+      },
+      {
+        "store": "steam",
+        "label": "Steam",
+        "url": "https://store.steampowered.com/app/824550/",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "playstation",
+        "label": "PlayStation Store",
+        "url": "https://store.playstation.com/en-us/product/UP0700-PPSA05166_00-SDGUNBATTLEA0000/",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "xbox",
+        "label": "Xbox Store",
+        "url": "https://www.xbox.com/en-US/games/store/SD-GUNDAM-BATTLE-ALLIANCE/9P70TQ6KZN7X",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "nintendo",
+        "label": "Nintendo eShop",
+        "url": "https://www.nintendo.com/us/store/products/sd-gundam-battle-alliance-switch/",
+        "status": "unknown",
+        "reason": "unverifiable"
       }
     ],
     "availability": "unknown",
@@ -431,7 +605,8 @@
       "Physical new-stock status in 2026 is UNVERIFIED — likely thinning for a 2022 title.",
       "Online co-op activity not independently verified; no shutdown announced as of 16 Nov 2026.",
       "Xbox Game Pass availability UNVERIFIED — do not assume."
-    ]
+    ],
+    "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/824550/header.jpg"
   },
   {
     "id": "cross-rays",
@@ -452,6 +627,13 @@
         "url": "https://www.amazon.com/s?k=SD+Gundam+G+Generation+Cross+Rays+game",
         "status": "unknown",
         "reason": "unverifiable"
+      },
+      {
+        "store": "steam",
+        "label": "Steam",
+        "url": "https://store.steampowered.com/app/728530/SD_GUNDAM_G_GENERATION_CROSS_RAYS/",
+        "status": "unknown",
+        "reason": "unverifiable"
       }
     ],
     "availability": "unknown",
@@ -459,7 +641,8 @@
     "notes": [
       "North American release is Steam-digital-only. Console versions are Asia-English imports (excluded here).",
       "Single-player tactical RPG; no server question."
-    ]
+    ],
+    "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/728530/header.jpg"
   },
   {
     "id": "g-generation-eternal",
@@ -479,6 +662,20 @@
         "store": "amazon",
         "label": "Amazon",
         "url": "https://www.amazon.com/s?k=SD+Gundam+G+Generation+ETERNAL+game",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "apple",
+        "label": "App Store",
+        "url": "https://apps.apple.com/us/app/sd-gundam-g-generation-eternal/id6692615881",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "google",
+        "label": "Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.bandainamcoent.gget_WW",
         "status": "unknown",
         "reason": "unverifiable"
       }
@@ -512,6 +709,13 @@
         "url": "https://www.amazon.com/s?k=Super+Robot+Wars+30+game",
         "status": "unknown",
         "reason": "unverifiable"
+      },
+      {
+        "store": "steam",
+        "label": "Steam",
+        "url": "https://store.steampowered.com/app/898750/Super_Robot_Wars_30/",
+        "status": "unknown",
+        "reason": "unverifiable"
       }
     ],
     "availability": "unknown",
@@ -519,7 +723,8 @@
     "notes": [
       "Steam version is worldwide; console versions are Asia-English imports (excluded here).",
       "Crossover strategy RPG featuring Gundam series alongside other mecha franchises."
-    ]
+    ],
+    "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/898750/header.jpg"
   },
   {
     "id": "srw-y",
@@ -542,6 +747,27 @@
         "url": "https://www.amazon.com/s?k=Super+Robot+Wars+Y+game",
         "status": "unknown",
         "reason": "unverifiable"
+      },
+      {
+        "store": "steam",
+        "label": "Steam",
+        "url": "https://store.steampowered.com/app/1909950/SUPER_ROBOT_WARS_Y/",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "playstation",
+        "label": "PlayStation Store",
+        "url": "https://www.playstation.com/en-us/games/super-robot-wars-y/",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "nintendo",
+        "label": "Nintendo eShop",
+        "url": "https://www.nintendo.com/us/store/products/super-robot-wars-y-switch/",
+        "status": "unknown",
+        "reason": "unverifiable"
       }
     ],
     "availability": "unknown",
@@ -552,6 +778,7 @@
     "unverified": [
       "Release date reported as 27/28 Aug 2025.",
       "Canada console presence UNVERIFIED."
-    ]
+    ],
+    "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1909950/f5b9a10e10bb072dc720e7efa8fdf46ce5d6956a/page_bg_raw.jpg"
   }
 ]

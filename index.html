@@ -81,6 +81,7 @@
     }
 
     .hub-strip {
+      position: relative;
       flex: 1;
       height: 100%;
       overflow: hidden;
@@ -140,6 +141,38 @@
       font-size: 1.6rem;
       font-weight: 800;
       color: #fafafa;
+    }
+
+    /* Random cover background: decorative layer behind the label/detail,
+       reusing the modal cover pattern (cropped cover + dark scrim). An
+       empty pool — or a broken image — leaves the gradient fallback. */
+    .hub-strip-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .hub-strip-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.5);
+      filter: blur(4px);
+    }
+
+    .hub-strip-bg::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(15, 18, 26, 0.72);
+    }
+
+    .hub-strip-label,
+    .hub-strip-detail {
+      position: relative;
+      z-index: 1;
     }
 
     /* Narrow screens: stack the strips, labels stay horizontal. */
@@ -333,21 +366,21 @@
     </div>
 
     <div class="hub-card" role="group" aria-label="Media types">
-      <button type="button" class="hub-strip" style="--strip-accent: #ef4444" onclick="location.hash='#/manga'" aria-label="Browse manga">
+      <button type="button" id="strip-manga" class="hub-strip" style="--strip-accent: #ef4444" onclick="location.hash='#/manga'" aria-label="Browse manga">
         <span class="hub-strip-label">Manga</span>
         <span class="hub-strip-detail">
           <span class="hub-strip-count" id="count-manga">–</span><br>
           English volumes, in print and upcoming
         </span>
       </button>
-      <button type="button" class="hub-strip" style="--strip-accent: #f59e0b" onclick="location.hash='#/games'" aria-label="Browse video games">
+      <button type="button" id="strip-games" class="hub-strip" style="--strip-accent: #f59e0b" onclick="location.hash='#/games'" aria-label="Browse video games">
         <span class="hub-strip-label">Video Games</span>
         <span class="hub-strip-detail">
           <span class="hub-strip-count" id="count-games">–</span><br>
           Buyable new in North America — no imports, no dead games
         </span>
       </button>
-      <button type="button" class="hub-strip" style="--strip-accent: #f97316" onclick="location.hash='#/discs'" aria-label="Browse discs">
+      <button type="button" id="strip-discs" class="hub-strip" style="--strip-accent: #f97316" onclick="location.hash='#/discs'" aria-label="Browse discs">
         <span class="hub-strip-label">Discs</span>
         <span class="hub-strip-detail">
           <span class="hub-strip-count" id="count-discs">–</span><br>
@@ -390,10 +423,10 @@
           </div>
 
           <!-- Group Filter (options populated from the catalog) -->
-          <select id="groupSelect" onchange="applyFilters()" class="bg-slate-800/80 border border-white/10 text-slate-300 rounded-xl px-3 py-1.5 focus:outline-none focus:border-red-500"></select>
+          <select id="groupSelect" onchange="applyFilters()" class="min-w-0 max-w-full w-full md:w-auto bg-slate-800/80 border border-white/10 text-slate-300 rounded-xl px-3 py-1.5 focus:outline-none focus:border-red-500"></select>
 
           <!-- Sort Select -->
-          <select id="sortSelect" onchange="applyFilters()" class="bg-slate-800/80 border border-red-500/40 text-red-300 rounded-xl px-3 py-1.5 focus:outline-none font-medium"></select>
+          <select id="sortSelect" onchange="applyFilters()" class="min-w-0 max-w-full w-full md:w-auto bg-slate-800/80 border border-red-500/40 text-red-300 rounded-xl px-3 py-1.5 focus:outline-none font-medium"></select>
 
         </div>
 
@@ -582,6 +615,36 @@
       document.getElementById('count-discs').textContent = DATA.discs.filter(isVisible).length;
     }
 
+    // Landing strips: one uniform-random cover per strip, re-picked on
+    // every landing render. Pool = visible entries with a coverUrl;
+    // empty pool returns null and the strip keeps its gradient.
+    function pickStripCover(entries) {
+      const pool = entries.filter(c => isVisible(c) && c.coverUrl);
+      if (!pool.length) return null;
+      return pool[Math.floor(Math.random() * pool.length)];
+    }
+
+    function updateLandingStrips() {
+      for (const name of ['manga', 'games', 'discs']) {
+        const strip = document.getElementById('strip-' + name);
+        if (!strip) continue;
+        const pick = pickStripCover(DATA[name]);
+        let bg = strip.querySelector('.hub-strip-bg');
+        if (!pick) {
+          if (bg) bg.remove();
+          continue;
+        }
+        if (!bg) {
+          bg = document.createElement('span');
+          bg.className = 'hub-strip-bg';
+          bg.setAttribute('aria-hidden', 'true');
+          strip.prepend(bg);
+        }
+        bg.style.display = '';
+        bg.innerHTML = `<img src="${escapeHtml(pick.coverUrl)}" alt="" decoding="async" onerror="this.parentElement.style.display='none'" style="object-position:center ${COVER_POS[pick.seriesId] || '40%'}">`;
+      }
+    }
+
     async function checkLiveUpdates() {
       const btn = document.querySelector('button[onclick="checkLiveUpdates()"]');
       if (btn) btn.innerHTML = `<span class="animate-spin inline-block mr-1">↻</span> Syncing...`;
@@ -719,7 +782,7 @@
         const meta = STORE_META[entry.store] || STORE_FALLBACK;
         let url = entry.url;
         if (entry.store === 'amazon') url = localizeAmazon(url);
-        out.push({ label: entry.label || (STORE_META[entry.store] || {}).label || entry.store, url, cardClass: meta.card, modalClass: meta.modal });
+        out.push({ label: entry.label || (STORE_META[entry.store] || {}).label || entry.store, url, kind: entry.kind || 'buy', cardClass: meta.card, modalClass: meta.modal });
       }
       return out;
     }
@@ -761,7 +824,7 @@
     }
 
     // Card face: product image where one exists, else a styled placeholder.
-    // Games and discs have no verified image URLs, so they render placeholders.
+    // Entries without a verified image URL render the placeholder.
     function placeholderFace(title, glyph) {
       return `<div class="item-card__placeholder"><span class="item-card__glyph">${glyph}</span><span class="item-card__placeholder-title">${escapeHtml(title)}</span></div>`;
     }
@@ -854,10 +917,19 @@
       const c = DATA[currentCatalog].find(item => item.id === id);
       if (!c) return;
       const links = getBuyLinks(c);
-      const buyBtns = links.map(l => `<a href="${escapeHtml(l.url)}" target="_blank" rel="noopener noreferrer" class="${l.modalClass}">${escapeHtml(l.label)} ↗</a>`).join('');
+      const buyLinks = links.filter(l => l.kind !== 'stream');
+      const streamLinks = links.filter(l => l.kind === 'stream');
+      const linkBtn = l => `<a href="${escapeHtml(l.url)}" target="_blank" rel="noopener noreferrer" class="${l.modalClass}">${escapeHtml(l.label)} ↗</a>`;
+      const buyBtns = buyLinks.map(linkBtn).join('');
       const buySection = buyBtns
         ? `<div class="flex flex-wrap gap-2 pt-1">${buyBtns}</div>`
         : `<div class="text-xs text-slate-500 pt-1">No purchase links currently verified for this item — check back soon.</div>`;
+      const streamSection = streamLinks.length
+        ? `<div class="p-3.5 rounded-2xl bg-slate-900/90 border border-white/10 space-y-2">
+            <div class="text-xs uppercase font-bold text-slate-400">Stream:</div>
+            <div class="flex flex-wrap gap-2 pt-1">${streamLinks.map(linkBtn).join('')}</div>
+          </div>`
+        : '';
       const notesSection = (c.notes && c.notes.length)
         ? `<div class="p-3.5 rounded-2xl bg-amber-500/10 border border-amber-500/20 space-y-1.5">
             <div class="text-xs uppercase font-bold text-amber-300">Research notes:</div>
@@ -901,6 +973,8 @@
             <p class="text-[11px] text-slate-500 pt-1">Availability is re-checked daily. Amazon links are title searches, not stock evidence.</p>
           </div>
 
+          ${streamSection}
+
           ${notesSection}
           ${unverifiedSection}
 
@@ -937,6 +1011,9 @@
         updateCounts();
         applyFilters();
         window.scrollTo(0, 0);
+      } else {
+        // Landing render: fresh random strip covers every time.
+        updateLandingStrips();
       }
     }
 
