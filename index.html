@@ -372,24 +372,21 @@
 
     <div id="hubCard" class="hub-card" role="group" aria-label="Media types">
       <button type="button" id="strip-manga" class="hub-strip" style="--strip-accent: #ef4444" onclick="location.hash='#/manga'" aria-label="Browse manga">
-        <span class="hub-strip-label">Manga</span>
+        <span class="hub-strip-label">Read</span>
         <span class="hub-strip-detail">
-          <span class="hub-strip-count" id="count-manga">–</span><br>
-          <span id="stripDetail-manga">English volumes, in print and upcoming</span>
+          <span class="hub-strip-count" id="count-manga">–</span>
         </span>
       </button>
       <button type="button" id="strip-games" class="hub-strip" style="--strip-accent: #f59e0b" onclick="location.hash='#/games'" aria-label="Browse video games">
-        <span class="hub-strip-label">Video Games</span>
+        <span class="hub-strip-label">Play</span>
         <span class="hub-strip-detail">
-          <span class="hub-strip-count" id="count-games">–</span><br>
-          <span id="stripDetail-games">Buyable new in North America — no imports, no dead games</span>
+          <span class="hub-strip-count" id="count-games">–</span>
         </span>
       </button>
       <button type="button" id="strip-discs" class="hub-strip" style="--strip-accent: #f97316" onclick="location.hash='#/discs'" aria-label="Browse discs">
-        <span class="hub-strip-label">Discs</span>
+        <span class="hub-strip-label">Watch</span>
         <span class="hub-strip-detail">
-          <span class="hub-strip-count" id="count-discs">–</span><br>
-          <span id="stripDetail-discs">Blu-ray, DVD &amp; 4K Ultra HD, verified in stock</span>
+          <span class="hub-strip-count" id="count-discs">–</span>
         </span>
       </button>
     </div>
@@ -644,18 +641,17 @@
       const hubCard = document.getElementById('hubCard');
       if (hubCard) hubCard.setAttribute('aria-label', tr('landing.mediaTypesAria', 'Media types'));
       const strips = [
-        ['strip-manga', 'media.manga', 'Manga', 'landing.browseMangaAria', 'Browse manga', 'stripDetail-manga', 'landing.mangaDetail', 'English volumes, in print and upcoming'],
-        ['strip-games', 'media.videoGames', 'Video Games', 'landing.browseGamesAria', 'Browse video games', 'stripDetail-games', 'landing.gamesDetail', 'Buyable new in North America — no imports, no dead games'],
-        ['strip-discs', 'media.discs', 'Discs', 'landing.browseDiscsAria', 'Browse discs', 'stripDetail-discs', 'landing.discsDetail', 'Blu-ray, DVD & 4K Ultra HD, verified in stock'],
+        ['strip-manga', 'media.manga', 'Read', 'landing.browseMangaAria', 'Browse manga'],
+        ['strip-games', 'media.videoGames', 'Play', 'landing.browseGamesAria', 'Browse video games'],
+        ['strip-discs', 'media.discs', 'Watch', 'landing.browseDiscsAria', 'Browse discs'],
       ];
-      for (const [stripId, labelKey, labelFallback, ariaKey, ariaFallback, detailId, detailKey, detailFallback] of strips) {
+      for (const [stripId, labelKey, labelFallback, ariaKey, ariaFallback] of strips) {
         const strip = document.getElementById(stripId);
         if (strip) {
           strip.setAttribute('aria-label', tr(ariaKey, ariaFallback));
           const labelEl = strip.querySelector('.hub-strip-label');
           if (labelEl) labelEl.textContent = tr(labelKey, labelFallback);
         }
-        setText(detailId, tr(detailKey, detailFallback));
       }
       setText('landingFootnote', tr('landing.footnote', 'Buy links verified daily · Only in-stock and upcoming items are shown · An item disappears only after two consecutive daily checks find it unavailable everywhere'));
       setText('backLink', tr('browser.backLink', '← All media'));
@@ -692,7 +688,7 @@
     // Catalog configuration. One browser section, three catalogs.
     const CATALOGS = {
       manga: {
-        label: 'Manga',
+        label: 'Read',
         labelKey: 'media.manga',
         subtitle: 'English-language volumes, in print and upcoming.',
         subtitleKey: 'browser.subtitleManga',
@@ -722,7 +718,7 @@
         ]),
       },
       games: {
-        label: 'Video Games',
+        label: 'Play',
         labelKey: 'media.videoGames',
         subtitle: 'Buyable new in North America. No imports, no dead games, no out-of-print.',
         subtitleKey: 'browser.subtitleGames',
@@ -750,7 +746,7 @@
         ]),
       },
       discs: {
-        label: 'Discs',
+        label: 'Watch',
         labelKey: 'media.discs',
         subtitle: 'Blu-ray, DVD, and 4K Ultra HD — only titles verified buyable-new are listed.',
         subtitleKey: 'browser.subtitleDiscs',
