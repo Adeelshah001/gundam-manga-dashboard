@@ -340,6 +340,43 @@
     ]
   },
   {
+    "id": "watch-requiem-for-vengeance",
+    "title": "Gundam: Requiem for Vengeance",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "ONA",
+    "originalDate": "2024-10-17",
+    "episodes": 6,
+    "links": [
+      {
+        "store": "netflix",
+        "label": "Netflix",
+        "url": "https://www.netflix.com/title/81276500",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      }
+    ],
+    "countries": {
+      "us": [
+        "netflix"
+      ],
+      "ca": [
+        "netflix"
+      ],
+      "mx": [
+        "netflix"
+      ]
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "6-episode Unreal Engine 5 CG series from the Zeon side of the European front, late in the One Year War. Directed by Erasmus Brosdau; Sunrise and SAFEHOUSE. A Netflix exclusive, released October 17, 2024."
+    ],
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/GundamRequiemForVengeancePoster.jpg/500px-GundamRequiemForVengeancePoster.jpg"
+  },
+  {
     "id": "watch-g-gundam",
     "title": "Mobile Fighter G Gundam",
     "coverUrl": "https://thumb.wikimedia.org/wikipedia/en/thumb/6/6c/MobileFighterGGundamPoster.jpg/250px-MobileFighterGGundamPoster.jpg",
@@ -1127,6 +1164,20 @@
         "kind": "rentbuy",
         "unverified": true,
         "offer": "rent+buy"
+      },
+      {
+        "store": "amazon",
+        "label": "Amazon",
+        "url": "https://www.amazon.com/s?k=Mobile+Suit+Gundam+SEED+Freedom+%E2%80%94+SteelBook+Blu-ray",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "crunchyroll",
+        "label": "Crunchyroll (subscriber-only)",
+        "url": "https://www.crunchyroll.com/store/search?q=Mobile+Suit+Gundam+SEED+Freedom+%E2%80%94+SteelBook",
+        "status": "unknown",
+        "reason": "unverifiable"
       }
     ],
     "countries": {
@@ -1146,12 +1197,27 @@
     "availability": "unknown",
     "unavailableStreak": 0,
     "notes": [
-      "Subtitled and dubbed on Crunchyroll. The Amazon Video rent/buy destination shares its ID with the Channel stream link. A second Prime Video page showing 'currently unavailable' is not linked; the linked Prime Video page is the Crunchyroll Channel offer."
+      "Subtitled and dubbed on Crunchyroll. The Amazon Video rent/buy destination shares its ID with the Channel stream link. A second Prime Video page showing 'currently unavailable' is not linked; the linked Prime Video page is the Crunchyroll Channel offer.",
+      "The only North American 4K Gundam release found.",
+      "Backordered at ImportCDs on a live fetch, 16 Nov 2026 (backorder is not out-of-print).",
+      "Orderable at the Crunchyroll Store on a live check, Nov 2026 (Add to cart button; no explicit in-stock wording).",
+      "A second Prime Video detail page for this title shows 'currently unavailable' and is not linked; the linked Prime Video page is the Crunchyroll Channel offer."
     ],
     "unverified": [
-      "Runtime variant: 125 min vs 2h 4m (124 min) on the Prime Video page — recorded, not resolved."
+      "Runtime variant: 125 min vs 2h 4m (124 min) on the Prime Video page — recorded, not resolved.",
+      "4K-only with no standard Blu-ray is UNVERIFIED (forum correction of the initial '4K & Blu-ray' listing).",
+      "Date conflict: 14 Apr 2026 (press/retailers) vs 13 Apr (one forum schedule).",
+      "Region-free status UNVERIFIED (blu-ray.com).",
+      "The UK Anime Limited 4K edition is a different product — do not confuse."
     ],
-    "coverUrl": "https://mediacdn.aent-m.com/prod-img/500/01/4488701-3516778.jpg?ae=4621895150"
+    "coverUrl": "https://mediacdn.aent-m.com/prod-img/500/01/4488701-3516778.jpg?ae=4621895150",
+    "discFormat": "4K Ultra HD",
+    "discTitle": "Mobile Suit Gundam SEED Freedom — SteelBook",
+    "discDistributor": "Crunchyroll, LLC",
+    "discContents": "Film; 4K Ultra HD only — no standard Blu-ray disc included",
+    "discRegion": "Region free",
+    "discUpc": "704400111655",
+    "discReleaseDate": "2026-04-14"
   },
   {
     "id": "watch-seed-freedom-zero",
@@ -1308,6 +1374,13 @@
         "status": "unknown",
         "reason": "unverifiable",
         "kind": "stream"
+      },
+      {
+        "store": "amazon",
+        "label": "Amazon",
+        "url": "https://www.amazon.com/s?k=Mobile+Suit+Gundam+ZZ+%E2%80%94+Collection+2+Blu-ray",
+        "status": "unknown",
+        "reason": "unverifiable"
       }
     ],
     "countries": {
@@ -1324,9 +1397,20 @@
     "availability": "unknown",
     "unavailableStreak": 0,
     "notes": [
-      "Subtitled only on Crunchyroll (audio Japanese, English subtitles). Crunchyroll names the title 'Mobile Suit Zeta Gundam: ZZ'."
+      "Subtitled only on Crunchyroll (audio Japanese, English subtitles). Crunchyroll names the title 'Mobile Suit Zeta Gundam: ZZ'.",
+      "Verified in stock at Barnes & Noble on a live fetch, 16 Nov 2026 (remaining stock; in-print status not confirmed)."
     ],
-    "coverUrl": "https://m.media-amazon.com/images/I/51NrjFPTBVL._SL1500_.jpg"
+    "coverUrl": "https://m.media-amazon.com/images/I/51NrjFPTBVL._SL1500_.jpg",
+    "discFormat": "Blu-ray",
+    "discTitle": "Mobile Suit Gundam ZZ — Collection 2",
+    "discDistributor": "Right Stuf / Nozomi (for Sunrise)",
+    "discContents": "Episodes 23–47",
+    "discReleaseDate": "2016-07-05",
+    "unverified": [
+      "Release date rests on Gundam Wiki only — the weakest date in the survey.",
+      "A specialty retailer calls this title out of print; remaining stock does not prove in-print status.",
+      "An older listing snippet said out of stock (conflicts with the Nov 2026 live fetch)."
+    ]
   },
   {
     "id": "watch-chars-counterattack",
@@ -1422,6 +1506,20 @@
         "reason": "unverifiable",
         "kind": "rentbuy",
         "offer": "buy"
+      },
+      {
+        "store": "amazon",
+        "label": "Amazon",
+        "url": "https://www.amazon.com/s?k=Mobile+Suit+Gundam%3A+Cucuruz+Doan%27s+Island+Blu-ray",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "crunchyroll",
+        "label": "Crunchyroll (subscriber-only)",
+        "url": "https://www.crunchyroll.com/store/search?q=Mobile+Suit+Gundam%3A+Cucuruz+Doan%27s+Island",
+        "status": "unknown",
+        "reason": "unverifiable"
       }
     ],
     "countries": {
@@ -1441,12 +1539,27 @@
     "availability": "unknown",
     "unavailableStreak": 0,
     "notes": [
-      "108 min. Subtitled and dubbed on Crunchyroll (audio Japanese/English/German). Apple TV buy is US-only."
+      "108 min. Subtitled and dubbed on Crunchyroll (audio Japanese/English/German). Apple TV buy is US-only.",
+      "Verified in stock at Barnes & Noble on a live fetch, 16 Nov 2026 (remaining stock; in-print status not distributor-confirmed).",
+      "Region A verified on the YesAsia retailer page.",
+      "Live check 17 Nov 2026 resolved the aggregator conflict: the YouTube Movies listing shows 'Video unavailable' with no buy/rent option; Microsoft no longer sells movies online (legacy listing only); Google Play and Fandango at Home pages are geo-blocked from Canada and could not be confirmed. The Apple TV Store (US) remains the only verified digital buy option."
     ],
     "unverified": [
-      "Crunchyroll's watch page wrongly says 'Originally released Jul 14, 1979' (Crunchyroll metadata error — ignore)."
+      "Crunchyroll's watch page wrongly says 'Originally released Jul 14, 1979' (Crunchyroll metadata error — ignore).",
+      "Street date conflict: retailer page says 24 Sep 2024; Crunchyroll press release said 10 Sep 2024.",
+      "Format conflict: PR-calendar contrast suggests Blu-ray-only, while YesAsia wording lists 'DVD, Blu-ray' — not listed as a combo.",
+      "Distributor credit (Crunchyroll, LLC) UNVERIFIED on a primary page.",
+      "In-print status NOT distributor-confirmed; a forum post called it the only Gundam title still in print [UNVERIFIED].",
+      "Google Play and Fandango at Home listings for this film could not be confirmed from Canada (geo-blocked) — US availability unconfirmed."
     ],
-    "coverUrl": "https://mediacdn.aent-m.com/prod-img/500/62/4354362-3197556.jpg"
+    "coverUrl": "https://mediacdn.aent-m.com/prod-img/500/62/4354362-3197556.jpg",
+    "discFormat": "Blu-ray",
+    "discTitle": "Mobile Suit Gundam: Cucuruz Doan's Island",
+    "discDistributor": "Crunchyroll, LLC",
+    "discContents": "Film",
+    "discRegion": "A",
+    "discUpc": "704400109652",
+    "discReleaseDate": "2024-09-24"
   },
   {
     "id": "watch-iron-blooded-orphans",
@@ -1806,130 +1919,5 @@
     "unverified": [
       "Episode count conflict: 7 vs 10 vs 12 — no single count is verified."
     ]
-  },
-  {
-    "id": "zz-collection-2-bd",
-    "watchId": "watch-zz",
-    "title": "Mobile Suit Gundam ZZ — Collection 2",
-    "distributor": "Right Stuf / Nozomi (for Sunrise)",
-    "format": "Blu-ray",
-    "releaseDate": "2016-07-05",
-    "originalDate": "1986-03-01",
-    "contents": "Episodes 23–47",
-    "status": "Released",
-    "type": "disc",
-    "links": [
-      {
-        "store": "amazon",
-        "label": "Amazon",
-        "url": "https://www.amazon.com/s?k=Mobile+Suit+Gundam+ZZ+%E2%80%94+Collection+2+Blu-ray",
-        "status": "unknown",
-        "reason": "unverifiable"
-      }
-    ],
-    "availability": "available",
-    "unavailableStreak": 0,
-    "notes": [
-      "Verified in stock at Barnes & Noble on a live fetch, 16 Nov 2026 (remaining stock; in-print status not confirmed).",
-      "See the Watch entry for streaming options."
-    ],
-    "unverified": [
-      "Release date rests on Gundam Wiki only — the weakest date in the survey.",
-      "A specialty retailer calls this title out of print; remaining stock does not prove in-print status.",
-      "An older listing snippet said out of stock (conflicts with the Nov 2026 live fetch)."
-    ],
-    "coverUrl": "https://m.media-amazon.com/images/I/51NrjFPTBVL._SL1500_.jpg"
-  },
-  {
-    "id": "cucuruz-doans-island-bd",
-    "watchId": "watch-cucuruz-doans-island",
-    "title": "Mobile Suit Gundam: Cucuruz Doan's Island",
-    "distributor": "Crunchyroll, LLC",
-    "format": "Blu-ray",
-    "releaseDate": "2024-09-24",
-    "originalDate": "2022-06-03",
-    "contents": "Film",
-    "status": "Released",
-    "type": "disc",
-    "links": [
-      {
-        "store": "amazon",
-        "label": "Amazon",
-        "url": "https://www.amazon.com/s?k=Mobile+Suit+Gundam%3A+Cucuruz+Doan%27s+Island+Blu-ray",
-        "status": "unknown",
-        "reason": "unverifiable"
-      },
-      {
-        "store": "crunchyroll",
-        "label": "Crunchyroll (subscriber-only)",
-        "url": "https://www.crunchyroll.com/store/search?q=Mobile+Suit+Gundam%3A+Cucuruz+Doan%27s+Island",
-        "status": "unknown",
-        "reason": "unverifiable"
-      }
-    ],
-    "availability": "available",
-    "unavailableStreak": 0,
-    "upc": "704400109652",
-    "region": "A",
-    "notes": [
-      "Verified in stock at Barnes & Noble on a live fetch, 16 Nov 2026 (remaining stock; in-print status not distributor-confirmed).",
-      "Region A verified on the YesAsia retailer page.",
-      "See the Watch entry for streaming options.",
-      "Live check 17 Nov 2026 resolved the aggregator conflict: the YouTube Movies listing shows 'Video unavailable' with no buy/rent option; Microsoft no longer sells movies online (legacy listing only); Google Play and Fandango at Home pages are geo-blocked from Canada and could not be confirmed. The Apple TV Store (US) remains the only verified digital buy option."
-    ],
-    "unverified": [
-      "Street date conflict: retailer page says 24 Sep 2024; Crunchyroll press release said 10 Sep 2024.",
-      "Format conflict: PR-calendar contrast suggests Blu-ray-only, while YesAsia wording lists 'DVD, Blu-ray' — not listed as a combo.",
-      "Distributor credit (Crunchyroll, LLC) UNVERIFIED on a primary page.",
-      "In-print status NOT distributor-confirmed; a forum post called it the only Gundam title still in print [UNVERIFIED].",
-      "Google Play and Fandango at Home listings for this film could not be confirmed from Canada (geo-blocked) — US availability unconfirmed."
-    ],
-    "coverUrl": "https://mediacdn.aent-m.com/prod-img/500/62/4354362-3197556.jpg"
-  },
-  {
-    "id": "seed-freedom-4k",
-    "watchId": "watch-seed-freedom",
-    "title": "Mobile Suit Gundam SEED Freedom — SteelBook",
-    "distributor": "Crunchyroll, LLC",
-    "format": "4K Ultra HD",
-    "releaseDate": "2026-04-14",
-    "originalDate": "2024-01-26",
-    "contents": "Film; 4K Ultra HD only — no standard Blu-ray disc included",
-    "status": "Released",
-    "type": "disc",
-    "links": [
-      {
-        "store": "amazon",
-        "label": "Amazon",
-        "url": "https://www.amazon.com/s?k=Mobile+Suit+Gundam+SEED+Freedom+%E2%80%94+SteelBook+Blu-ray",
-        "status": "unknown",
-        "reason": "unverifiable"
-      },
-      {
-        "store": "crunchyroll",
-        "label": "Crunchyroll (subscriber-only)",
-        "url": "https://www.crunchyroll.com/store/search?q=Mobile+Suit+Gundam+SEED+Freedom+%E2%80%94+SteelBook",
-        "status": "unknown",
-        "reason": "unverifiable"
-      }
-    ],
-    "availability": "unknown",
-    "unavailableStreak": 0,
-    "upc": "704400111655",
-    "region": "Region free",
-    "notes": [
-      "The only North American 4K Gundam release found.",
-      "Backordered at ImportCDs on a live fetch, 16 Nov 2026 (backorder is not out-of-print).",
-      "Orderable at the Crunchyroll Store on a live check, Nov 2026 (Add to cart button; no explicit in-stock wording).",
-      "See the Watch entry for streaming options.",
-      "A second Prime Video detail page for this title shows 'currently unavailable' and is not linked; the linked Prime Video page is the Crunchyroll Channel offer."
-    ],
-    "unverified": [
-      "4K-only with no standard Blu-ray is UNVERIFIED (forum correction of the initial '4K & Blu-ray' listing).",
-      "Date conflict: 14 Apr 2026 (press/retailers) vs 13 Apr (one forum schedule).",
-      "Region-free status UNVERIFIED (blu-ray.com).",
-      "The UK Anime Limited 4K edition is a different product — do not confuse."
-    ],
-    "coverUrl": "https://mediacdn.aent-m.com/prod-img/500/01/4488701-3516778.jpg?ae=4621895150"
   }
 ]

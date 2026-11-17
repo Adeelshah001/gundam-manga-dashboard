@@ -109,7 +109,8 @@
     "status.all": "Tous",
     "status.buttonPattern": "{label} ({n})",
     "status.released": "Sorti",
-    "status.upcoming": "À venir"
+    "status.upcoming": "À venir",
+    "label.discReleaseDate": "Date de sortie du disque"
   },
   "entries": {
     "beltorchikas-children-vol-1": {
@@ -360,50 +361,11 @@
         "La présence sur consoles au Canada NON VÉRIFIÉE."
       ]
     },
-    "zz-collection-2-bd": {
-      "title": "Mobile Suit Gundam ZZ - Partie 2",
-      "notes": [
-        "Vérifié en stock chez Barnes & Noble lors d'une consultation en direct, le 16 Nov 2026 (stock restant; statut d'impression non confirmé).",
-        "Diffusion en continu (JustWatch, Nov 2026) : Crunchyroll aux États-Unis, au Canada et au Mexique; aucune option d'achat ou de location numérique listée dans aucune région."
-      ],
-      "unverified": [
-        "La date de sortie repose uniquement sur Gundam Wiki — la date la plus faible de l'étude.",
-        "Un détaillant spécialisé qualifie ce titre d'épuisé; le stock restant ne prouve pas le statut d'impression.",
-        "Un extrait d'annonce plus ancien indiquait une rupture de stock (en conflit avec la consultation en direct de Nov 2026)."
-      ],
-      "contents": "Épisodes 23–47"
+    "watch-zz": {
+      "discContents": "Épisodes 23–47"
     },
-    "cucuruz-doans-island-bd": {
-      "notes": [
-        "Vérifié en stock chez Barnes & Noble lors d'une consultation en direct, le 16 Nov 2026 (stock restant; statut d'impression non confirmé par le distributeur).",
-        "Région A vérifiée sur la page du détaillant YesAsia.",
-        "Diffusion en continu (JustWatch, Nov 2026) : Crunchyroll et Crunchyroll Amazon Channel aux États-Unis, au Canada et au Mexique. Achat numérique sur l'Apple TV Store aux États-Unis seulement — non listé au Canada ou au Mexique.",
-        "La vérification en direct du 17 Nov 2026 a résolu le conflit entre agrégateurs : la fiche YouTube Movies affiche 'Video unavailable' sans option d'achat ou de location; Microsoft ne vend plus de films en ligne (fiche héritée seulement); les pages Google Play et Fandango at Home sont géobloquées depuis le Canada et n'ont pas pu être confirmées. L'Apple TV Store (US) demeure la seule option vérifiée d'achat numérique."
-      ],
-      "unverified": [
-        "Conflit de date de sortie : la page du détaillant indique 24 Sep 2024; le communiqué de presse de Crunchyroll indiquait 10 Sep 2024.",
-        "Conflit de format : le contraste avec le calendrier des communiqués suggère Blu-ray uniquement, tandis que le libellé de YesAsia indique 'DVD, Blu-ray' — non listé comme combo.",
-        "La mention du distributeur (Crunchyroll, LLC) NON VÉRIFIÉE sur une page officielle.",
-        "Le statut d'impression NON confirmé par le distributeur; une publication sur un forum l'a qualifié de seul titre Gundam encore en impression [UNVERIFIED].",
-        "Les fiches Google Play et Fandango at Home pour ce film n'ont pas pu être confirmées depuis le Canada (géobloquées) — disponibilité aux États-Unis non confirmée."
-      ]
-    },
-    "seed-freedom-4k": {
-      "notes": [
-        "La seule sortie Gundam 4K nord-américaine trouvée.",
-        "En commande en attente chez ImportCDs lors d'une consultation en direct, le 16 Nov 2026 (une commande en attente ne signifie pas épuisé).",
-        "Commandable à la Crunchyroll Store lors d'une vérification en direct, Nov 2026 (bouton Add to cart; aucun libellé explicite de disponibilité en stock).",
-        "Diffusion en continu (JustWatch, Nov 2026) : Netflix et Crunchyroll (plus Crunchyroll Amazon Channel) aux États-Unis et au Canada; Hulu aux États-Unis seulement; aucune option de diffusion en continu listée au Mexique. Achat ou location numérique sur l'Apple TV Store et Amazon Video aux États-Unis seulement.",
-        "Une deuxième page de détails Prime Video pour ce titre affiche 'currently unavailable' et n'est pas liée; la page Prime Video liée est l'offre de Crunchyroll Channel."
-      ],
-      "unverified": [
-        "Le fait qu'il s'agisse d'une édition 4K uniquement, sans Blu-ray standard, est NON VÉRIFIÉ (correction sur un forum de la fiche initiale '4K & Blu-ray').",
-        "Conflit de dates : 14 Apr 2026 (presse/détaillants) vs 13 Apr (un calendrier de forum).",
-        "Le statut sans restriction de région NON VÉRIFIÉ (blu-ray.com).",
-        "L'édition 4K d'Anime Limited au Royaume-Uni est un produit différent — ne pas confondre.",
-        "La page du titre Hulu (US) n'a pas pu être confirmée sur la page — Hulu redirige les visiteurs canadiens vers Disney+; une URL issue d'une recherche existe, mais elle n'est pas vérifiée."
-      ],
-      "contents": "Film; 4K Ultra HD uniquement — aucun disque Blu-ray standard inclus"
+    "watch-seed-freedom": {
+      "discContents": "Film; 4K Ultra HD uniquement — aucun disque Blu-ray standard inclus"
     }
   }
 }
