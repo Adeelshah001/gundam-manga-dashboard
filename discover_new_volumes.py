@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Gundam Manga - New-Volume Discovery.
+Gundam Media Hub - New-Volume Discovery (manga).
 
 Watches for new English Gundam manga volumes from the sources that can be
 checked automatically, and refreshes Upcoming entries from their live
@@ -70,7 +70,7 @@ SITEMAP_INDEX = PRH + "/sitemap.xml"
 BOOK_RE = re.compile(r"https://(www\.)?penguinrandomhouse\.com/books/(\d+)/([a-z0-9\-\.]+)/")
 GUNDAM_MARKER = "gundam"
 USER_AGENT = {
-    "User-Agent": "gundam-manga-dashboard-discovery/1.0 (+https://github.com/Adeelshah001/gundam-manga-dashboard)"
+    "User-Agent": "gundam-media-hub-discovery/1.0 (+https://github.com/Adeelshah001/gundam-media-hub)"
 }
 
 # Publisher-primary pins: values stated by the publisher itself that must

@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """
-Gundam Manga - Buy-Link Verifier.
+Gundam Media Hub - Buy-Link Verifier.
 
-For every volume in data/gundam_manga.json, checks whether its buy links
-actually resolve to the book on each storefront, and records the result:
+For every entry in the three hub catalogs (data/gundam_manga.json,
+data/gundam_games.json, data/gundam_discs.json), checks whether its buy
+links actually resolve to the item on each storefront, and records the
+result:
 
     "links": [
       {"store": "amazon", "label": "Amazon",
@@ -12,17 +14,29 @@ actually resolve to the book on each storefront, and records the result:
     ],
     "linksCheckedAt": "<ISO-8601 UTC timestamp>"
 
-Each volume carries only the stores that carry it (a flexible array, not
+Each entry carries only the stores that carry it (a flexible array, not
 a fixed set). The checker verifies the stores listed; it never adds a
 store. The frontend (index.html) renders only links whose status is
 "available" or "unknown", and hides "unavailable" ones.
 
-Link policy: the default is the exact product page for the volume. Only
+Link policy: the default is the exact product page for the item. Only
 when a provider cannot land on the specific product page does the stored
-URL fall back to a store search for the exact volume, queried as
-"<title> manga" so results stay on the manga edition rather than other
-Gundam merchandise. A link is hidden only when the provider is confirmed
-not to carry the book (see "Fail open" below).
+URL fall back to a store search for the exact item, queried as
+"<title> <qualifier>" (manga / game / Blu-ray per catalog) so results
+stay on the right edition rather than other Gundam merchandise. A link
+is hidden only when the provider is confirmed not to carry the item
+(see "Fail open" below).
+
+Display rule (checker-gated visibility): after the link checks, each
+entry's "availability" and "unavailableStreak" are updated from the
+evidence links (every stored link except Amazon, which is links-only
+and never stock evidence, and except owner-pinned stores). Any evidence
+link "available" -> availability "available", streak 0. Evidence
+non-empty and ALL "unavailable" -> "unavailable", streak + 1. Anything
+else (some "unknown", or no evidence links) -> "unknown", streak 0.
+The frontend hides an entry only when its streak reaches 2 and its
+status is not Upcoming, so a card disappears only after two consecutive
+daily runs found it unavailable everywhere.
 
 Design principles:
 
@@ -56,20 +70,27 @@ Design principles:
   "unknown" when the challenge page is detected. A stored exact product
   page (/dp/ or /gp/product/) is kept verbatim ("exact-kept") and never
   rewritten to a search. Otherwise the stored URL is a title search on
-  amazon.com; the frontend swaps in amazon.ca for visitors in Canada.
+  amazon.com; the frontend swaps in amazon.ca / amazon.com.mx for
+  visitors in Canada / Mexico. Amazon links are never stock evidence
+  for the display rule.
 * Bookshop.org: product pages and search return Cloudflare 403s to
   datacenter IPs, and product URLs carry an opaque id, so availability
   cannot be verified from a server. Bookshop links are recorded
   "unknown" with a title search URL, the same fail-open treatment as
   Amazon. An exact /p/books/ page is kept verbatim ("exact-kept").
 * Publisher & other storefronts (VIZ, Yen Press, Denpa, Kodansha,
-  Barnes & Noble, and any future store): the stored exact page is
-  re-fetched. 200 + the ISBN in the body, or a title match on the page
-  <title>, = "available". Only a 404 hides the link. Anything else is
-  "unknown" with the URL kept. (Probed 2026-11-15: VIZ, Yen Press, and
-  Denpa pages all return 200 with the ISBN and title in the HTML.
-  Denpa's Beltorchika Vol. 1 page lists the digital ISBN, not the print
-  ISBN in the catalog, so the title-match fallback is what verifies it.)
+  Barnes & Noble, Crunchyroll, and any future store): the stored exact
+  page is re-fetched. 200 + the item code (ISBN, or UPC for discs) in
+  the body, or a title match on the page <title>, = "available". Only a
+  404 hides the link. Anything else is "unknown" with the URL kept.
+  (Probed 2026-11-15: VIZ, Yen Press, and Denpa pages all return 200
+  with the ISBN and title in the HTML. Denpa's Beltorchika Vol. 1 page
+  lists the digital ISBN, not the print ISBN in the catalog, so the
+  title-match fallback is what verifies it.) Entries with no code
+  (games) verify by title match only; an empty code must never count
+  as a match. A Crunchyroll store-search URL is treated like any other
+  exact page: it can only ever verify by title match, so in practice it
+  stays "unknown" (fail-open) until an exact product URL is stored.
 * Owner-pinned hides. An entry may carry "hideLinks": ["prh"] (any store
   names); those stores are recorded "unavailable" with reason
   "hidden-by-owner" regardless of the live check, so a deliberate hide
@@ -94,7 +115,15 @@ import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 
-DATA_FILE = os.path.join(os.path.dirname(__file__), "data", "gundam_manga.json")
+DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+
+# Catalog name -> (file, store-search qualifier). The qualifier keeps
+# fallback searches on the right edition (see search_query).
+CATALOGS = {
+    "manga": ("gundam_manga.json", "manga"),
+    "games": ("gundam_games.json", "game"),
+    "discs": ("gundam_discs.json", "Blu-ray"),
+}
 
 BROWSER_UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -221,22 +250,23 @@ _reststop_failures = 0
 _CANONICAL_PRH_RE = re.compile(r"^https://(www\.)?penguinrandomhouse\.com/books/\d+/")
 
 
-def search_query(title):
-    """Store search query for the manga edition of a volume.
+def search_query(title, qualifier):
+    """Store search query for the item's edition.
 
     Exact product pages are always preferred; this query is only the
     fallback when a provider cannot land on the specific product page.
-    Appending "manga" keeps results on the manga edition instead of
-    other Gundam merchandise carrying the same name.
+    Appending the catalog qualifier ("manga", "game", "Blu-ray") keeps
+    results on the right edition instead of other Gundam merchandise
+    carrying the same name.
     """
-    return f"{title} manga"
+    return f"{title} {qualifier}" if qualifier else title
 
 
-def check_prh(isbn, title, existing_url=None):
+def check_prh(isbn, title, qualifier, existing_url=None):
     global _reststop_dead, _reststop_failures
     search_url = (
         "https://www.penguinrandomhouse.com/search/"
-        + urllib.parse.quote(search_query(title))
+        + urllib.parse.quote(search_query(title, qualifier))
     )
     existing_canonical = (
         existing_url if existing_url and _CANONICAL_PRH_RE.match(existing_url) else None
@@ -352,9 +382,9 @@ def _is_indigo_product_url(url):
     return bool(url) and "indigo.ca" in url and "/products/" in url
 
 
-def check_indigo(isbn, title, existing_url=None):
+def check_indigo(isbn, title, qualifier, existing_url=None):
     search_url = "https://www.indigo.ca/en-ca/search?q=" + urllib.parse.quote_plus(
-        search_query(title)
+        search_query(title, qualifier)
     )
     existing_product = existing_url if _is_indigo_product_url(existing_url) else None
     page_gone = False
@@ -376,10 +406,10 @@ def check_indigo(isbn, title, existing_url=None):
     time.sleep(0.4)
     title_products = _indigo_suggest(title)
     time.sleep(0.4)
-    manga_products = _indigo_suggest(title + " manga")
+    qualified_products = _indigo_suggest(search_query(title, qualifier))
 
     all_products = []
-    for products in (isbn_products, title_products, manga_products):
+    for products in (isbn_products, title_products, qualified_products):
         if products:
             all_products.extend(products)
     match = _best_indigo_match(title, all_products)
@@ -391,7 +421,7 @@ def check_indigo(isbn, title, existing_url=None):
     # Both title-shaped queries returned candidates but none matched: the
     # book genuinely is not surfacing. An empty/failed query on either
     # side is inconclusive, not a negative.
-    if title_products and manga_products:
+    if title_products and qualified_products:
         if existing_product and not page_gone:
             # A previously verified exact page outweighs a suggest miss
             # (the re-check above was inconclusive, e.g. a 403 bot wall).
@@ -416,16 +446,16 @@ def _is_amazon_product_url(url):
     )
 
 
-def check_amazon(isbn, title, existing_url=None):
+def check_amazon(isbn, title, qualifier, existing_url=None):
     # A stored exact product page can never be verified from a server
     # (Amazon's bot challenge blocks every check), so it is kept
     # verbatim and never rewritten to a search.
     if _is_amazon_product_url(existing_url):
         return "unknown", existing_url, "exact-kept"
-    # Title search. The "manga" qualifier keeps it on this edition.
-    # (The frontend swaps amazon.com for amazon.ca for visitors in
-    # Canada.)
-    url = "https://www.amazon.com/s?k=" + urllib.parse.quote_plus(search_query(title))
+    # Title search. The qualifier keeps it on this edition.
+    # (The frontend swaps amazon.com for amazon.ca / amazon.com.mx for
+    # visitors in Canada / Mexico.)
+    url = "https://www.amazon.com/s?k=" + urllib.parse.quote_plus(search_query(title, qualifier))
     try:
         status, _, body = fetch_with_retry(url, timeout=15)
     except Exception:
@@ -440,7 +470,7 @@ def check_amazon(isbn, title, existing_url=None):
     return "unknown", url, "unrecognized-page"
 
 
-def check_bookshop(isbn, title, existing_url=None):
+def check_bookshop(isbn, title, qualifier, existing_url=None):
     # Title search. Bookshop.org cannot be verified from a server: its
     # product pages and search return Cloudflare 403s to datacenter IPs,
     # and product URLs carry an opaque id that cannot be built from the
@@ -452,17 +482,19 @@ def check_bookshop(isbn, title, existing_url=None):
     # so it stays "unknown" rather than being downgraded back to a search).
     if existing_url and existing_url.startswith("https://bookshop.org/p/books/"):
         return "unknown", existing_url, "exact-kept"
-    url = "https://bookshop.org/beta-search?keywords=" + urllib.parse.quote_plus(search_query(title))
+    url = "https://bookshop.org/beta-search?keywords=" + urllib.parse.quote_plus(search_query(title, qualifier))
     return "unknown", url, "unverifiable"
 
 
-def check_exact_page(url, isbn, title):
+def check_exact_page(url, code, title):
     """Generic check for publisher & other storefronts (VIZ, Yen, Denpa,
-    Kodansha, Barnes & Noble, and any future store).
+    Kodansha, Barnes & Noble, Crunchyroll, and any future store).
 
-    The stored exact page is re-fetched: 200 + the ISBN in the body, or
-    a title match on the page <title>, means the volume is there. Only a
-    404 hides the link; anything else keeps it with "unknown".
+    The stored exact page is re-fetched: 200 + the item code (ISBN, or
+    UPC for discs) in the body, or a title match on the page <title>,
+    means the item is there. Only a 404 hides the link; anything else
+    keeps it with "unknown". An empty code never counts as a match
+    ("" is a substring of every string).
     """
     if not url:
         return "unknown", "", "no-url"
@@ -470,7 +502,7 @@ def check_exact_page(url, isbn, title):
         status, _, body = fetch_with_retry(url, timeout=15)
     except Exception:
         return "unknown", url, "request-error"
-    if status == 200 and (isbn in (body or "") or titles_match(title, page_title(body))):
+    if status == 200 and ((bool(code) and code in (body or "")) or titles_match(title, page_title(body))):
         return "available", url, "page-verified"
     if status == 404:
         return "unavailable", url, "page-404"
@@ -481,35 +513,63 @@ def check_exact_page(url, isbn, title):
 # Main
 # ---------------------------------------------------------------------------
 
-def load_data():
-    with open(DATA_FILE, "r", encoding="utf-8") as f:
+def load_data(filename):
+    with open(os.path.join(DATA_DIR, filename), "r", encoding="utf-8") as f:
         return json.load(f)
 
 
-def save_data(data):
+def save_data(filename, data):
     # Preserve file order (the sorter script owns sorting).
-    with open(DATA_FILE, "w", encoding="utf-8") as f:
+    with open(os.path.join(DATA_DIR, filename), "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
-def check_link(store, url, isbn, title):
+def check_link(store, url, code, title, qualifier):
     """Dispatch one stored link to its storefront check."""
     if store == "amazon":
-        return check_amazon(isbn, title, url)
+        return check_amazon(code, title, qualifier, url)
     if store == "indigo":
-        return check_indigo(isbn, title, url)
+        return check_indigo(code, title, qualifier, url)
     if store == "prh":
-        return check_prh(isbn, title, url)
+        return check_prh(code, title, qualifier, url)
     if store == "bookshop":
-        return check_bookshop(isbn, title, url)
-    return check_exact_page(url, isbn, title)
+        return check_bookshop(code, title, qualifier, url)
+    return check_exact_page(url, code, title)
 
 
-def check_item(item, delay):
+def update_availability(item):
+    """Display-rule fields from this run's link statuses.
+
+    Evidence = stored links other than Amazon (links only, never stock
+    evidence) and other than owner-pinned stores. Any evidence link
+    "available" -> available, streak 0. Evidence non-empty and all
+    "unavailable" -> unavailable, streak + 1. Otherwise -> unknown,
+    streak 0 (the frontend shows unknown items).
+    """
+    pinned = set(item.get("hideLinks") or [])
+    evidence = [
+        e for e in item.get("links") or []
+        if e.get("store") != "amazon" and e.get("store") not in pinned
+    ]
+    if any(e["status"] == "available" for e in evidence):
+        item["availability"] = "available"
+        item["unavailableStreak"] = 0
+    elif evidence and all(e["status"] == "unavailable" for e in evidence):
+        item["availability"] = "unavailable"
+        item["unavailableStreak"] = item.get("unavailableStreak", 0) + 1
+    else:
+        item["availability"] = "unknown"
+        item["unavailableStreak"] = 0
+
+
+def check_item(item, delay, qualifier):
     """Re-verify one entry's stored links in place. Returns (counts, hidden)."""
     counts = {"available": 0, "unavailable": 0, "unknown": 0}
     hidden = []
     isbn = (item.get("isbn") or "").strip()
+    # Item code for exact-page checks: ISBN for manga, UPC for discs,
+    # empty for games (title match only — see check_exact_page).
+    code = isbn or (item.get("upc") or "").strip()
     title = item.get("title", "")
     pinned = set(item.get("hideLinks") or [])
     new_links = []
@@ -522,11 +582,14 @@ def check_item(item, delay):
             # Owner-pinned hide: skip the live check entirely so the
             # stored URL is preserved verbatim if the pin is ever lifted.
             status, new_url, reason = "unavailable", url, "hidden-by-owner"
-        elif isbn:
-            status, new_url, reason = check_link(store, url, isbn, title)
-            time.sleep(delay)
-        else:
+        elif store in ("prh", "indigo") and not isbn:
+            # PRH/Indigo checks are ISBN-keyed; without an ISBN there is
+            # nothing to query. (For entries WITH an ISBN, code == isbn,
+            # so the dispatch below passes the ISBN to these checks.)
             status, new_url, reason = "unknown", url, "no-isbn"
+        else:
+            status, new_url, reason = check_link(store, url, code, title, qualifier)
+            time.sleep(delay)
         new_entry = {"store": store, "url": new_url, "status": status, "reason": reason}
         if entry.get("label"):
             new_entry["label"] = entry["label"]
@@ -535,39 +598,49 @@ def check_item(item, delay):
         if status == "unavailable":
             hidden.append(f"{title} [{store}]")
     item["links"] = new_links
+    update_availability(item)
     return counts, hidden
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Verify buy links for Gundam Manga.")
-    parser.add_argument("--limit", type=int, default=0, help="Check only the first N volumes (0 = all).")
+    parser = argparse.ArgumentParser(description="Verify buy links for Gundam Media Hub.")
+    parser.add_argument("--limit", type=int, default=0, help="Check only the first N entries per catalog (0 = all).")
     parser.add_argument("--delay", type=float, default=0.7, help="Seconds to wait between requests.")
     args = parser.parse_args()
 
-    data = load_data()
-    items = data[: args.limit] if args.limit else data
     checked_at = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
-
-    counts = {"available": 0, "unavailable": 0, "unknown": 0}
+    total_counts = {"available": 0, "unavailable": 0, "unknown": 0}
     hidden = []
+    total_items = 0
 
-    for idx, item in enumerate(items, 1):
-        item_counts, item_hidden = check_item(item, args.delay)
-        for st, n in item_counts.items():
-            counts[st] += n
-        hidden.extend(item_hidden)
-        if item.get("links"):
-            item["linksCheckedAt"] = checked_at
-        summary = " ".join(f"{e['store']}={e['status']}" for e in item.get("links") or [])
-        print(
-            f"[{idx}/{len(items)}] {item.get('title', '')[:52]:<52} {summary or '(no links)'}",
-            flush=True,
-        )
+    for name, (filename, qualifier) in CATALOGS.items():
+        data = load_data(filename)
+        items = data[: args.limit] if args.limit else data
+        counts = {"available": 0, "unavailable": 0, "unknown": 0}
 
-    save_data(data)
-    total = sum(counts.values())
-    print(f"\nChecked {len(items)} volumes ({total} store links) at {checked_at}")
-    print(f"  available: {counts['available']}  unavailable (hidden): {counts['unavailable']}  unknown (kept): {counts['unknown']}")
+        for idx, item in enumerate(items, 1):
+            item_counts, item_hidden = check_item(item, args.delay, qualifier)
+            for st, n in item_counts.items():
+                counts[st] += n
+            hidden.extend(f"[{name}] {h}" for h in item_hidden)
+            if item.get("links"):
+                item["linksCheckedAt"] = checked_at
+            summary = " ".join(f"{e['store']}={e['status']}" for e in item.get("links") or [])
+            print(
+                f"[{name} {idx}/{len(items)}] {item.get('title', '')[:52]:<52} {summary or '(no links)'}",
+                flush=True,
+            )
+
+        save_data(filename, data)
+        total_items += len(items)
+        for st, n in counts.items():
+            total_counts[st] += n
+        total = sum(counts.values())
+        print(f"\n{name}: checked {len(items)} entries ({total} store links) at {checked_at}")
+        print(f"  available: {counts['available']}  unavailable (hidden): {counts['unavailable']}  unknown (kept): {counts['unknown']}")
+
+    print(f"\nTOTAL: {total_items} entries, {sum(total_counts.values())} store links")
+    print(f"  available: {total_counts['available']}  unavailable (hidden): {total_counts['unavailable']}  unknown (kept): {total_counts['unknown']}")
     if hidden:
         print("\nLinks that will be HIDDEN (confirmed unavailable):")
         for h in hidden:

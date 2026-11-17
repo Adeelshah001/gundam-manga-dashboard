@@ -1,0 +1,112 @@
+[
+  {
+    "id": "zz-collection-2-bd",
+    "title": "Mobile Suit Gundam ZZ — Collection 2",
+    "distributor": "Right Stuf / Nozomi (for Sunrise)",
+    "format": "Blu-ray",
+    "releaseDate": "2016-07-05",
+    "contents": "Episodes 23–47",
+    "status": "Released",
+    "type": "disc",
+    "links": [
+      {
+        "store": "amazon",
+        "label": "Amazon",
+        "url": "https://www.amazon.com/s?k=Mobile+Suit+Gundam+ZZ+%E2%80%94+Collection+2+Blu-ray",
+        "status": "unknown",
+        "reason": "unverifiable"
+      }
+    ],
+    "availability": "available",
+    "unavailableStreak": 0,
+    "notes": [
+      "Verified in stock at Barnes & Noble on a live fetch, 16 Nov 2026 (remaining stock; in-print status not confirmed)."
+    ],
+    "unverified": [
+      "Release date rests on Gundam Wiki only — the weakest date in the survey.",
+      "A specialty retailer calls this title out of print; remaining stock does not prove in-print status.",
+      "An older listing snippet said out of stock (conflicts with the Nov 2026 live fetch)."
+    ]
+  },
+  {
+    "id": "cucuruz-doans-island-bd",
+    "title": "Mobile Suit Gundam: Cucuruz Doan's Island",
+    "distributor": "Crunchyroll, LLC",
+    "format": "Blu-ray",
+    "releaseDate": "2024-09-24",
+    "contents": "Film",
+    "status": "Released",
+    "type": "disc",
+    "links": [
+      {
+        "store": "amazon",
+        "label": "Amazon",
+        "url": "https://www.amazon.com/s?k=Mobile+Suit+Gundam%3A+Cucuruz+Doan%27s+Island+Blu-ray",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "crunchyroll",
+        "label": "Crunchyroll (subscriber-only)",
+        "url": "https://www.crunchyroll.com/store/search?q=Mobile+Suit+Gundam%3A+Cucuruz+Doan%27s+Island",
+        "status": "unknown",
+        "reason": "unverifiable"
+      }
+    ],
+    "availability": "available",
+    "unavailableStreak": 0,
+    "upc": "704400109652",
+    "region": "A",
+    "notes": [
+      "Verified in stock at Barnes & Noble on a live fetch, 16 Nov 2026 (remaining stock; in-print status not distributor-confirmed).",
+      "Region A verified on the YesAsia retailer page."
+    ],
+    "unverified": [
+      "Street date conflict: retailer page says 24 Sep 2024; Crunchyroll press release said 10 Sep 2024.",
+      "Format conflict: PR-calendar contrast suggests Blu-ray-only, while YesAsia wording lists 'DVD, Blu-ray' — not listed as a combo.",
+      "Distributor credit (Crunchyroll, LLC) UNVERIFIED on a primary page.",
+      "In-print status NOT distributor-confirmed; a forum post called it the only Gundam title still in print [UNVERIFIED]."
+    ]
+  },
+  {
+    "id": "seed-freedom-4k",
+    "title": "Mobile Suit Gundam SEED Freedom — SteelBook",
+    "distributor": "Crunchyroll, LLC",
+    "format": "4K Ultra HD",
+    "releaseDate": "2026-04-14",
+    "contents": "Film; 4K Ultra HD only — no standard Blu-ray disc included",
+    "status": "Released",
+    "type": "disc",
+    "links": [
+      {
+        "store": "amazon",
+        "label": "Amazon",
+        "url": "https://www.amazon.com/s?k=Mobile+Suit+Gundam+SEED+Freedom+%E2%80%94+SteelBook+Blu-ray",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "crunchyroll",
+        "label": "Crunchyroll (subscriber-only)",
+        "url": "https://www.crunchyroll.com/store/search?q=Mobile+Suit+Gundam+SEED+Freedom+%E2%80%94+SteelBook",
+        "status": "unknown",
+        "reason": "unverifiable"
+      }
+    ],
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "upc": "704400111655",
+    "region": "Region free",
+    "notes": [
+      "The only North American 4K Gundam release found.",
+      "Backordered at ImportCDs on a live fetch, 16 Nov 2026 (backorder is not out-of-print).",
+      "Orderable at the Crunchyroll Store on a live check, Nov 2026 (Add to cart button; no explicit in-stock wording)."
+    ],
+    "unverified": [
+      "4K-only with no standard Blu-ray is UNVERIFIED (forum correction of the initial '4K & Blu-ray' listing).",
+      "Date conflict: 14 Apr 2026 (press/retailers) vs 13 Apr (one forum schedule).",
+      "Region-free status UNVERIFIED (blu-ray.com).",
+      "The UK Anime Limited 4K edition is a different product — do not confuse."
+    ]
+  }
+]

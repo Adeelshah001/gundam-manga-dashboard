@@ -39,7 +39,9 @@
     "notes": [
       "Print/digital ISBN ambiguity in research: print ISBN 9781634428095 (14 Nov 2023); Denpa's own page lists digital ISBN 9781634427999."
     ],
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781634428095"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781634428095",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "beltorchikas-children-vol-2",
@@ -78,7 +80,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781634428101"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781634428101",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "beltorchikas-children-vol-3",
@@ -118,7 +122,9 @@
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
     "datePrecision": "month",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781634428651"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781634428651",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "beltorchikas-children-vol-4",
@@ -153,7 +159,9 @@
     "notes": [
       "Release date slipped repeatedly in solicitations before settling on 24 Nov 2026 (US)."
     ],
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781634428828"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781634428828",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "cucuruz-doans-island-vol-1",
@@ -192,7 +200,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647293901"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647293901",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "cucuruz-doans-island-vol-2",
@@ -231,7 +241,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647293918"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647293918",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "cucuruz-doans-island-vol-3",
@@ -270,7 +282,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647293925"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647293925",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "cucuruz-doans-island-vol-4",
@@ -309,7 +323,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647293932"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647293932",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "cucuruz-doans-island-vol-5",
@@ -348,7 +364,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647293949"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647293949",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "men-who-created-gundam",
@@ -388,7 +406,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781634429740"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781634429740",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "origin-vol-1",
@@ -428,7 +448,9 @@
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
     "subtitle": "Activation",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781935654872"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781935654872",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "origin-vol-2",
@@ -468,7 +490,9 @@
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
     "subtitle": "Garma",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781935654889"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781935654889",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "origin-vol-3",
@@ -508,7 +532,9 @@
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
     "subtitle": "Ramba Ral",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781935654971"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781935654971",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "origin-vol-4",
@@ -548,7 +574,9 @@
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
     "subtitle": "Jaburo",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781935654988"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781935654988",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "origin-vol-5",
@@ -588,7 +616,9 @@
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
     "subtitle": "Char & Sayla",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781939130198"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781939130198",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "origin-vol-6",
@@ -628,7 +658,9 @@
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
     "subtitle": "To War",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781939130204"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781939130204",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "origin-vol-7",
@@ -668,7 +700,9 @@
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
     "subtitle": "Battle of Loum",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781939130679"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781939130679",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "origin-vol-8",
@@ -708,7 +742,9 @@
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
     "subtitle": "Operation Odessa",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781939130686"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781939130686",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "origin-vol-9",
@@ -748,7 +784,9 @@
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
     "subtitle": "Lalah",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781941220153"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781941220153",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "origin-vol-10",
@@ -788,7 +826,9 @@
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
     "subtitle": "Solomon",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781941220160"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781941220160",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "origin-vol-11",
@@ -828,7 +868,9 @@
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
     "subtitle": "A Cosmic Glow",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781941220467"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781941220467",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "origin-vol-12",
@@ -868,7 +910,9 @@
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
     "subtitle": "Encounters",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781941220474"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781941220474",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "origin-deluxe-vol-1",
@@ -908,7 +952,9 @@
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
     "pageCount": 880,
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647294854"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647294854",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "origin-deluxe-vol-2",
@@ -948,7 +994,9 @@
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
     "pageCount": 976,
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647294861"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647294861",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "origin-deluxe-vol-3",
@@ -987,7 +1035,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647294878"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647294878",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "origin-deluxe-vol-4",
@@ -1027,7 +1077,9 @@
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
     "pageCount": 904,
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647295523"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647295523",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "origin-deluxe-vol-5",
@@ -1067,7 +1119,9 @@
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
     "pageCount": 856,
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647295530"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647295530",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "origin-deluxe-vol-6",
@@ -1107,7 +1161,9 @@
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
     "pageCount": 784,
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647295547"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781647295547",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-1",
@@ -1146,7 +1202,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421590554"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421590554",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-2",
@@ -1185,7 +1243,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421592602"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421592602",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-3",
@@ -1224,7 +1284,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421592619"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421592619",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-4",
@@ -1263,7 +1325,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421593029"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421593029",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-5",
@@ -1302,7 +1366,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421593036"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421593036",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-6",
@@ -1341,7 +1407,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421593043"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421593043",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-7",
@@ -1380,7 +1448,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421595054"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421595054",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-8",
@@ -1419,7 +1489,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421595061"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421595061",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-9",
@@ -1458,7 +1530,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421599151"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781421599151",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-10",
@@ -1497,7 +1571,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974701070"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974701070",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-11",
@@ -1536,7 +1612,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974706464"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974706464",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-12",
@@ -1575,7 +1653,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974707461"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974707461",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-13",
@@ -1614,7 +1694,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974711987"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974711987",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-14",
@@ -1653,7 +1735,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974715329"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974715329",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-15",
@@ -1692,7 +1776,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974720729"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974720729",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-16",
@@ -1731,7 +1817,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974722952"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974722952",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-17",
@@ -1770,7 +1858,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974726530"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974726530",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-18",
@@ -1809,7 +1899,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974732487"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974732487",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-19",
@@ -1848,7 +1940,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974736164"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974736164",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-20",
@@ -1887,7 +1981,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974740444"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974740444",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-21",
@@ -1926,7 +2022,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974743735"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974743735",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-22",
@@ -1965,7 +2063,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974749324"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974749324",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-23",
@@ -2004,7 +2104,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974754960"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974754960",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-24",
@@ -2043,7 +2145,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974752928"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974752928",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-25",
@@ -2082,7 +2186,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974760961"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974760961",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-26",
@@ -2121,7 +2227,9 @@
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974766475"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974766475",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "thunderbolt-vol-27",
@@ -2156,7 +2264,9 @@
     "notes": [
       "Final volume of the series."
     ],
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974769179"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9781974769179",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "vanadis-heart-vol-1",
@@ -2199,7 +2309,9 @@
     "notes": [
       "Release date conflict in research: Yen Press lists 25 Aug 2026; Anime News Network listed 14 Jul 2026. Yen's date is used."
     ],
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9798855437102"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9798855437102",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "vanadis-heart-vol-2",
@@ -2242,7 +2354,9 @@
     "notes": [
       "Release date conflict in research: Yen Press lists 22 Sep 2026; a Hachette order form lists 24 Nov 2026. Yen's date is used."
     ],
-    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9798855438758"
+    "coverUrl": "https://images2.penguinrandomhouse.com/cover/9798855438758",
+    "availability": "available",
+    "unavailableStreak": 0
   },
   {
     "id": "vanadis-heart-vol-3",
@@ -2273,6 +2387,8 @@
         "label": "Indigo"
       }
     ],
-    "linksCheckedAt": "2026-11-16T04:20:25.295974Z"
+    "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
+    "availability": "available",
+    "unavailableStreak": 0
   }
 ]

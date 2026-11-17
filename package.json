@@ -1,13 +1,15 @@
 {
   "author": "",
-  "description": "Gundam Manga \u2014 English-language Gundam manga releases available in Canada and the USA, with buy links verified daily.",
+  "description": "Gundam Media Hub — buyable Gundam manga, video games, and Blu-ray / DVD / 4K discs across North America, with buy links verified daily.",
   "keywords": [
     "gundam",
     "manga",
-    "manga-dashboard"
+    "video-games",
+    "blu-ray",
+    "gundam-media-hub"
   ],
   "license": "MIT",
-  "name": "gundam-manga-dashboard",
+  "name": "gundam-media-hub",
   "scripts": {
     "start": "python -m http.server 3000",
     "update": "python sort_catalog.py"
