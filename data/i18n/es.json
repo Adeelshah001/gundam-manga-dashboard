@@ -1,0 +1,373 @@
+{
+  "ui": {
+    "browser.backLink": "← Todos los medios",
+    "browser.subtitleDiscs": "Blu-ray, DVD y 4K Ultra HD: solo se incluyen los títulos verificados como comprables nuevos.",
+    "browser.subtitleGames": "Comprables nuevos en Norteamérica. Sin importaciones, sin juegos muertos y sin ediciones agotadas.",
+    "browser.subtitleManga": "Volúmenes en inglés, en circulación y próximos lanzamientos.",
+    "card.hint": "Selecciona para ver detalles y enlaces de compra",
+    "common.oneShot": "Volumen único",
+    "common.regionPattern": "Región {region}",
+    "common.tbd": "Por confirmar",
+    "common.volumePattern": "Volumen {n}",
+    "empty.discs": "No hay discos que coincidan con tus filtros. Ningún título en DVD tiene existencia verificada en este momento, así que la sección de DVD está vacía; se llenará automáticamente cuando la revisión diaria confirme uno.",
+    "empty.games": "No hay juegos que coincidan con tus filtros.",
+    "empty.manga": "No hay volúmenes que coincidan con tus filtros.",
+    "filters.allFormats": "Todos los formatos",
+    "filters.allPlatforms": "Todas las plataformas",
+    "filters.allSeries": "Todas las series",
+    "footer.text": "Gundam Media Hub · Medios de Gundam que puedes comprar en Norteamérica · Enlaces de compra verificados a diario",
+    "format.bluray": "Blu-ray",
+    "format.digitalOnly": "Solo digital",
+    "format.dvd": "DVD",
+    "format.hardcover": "Pasta dura",
+    "format.hardcoverOversized": "Pasta dura (gran formato)",
+    "format.paperback": "Pasta blanda",
+    "format.paperbackDigital": "Pasta blanda + digital",
+    "format.physicalDigital": "Físico + digital",
+    "format.ultraHd": "4K Ultra HD",
+    "header.liveBadge": "Panel en vivo",
+    "header.liveSync": "Sincronización en vivo",
+    "header.liveSyncTooltip": "Buscar los datos más recientes del catálogo",
+    "header.liveSynced": "Sincronizado en vivo ({n})",
+    "header.sisterSiteTooltip": "Sitio hermano: panel de DC Compact Comics",
+    "header.synced": "Sincronizado",
+    "header.syncing": "Sincronizando...",
+    "label.contents": "Contenido",
+    "label.creators": "Creadores",
+    "label.distributor": "Distribuidora",
+    "label.format": "Formato",
+    "label.isbn": "ISBN",
+    "label.model": "Modelo",
+    "label.pages": "Páginas",
+    "label.platforms": "Plataformas",
+    "label.publisher": "Editorial",
+    "label.region": "Región",
+    "label.releaseDate": "Fecha de lanzamiento",
+    "label.series": "Serie",
+    "label.upc": "UPC",
+    "label.volume": "Volumen",
+    "landing.browseDiscsAria": "Explorar discos",
+    "landing.browseGamesAria": "Explorar videojuegos",
+    "landing.browseMangaAria": "Explorar manga",
+    "landing.discsDetail": "Blu-ray, DVD y 4K Ultra HD, con existencia verificada",
+    "landing.footnote": "Enlaces de compra verificados a diario · Solo se muestran los artículos en existencia y los próximos lanzamientos · Un artículo desaparece solo después de que dos revisiones diarias consecutivas lo encuentren no disponible en todas partes",
+    "landing.gamesDetail": "Comprables nuevos en Norteamérica — sin importaciones, sin juegos muertos",
+    "landing.heading": "Todas las historias de Gundam. Un solo centro.",
+    "landing.mangaDetail": "Volúmenes en inglés, en circulación y próximos lanzamientos",
+    "landing.mediaTypesAria": "Tipos de medios",
+    "landing.subtext": "Manga, videojuegos y discos que realmente puedes comprar en línea en Estados Unidos, Canadá y México. Elige un estante.",
+    "media.discs": "Discos",
+    "media.manga": "Manga",
+    "media.videoGames": "Videojuegos",
+    "meta.description": "Gundam Media Hub — Manga, videojuegos y discos Blu-ray / DVD / 4K de Gundam en inglés que realmente puedes comprar en Norteamérica. Enlaces de compra verificados a diario; solo se muestran los artículos en existencia y los próximos lanzamientos.",
+    "meta.title": "Gundam Media Hub — Manga, videojuegos y discos de Gundam que puedes comprar en Norteamérica",
+    "modal.availabilityNote": "La disponibilidad se vuelve a verificar a diario. Los enlaces de Amazon son búsquedas por título, no evidencia de existencia.",
+    "modal.close": "Cerrar",
+    "modal.detailLinePattern": "{label}: {value}",
+    "modal.detailsHeading": "Detalles:",
+    "modal.footerLine": "Comprable en Norteamérica · Enlaces de compra verificados a diario",
+    "modal.noPurchaseLinks": "Actualmente no hay enlaces de compra verificados para este artículo; vuelve pronto.",
+    "modal.researchNotes": "Notas de investigación:",
+    "modal.statusWithDate": "{status} ({date})",
+    "modal.streamHeading": "Streaming:",
+    "modal.unverifiedHeading": "Sin verificar — tómalo como no confirmado:",
+    "modal.whereToBuy": "Dónde comprar:",
+    "model.freeToPlay": "Gratuito",
+    "model.paid": "De pago",
+    "search.placeholder": "Buscar títulos, creadores, editoriales...",
+    "sort.releaseAsc": "Fecha de lanzamiento: más antiguos primero",
+    "sort.releaseDesc": "Fecha de lanzamiento: más recientes primero",
+    "sort.seriesVol": "Por serie y luego por volumen",
+    "sort.titleAsc": "Título: A → Z",
+    "stats.ongoingSeries": "Series en curso",
+    "stats.publishers": "Editoriales",
+    "stats.series": "Series",
+    "stats.totalCatalogVolumes": "Total de volúmenes del catálogo",
+    "stats.totalDiscs": "Total de discos",
+    "stats.totalGames": "Total de juegos",
+    "status.all": "Todos",
+    "status.buttonPattern": "{label} ({n})",
+    "status.released": "Lanzado",
+    "status.upcoming": "Próximo"
+  },
+  "entries": {
+    "beltorchikas-children-vol-1": {
+      "notes": [
+        "Ambigüedad entre el ISBN impreso y el digital en la investigación: ISBN impreso 9781634428095 (14 Nov 2023); la propia página de Denpa indica el ISBN digital 9781634427999."
+      ]
+    },
+    "beltorchikas-children-vol-4": {
+      "notes": [
+        "La fecha de lanzamiento se retrasó repetidamente en las solicitudes antes de fijarse en 24 Nov 2026 (US)."
+      ]
+    },
+    "origin-vol-1": {
+      "title": "Gundam the Origin nº 01",
+      "series": "Gundam the Origin",
+      "subtitle": "Activación"
+    },
+    "origin-vol-2": {
+      "title": "Gundam the Origin nº 02",
+      "series": "Gundam the Origin"
+    },
+    "origin-vol-3": {
+      "title": "Gundam the Origin nº 03",
+      "series": "Gundam the Origin"
+    },
+    "origin-vol-4": {
+      "title": "Gundam the Origin nº 04",
+      "series": "Gundam the Origin"
+    },
+    "origin-vol-5": {
+      "title": "Gundam the Origin nº 05",
+      "series": "Gundam the Origin"
+    },
+    "origin-vol-6": {
+      "title": "Gundam the Origin nº 06",
+      "series": "Gundam the Origin"
+    },
+    "origin-vol-7": {
+      "title": "Gundam the Origin nº 07",
+      "series": "Gundam the Origin"
+    },
+    "origin-vol-8": {
+      "title": "Gundam the Origin nº 08",
+      "series": "Gundam the Origin"
+    },
+    "origin-vol-9": {
+      "title": "Gundam the Origin nº 09",
+      "series": "Gundam the Origin"
+    },
+    "origin-vol-10": {
+      "title": "Gundam the Origin nº 10",
+      "series": "Gundam the Origin"
+    },
+    "origin-vol-11": {
+      "title": "Gundam the Origin nº 11",
+      "series": "Gundam the Origin"
+    },
+    "origin-vol-12": {
+      "title": "Gundam the Origin nº 12",
+      "series": "Gundam the Origin"
+    },
+    "thunderbolt-vol-27": {
+      "notes": [
+        "Volumen final de la serie."
+      ]
+    },
+    "vanadis-heart-vol-1": {
+      "notes": [
+        "Conflicto de fecha de lanzamiento en la investigación: Yen Press indica 25 Aug 2026; Anime News Network indicaba 14 Jul 2026. Se usa la fecha de Yen."
+      ]
+    },
+    "vanadis-heart-vol-2": {
+      "notes": [
+        "Conflicto de fecha de lanzamiento en la investigación: Yen Press indica 22 Sep 2026; un formulario de pedido de Hachette indica 24 Nov 2026. Se usa la fecha de Yen."
+      ]
+    },
+    "blitz-order": {
+      "notes": [
+        "Simulación pasiva gratuita (según informes)."
+      ],
+      "unverified": [
+        "Lanzamiento en Canadá SIN VERIFICAR — la prueba de red en inglés cubre solo a residentes de EE. UU. e Inglaterra; Canadá no figuraba en la lista."
+      ],
+      "releaseNote": "Anunciado el 15 Oct 2026; prueba de red cerrada del 18–24 Nov 2026; sin fecha de lanzamiento."
+    },
+    "breaker-4": {
+      "notes": [
+        "Lanzamiento mundial el 29 Aug 2024 (Steam US muestra 28 Aug — artefacto de zona horaria)."
+      ],
+      "unverified": [
+        "La existencia de un disco físico de PS4 en Norteamérica está SIN VERIFICAR — la página de Bandai menciona solo preventas físicas de PS5/Switch.",
+        "La actividad cooperativa en línea no se verificó de forma independiente; no se ha anunciado ningún cierre al 16 Nov 2026."
+      ]
+    },
+    "rogue-orbit": {
+      "notes": [
+        "Anunciado en Summer Game Fest, el 5 Jun 2026; fecha de lanzamiento fijada el 3 Sep 2026. Preventas abiertas.",
+        "Preventas confirmadas en Best Buy Canada y Best Buy US (verificaciones en vivo, Nov 2026).",
+        "No se ha anunciado ninguna versión para Switch / Switch 2."
+      ],
+      "unverified": [
+        "Steam US muestra 4 Mar 2027 (artefacto de zona horaria).",
+        "Una publicación en redes sociales de un solo minorista afirmó mostrar un logotipo de Switch 2 — SIN VERIFICAR / probablemente erróneo.",
+        "La distribución entre formato físico y digital por plataforma está SIN VERIFICAR."
+      ]
+    },
+    "gundam-versus": {
+      "notes": [
+        "Juego de lucha en arena exclusivo de PS4.",
+        "La edición física solo está disponible de segunda mano o en mercados de terceros; se incluye aquí por su disponibilidad digital."
+      ],
+      "unverified": [
+        "La fecha de lanzamiento se reporta tanto como 28 como 29 Sep 2017 (SIN VERIFICAR cuál es la canónica).",
+        "El estado de los servidores en línea está SIN VERIFICAR — no se encontró ningún cierre ni prueba de actividad en 2026; los modos versus son solo en línea en consola."
+      ]
+    },
+    "seed-battle-destiny-remastered": {
+      "notes": [
+        "Lanzamiento digital mundial con la primera localización oficial al inglés del juego.",
+        "Solo digital en Occidente."
+      ],
+      "unverified": [
+        "Está SIN VERIFICAR si la edición física japonesa incluye texto en inglés.",
+        "Algunos listados muestran 21 May 2025 (artefacto de zona horaria/desbloqueo).",
+        "Una nota de compatibilidad con Switch 2 vista en un fragmento de foro está SIN VERIFICAR."
+      ]
+    },
+    "uc-engage": {
+      "notes": [
+        "Versión mundial (aplicación distinta de la versión japonesa); activa — Google Play se actualizó el 29 Oct 2026."
+      ],
+      "unverified": [
+        "La fecha de la versión mundial (17 Oct 2023) está SIN VERIFICAR.",
+        "La presencia en tiendas de Canadá está SIN VERIFICAR."
+      ]
+    },
+    "battle-operation-2": {
+      "notes": [
+        "Lanzamiento en PS4 el 1 Oct 2019; lanzamiento en Steam el 30 May 2023.",
+        "Juego como servicio. Bandai Namco ha anunciado que Battle Operation 2 y Battle Operation 3 no funcionarán en paralelo, sin dar una fecha de finalización para Battle Operation 2.",
+        "Combate por equipos en línea de 6v6."
+      ],
+      "unverified": [
+        "La fecha de lanzamiento en PS5 (Jan 2021) está SIN VERIFICAR en una tienda oficial.",
+        "Sin juego cruzado entre las versiones de PlayStation y Steam — ampliamente reportado, SIN VERIFICAR en una fuente primaria."
+      ]
+    },
+    "battle-operation-3": {
+      "notes": [
+        "Anunciado el 28 Oct 2026 durante la transmisión en vivo de Gundam Games 40th Anniversary. Combate por equipos gratuito con juego cruzado.",
+        "La prueba de red cerrada es solo para Japón (20 & 22 Nov 2026)."
+      ],
+      "unverified": [
+        "Lanzamiento norteamericano SIN VERIFICAR — no se ha anunciado una lista de países de lanzamiento; Battle Operation 2 tardó ~14 meses en llegar a Norteamérica después de Japón."
+      ],
+      "releaseNote": "Anunciado el 28 Oct 2026; sin fecha de lanzamiento anunciada."
+    },
+    "code-fairy": {
+      "notes": [
+        "Historia para un jugador en tres volúmenes: Vol. 1 el 5 Nov 2021, Vol. 2 el 19 Nov 2021, Vol. 3 el 3 Dec 2021.",
+        "Solo digital en todo el mundo; no se encontró ninguna edición física en ninguna región."
+      ],
+      "unverified": [
+        "Está SIN VERIFICAR si la Deluxe Edition se puede comprar actualmente en la PlayStation Store US (evidencia contradictoria) — se necesita una verificación en vivo de la tienda."
+      ]
+    },
+    "maxiboost-on": {
+      "notes": [
+        "Solo digital en Norteamérica y Europa; las ediciones físicas solo existen en Japón y Asia (importaciones, excluidas aquí)."
+      ],
+      "unverified": [
+        "No se encontró ninguna declaración explícita del editor sobre 'digital-only in the West' — solo evidencia sólida de minoristas y blogs.",
+        "El estado del emparejamiento en línea está SIN VERIFICAR — no se encontró ningún cierre; el juego sin conexión contra la CPU está disponible de todos modos."
+      ]
+    },
+    "silver-phantom": {
+      "notes": [
+        "Película interactiva de VR (experiencia de VR de pago), no un juego convencional. Lanzamiento mundial en Meta Quest Store.",
+        "Página de Meta Quest Store confirmada activa con precios de la tienda canadiense en una verificación en vivo, el 17 Nov 2026."
+      ],
+      "unverified": [
+        "La fecha de lanzamiento se reporta como 3/4 Oct 2024 (artefacto de zona horaria).",
+        "La compatibilidad con Meta Quest 3S está SIN VERIFICAR.",
+        "El audio en inglés y japonés está SIN VERIFICAR."
+      ]
+    },
+    "new-gundam-breaker": {
+      "notes": [
+        "Lanzamiento en PS4 el 22 Jun 2018; lanzamiento en Steam el 24 Sep 2018.",
+        "La edición física solo está disponible usada o en mercados de terceros; se incluye aquí por su disponibilidad digital."
+      ],
+      "unverified": [
+        "El listado actual de PlayStation Store US está SIN VERIFICAR — no se consultó ninguna página directa de PS Store."
+      ]
+    },
+    "battle-alliance": {
+      "notes": [
+        "Lanzamiento mundial simultáneo, el 25 Aug 2022."
+      ],
+      "unverified": [
+        "El estado del stock nuevo físico en 2026 está SIN VERIFICAR — probablemente en disminución para un título de 2022.",
+        "La actividad cooperativa en línea no se verificó de forma independiente; no se ha anunciado ningún cierre al 16 Nov 2026.",
+        "La disponibilidad en Xbox Game Pass está SIN VERIFICAR — no se debe dar por sentada."
+      ]
+    },
+    "cross-rays": {
+      "notes": [
+        "El lanzamiento norteamericano es solo digital en Steam. Las versiones de consola son importaciones de Asia en inglés (excluidas aquí).",
+        "RPG táctico para un jugador; sin cuestión de servidores."
+      ]
+    },
+    "g-generation-eternal": {
+      "notes": [
+        "Lanzamiento mundial el 16 Apr 2025; gratuito con compras dentro de la aplicación."
+      ],
+      "unverified": [
+        "La presencia en App Store / Google Play de Canadá no se verificó por separado para cada título.",
+        "La disponibilidad en Google Play Games for PC (desde el 16 Oct 2025) se basa en una sola fuente — SIN VERIFICAR."
+      ]
+    },
+    "srw-30": {
+      "notes": [
+        "La versión de Steam es mundial; las versiones de consola son importaciones de Asia en inglés (excluidas aquí).",
+        "RPG de estrategia que cruza series de Gundam con otras franquicias de mechas."
+      ]
+    },
+    "srw-y": {
+      "notes": [
+        "El primer lanzamiento de Super Robot Wars en inglés para consola y Steam a nivel mundial."
+      ],
+      "unverified": [
+        "La fecha de lanzamiento se reporta como 27/28 Aug 2025.",
+        "La presencia en consolas en Canadá está SIN VERIFICAR."
+      ]
+    },
+    "zz-collection-2-bd": {
+      "notes": [
+        "Verificado en stock en Barnes & Noble en una consulta en vivo, el 16 Nov 2026 (stock restante; estado de impresión no confirmado).",
+        "Streaming (JustWatch, Nov 2026): Crunchyroll en EE. UU., Canadá y México; sin opción de compra o alquiler digital en ninguna región."
+      ],
+      "unverified": [
+        "La fecha de lanzamiento se basa solo en Gundam Wiki — la fecha menos sólida del estudio.",
+        "Un minorista especializado considera este título agotado; el stock restante no prueba que siga en impresión.",
+        "Un fragmento de listado más antiguo indicaba sin stock (en conflicto con la consulta en vivo de Nov 2026)."
+      ],
+      "contents": "Episodios 23–47"
+    },
+    "cucuruz-doans-island-bd": {
+      "notes": [
+        "Verificado en stock en Barnes & Noble en una consulta en vivo, el 16 Nov 2026 (stock restante; estado de impresión no confirmado por el distribuidor).",
+        "Región A verificada en la página del minorista YesAsia.",
+        "Streaming (JustWatch, Nov 2026): Crunchyroll y Crunchyroll Amazon Channel en EE. UU., Canadá y México. Compra digital en Apple TV Store solo en EE. UU. — no figura en Canadá ni en México.",
+        "La verificación en vivo del 17 Nov 2026 resolvió el conflicto entre agregadores: el listado de YouTube Movies muestra 'Video unavailable' sin opción de compra o alquiler; Microsoft ya no vende películas en línea (solo listado heredado); las páginas de Google Play y Fandango at Home tienen bloqueo geográfico desde Canadá y no pudieron confirmarse. Apple TV Store (US) sigue siendo la única opción verificada de compra digital."
+      ],
+      "unverified": [
+        "Conflicto de fecha de lanzamiento: la página del minorista indica 24 Sep 2024; el comunicado de prensa de Crunchyroll indicaba 10 Sep 2024.",
+        "Conflicto de formato: el contraste con el calendario de prensa sugiere solo Blu-ray, mientras que el texto de YesAsia indica 'DVD, Blu-ray' — no figura como combo.",
+        "El crédito del distribuidor (Crunchyroll, LLC) está SIN VERIFICAR en una página oficial.",
+        "El estado de impresión NO está confirmado por el distribuidor; una publicación en un foro lo llamó el único título de Gundam que sigue en impresión [UNVERIFIED].",
+        "Los listados de Google Play y Fandango at Home de esta película no pudieron confirmarse desde Canadá (bloqueo geográfico) — disponibilidad en EE. UU. sin confirmar."
+      ],
+      "contents": "Película"
+    },
+    "seed-freedom-4k": {
+      "notes": [
+        "El único lanzamiento de Gundam en 4K norteamericano encontrado.",
+        "En pedido pendiente en ImportCDs en una consulta en vivo, el 16 Nov 2026 (el pedido pendiente no significa agotado).",
+        "Se puede pedir en Crunchyroll Store en una verificación en vivo, Nov 2026 (botón Add to cart; sin texto explícito de disponibilidad en stock).",
+        "Streaming (JustWatch, Nov 2026): Netflix y Crunchyroll (más Crunchyroll Amazon Channel) en EE. UU. y Canadá; Hulu solo en EE. UU.; sin opciones de streaming en México. Compra o alquiler digital en Apple TV Store y Amazon Video solo en EE. UU.",
+        "Una segunda página de detalles de Prime Video para este título muestra 'currently unavailable' y no está enlazada; la página enlazada de Prime Video es la oferta de Crunchyroll Channel."
+      ],
+      "unverified": [
+        "Que sea solo 4K sin Blu-ray estándar está SIN VERIFICAR (corrección en un foro del listado inicial de '4K & Blu-ray').",
+        "Conflicto de fechas: 14 Apr 2026 (prensa/minoristas) vs 13 Apr (un calendario de foro).",
+        "El estado de región libre está SIN VERIFICAR (blu-ray.com).",
+        "La edición 4K de Anime Limited del Reino Unido es un producto diferente — no confundir.",
+        "La página del título de Hulu (US) no pudo confirmarse en la página — Hulu redirige a los visitantes canadienses a Disney+; existe una URL derivada de una búsqueda, pero no está verificada."
+      ],
+      "contents": "Película; solo 4K Ultra HD — no incluye disco Blu-ray estándar"
+    }
+  }
+}

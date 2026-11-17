@@ -341,18 +341,23 @@
         <div>
           <div class="flex items-center gap-2">
             <h1 class="text-base font-bold text-white tracking-tight">Gundam Media Hub</h1>
-            <span class="text-xs px-2 py-0.5 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 font-mono">Live Dashboard</span>
+            <span id="liveBadge" class="text-xs px-2 py-0.5 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 font-mono">Live Dashboard</span>
           </div>
         </div>
       </a>
 
       <!-- Sister site & Live Actions -->
-      <div class="flex items-center gap-2">
-        <a href="https://dc-compact-live-dashboard.vercel.app" target="_blank" rel="noopener noreferrer" title="Sister site: DC Compact Comics dashboard" class="px-3 py-1.5 rounded-lg bg-slate-800/80 border border-white/10 text-slate-300 hover:text-white text-xs font-medium transition">DC Compact Comics ↗</a>
-        <button onclick="checkLiveUpdates()" title="Check for the latest catalog data" class="px-3 py-1.5 rounded-lg bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/25 text-xs font-medium flex items-center gap-1.5 transition">
+      <div class="flex flex-wrap items-center gap-2">
+        <a id="dcLink" href="https://dc-compact-live-dashboard.vercel.app" target="_blank" rel="noopener noreferrer" title="Sister site: DC Compact Comics dashboard" class="px-3 py-1.5 rounded-lg bg-slate-800/80 border border-white/10 text-slate-300 hover:text-white text-xs font-medium transition">DC Compact Comics ↗</a>
+        <button id="liveSyncBtn" onclick="checkLiveUpdates()" title="Check for the latest catalog data" class="px-3 py-1.5 rounded-lg bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/25 text-xs font-medium flex items-center gap-1.5 transition">
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
           Live Sync
         </button>
+        <select id="langSelect" onchange="setLanguage(this.value)" aria-label="Language" title="Language" class="px-3 py-1.5 rounded-lg bg-slate-800/80 border border-white/10 text-slate-300 hover:text-white text-xs font-medium transition">
+          <option value="en">English</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+        </select>
       </div>
 
     </div>
@@ -361,35 +366,35 @@
   <!-- LANDING VIEW -->
   <section id="view-landing" class="flex-1 px-4 lg:px-8 py-8">
     <div class="text-center mb-8">
-      <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight leading-tight">Every Gundam story. One hub.</h2>
-      <p class="text-slate-400 mt-3 max-w-xl mx-auto text-sm">Manga, video games, and discs you can actually buy online in the USA, Canada, and Mexico. Pick a shelf.</p>
+      <h2 id="landingHeading" class="text-3xl sm:text-4xl font-bold text-white tracking-tight leading-tight">Every Gundam story. One hub.</h2>
+      <p id="landingSubtext" class="text-slate-400 mt-3 max-w-xl mx-auto text-sm">Manga, video games, and discs you can actually buy online in the USA, Canada, and Mexico. Pick a shelf.</p>
     </div>
 
-    <div class="hub-card" role="group" aria-label="Media types">
+    <div id="hubCard" class="hub-card" role="group" aria-label="Media types">
       <button type="button" id="strip-manga" class="hub-strip" style="--strip-accent: #ef4444" onclick="location.hash='#/manga'" aria-label="Browse manga">
         <span class="hub-strip-label">Manga</span>
         <span class="hub-strip-detail">
           <span class="hub-strip-count" id="count-manga">–</span><br>
-          English volumes, in print and upcoming
+          <span id="stripDetail-manga">English volumes, in print and upcoming</span>
         </span>
       </button>
       <button type="button" id="strip-games" class="hub-strip" style="--strip-accent: #f59e0b" onclick="location.hash='#/games'" aria-label="Browse video games">
         <span class="hub-strip-label">Video Games</span>
         <span class="hub-strip-detail">
           <span class="hub-strip-count" id="count-games">–</span><br>
-          Buyable new in North America — no imports, no dead games
+          <span id="stripDetail-games">Buyable new in North America — no imports, no dead games</span>
         </span>
       </button>
       <button type="button" id="strip-discs" class="hub-strip" style="--strip-accent: #f97316" onclick="location.hash='#/discs'" aria-label="Browse discs">
         <span class="hub-strip-label">Discs</span>
         <span class="hub-strip-detail">
           <span class="hub-strip-count" id="count-discs">–</span><br>
-          Blu-ray, DVD &amp; 4K Ultra HD, verified in stock
+          <span id="stripDetail-discs">Blu-ray, DVD &amp; 4K Ultra HD, verified in stock</span>
         </span>
       </button>
     </div>
 
-    <p class="text-center text-xs text-slate-500 mt-6">Buy links verified daily &middot; Only in-stock and upcoming items are shown &middot; An item disappears only after two consecutive daily checks find it unavailable everywhere</p>
+    <p id="landingFootnote" class="text-center text-xs text-slate-500 mt-6">Buy links verified daily &middot; Only in-stock and upcoming items are shown &middot; An item disappears only after two consecutive daily checks find it unavailable everywhere</p>
   </section>
 
   <!-- BROWSER VIEW -->
@@ -397,7 +402,7 @@
 
     <!-- MEDIA TITLE ROW -->
     <section class="max-w-7xl mx-auto w-full px-4 lg:px-8 pt-4">
-      <a href="#/" class="text-xs text-slate-400 hover:text-white transition">&larr; All media</a>
+      <a id="backLink" href="#/" class="text-xs text-slate-400 hover:text-white transition">&larr; All media</a>
       <h2 id="browserTitle" class="text-2xl font-bold text-white tracking-tight mt-1">Manga</h2>
       <p id="browserSubtitle" class="text-slate-400 text-xs mt-0.5"></p>
     </section>
@@ -451,7 +456,7 @@
 
   <!-- FOOTER -->
   <footer class="mt-auto border-t border-white/5 py-8 px-4 flex items-center justify-center text-center">
-    <p class="text-xs text-slate-400 font-medium tracking-wide">
+    <p id="footerText" class="text-xs text-slate-400 font-medium tracking-wide">
       Gundam Media Hub · Buyable Gundam media across North America · Buy links verified daily
     </p>
   </footer>
@@ -459,18 +464,240 @@
   <!-- DETAIL MODAL SLIDEOUT -->
   <div id="detailModal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden flex overflow-y-auto overscroll-contain p-4" onclick="if(event.target===this)closeModal()">
     <div class="space-glass max-w-xl w-full m-auto rounded-3xl p-6 relative shadow-2xl border border-white/20" style="overflow:hidden">
-      <button onclick="closeModal()" style="z-index:1" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg">✕</button>
+      <button id="modalCloseX" onclick="closeModal()" aria-label="Close" style="z-index:1" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg">✕</button>
       <div id="modalContent"></div>
     </div>
   </div>
 
   <!-- SCRIPT LOGIC -->
   <script>
+    // ==================================================================
+    // Localization (EN/ES/FR). English renders from the hardcoded
+    // fallback literals passed to tr() — zero behavior change in EN.
+    // Spanish/French strings live in data/i18n/{es,fr}.json, fetched
+    // lazily on first switch and cached in memory; a failed fetch
+    // leaves the previous language active (English on first visit).
+    // Entry fields fall back to English per field via loc().
+    // ==================================================================
+    const LANG_KEY = 'gundam_media_hub_lang';
+    const DATE_LOCALES = { en: 'en-US', es: 'es-MX', fr: 'fr-CA' };
+    let currentLang = 'en';
+    let activeLocale = { ui: {}, entries: {} };
+    const LOCALE_CACHE = {};
+
+    function detectLang() {
+      try {
+        const stored = localStorage.getItem(LANG_KEY);
+        if (stored === 'en' || stored === 'es' || stored === 'fr') return stored;
+      } catch (e) {}
+      const nav = navigator.language || '';
+      if (/^fr/i.test(nav)) return 'fr';
+      if (/^es/i.test(nav)) return 'es';
+      return 'en';
+    }
+    const initialLang = detectLang();
+
+    function tr(key, fallback) {
+      const v = activeLocale.ui && activeLocale.ui[key];
+      return v != null ? v : fallback;
+    }
+
+    function loc(entry, field) {
+      if (!entry) return undefined;
+      const e = activeLocale.entries && activeLocale.entries[entry.id];
+      if (e && e[field] !== undefined && e[field] !== null) return e[field];
+      return entry[field];
+    }
+
+    function fmt(pattern, vars) {
+      return String(pattern).replace(/\{(\w+)\}/g, (_, k) => String(vars[k] ?? ''));
+    }
+
+    // English data values -> ui keys. Unknown values pass through as-is.
+    const FORMAT_KEYS = {
+      'Paperback': 'format.paperback',
+      'Hardcover': 'format.hardcover',
+      'Hardcover (oversized)': 'format.hardcoverOversized',
+      'Paperback + digital': 'format.paperbackDigital',
+      'Digital only': 'format.digitalOnly',
+      'Physical + digital': 'format.physicalDigital',
+      'Blu-ray': 'format.bluray',
+      'DVD': 'format.dvd',
+      '4K Ultra HD': 'format.ultraHd',
+    };
+    const MODEL_KEYS = { 'Paid': 'model.paid', 'Free-to-play': 'model.freeToPlay' };
+    const SORT_KEYS = {
+      'release-desc': 'sort.releaseDesc',
+      'release-asc': 'sort.releaseAsc',
+      'title-asc': 'sort.titleAsc',
+      'series-vol': 'sort.seriesVol',
+    };
+    function trFormat(value) {
+      const key = FORMAT_KEYS[value];
+      return key ? tr(key, value) : value;
+    }
+    function trModel(value) {
+      const key = MODEL_KEYS[value];
+      return key ? tr(key, value) : value;
+    }
+    function trStatus(status) {
+      if (status === 'Released') return tr('status.released', 'Released');
+      if (status === 'Upcoming') return tr('status.upcoming', 'Upcoming');
+      return status;
+    }
+
+    async function loadLocale(lang) {
+      if (LOCALE_CACHE[lang]) return LOCALE_CACHE[lang];
+      try {
+        const res = await fetch('data/i18n/' + lang + '.json');
+        if (!res.ok) return null;
+        const json = await res.json();
+        if (!json || typeof json !== 'object' || !json.ui || typeof json.ui !== 'object') return null;
+        const data = { ui: json.ui, entries: (json.entries && typeof json.entries === 'object') ? json.entries : {} };
+        LOCALE_CACHE[lang] = data;
+        return data;
+      } catch (e) {
+        return null;
+      }
+    }
+
+    let langRequest = 0;
+    async function setLanguage(lang) {
+      const target = (lang === 'es' || lang === 'fr') ? lang : 'en';
+      const req = ++langRequest;
+      let next = { ui: {}, entries: {} };
+      if (target !== 'en') {
+        const loaded = await loadLocale(target);
+        if (req !== langRequest) return; // superseded by a newer switch
+        if (!loaded) {
+          // Fetch failed: stay on the current language, restore the select.
+          const sel = document.getElementById('langSelect');
+          if (sel) sel.value = currentLang;
+          return;
+        }
+        next = loaded;
+      }
+      if (req !== langRequest) return;
+      activeLocale = next;
+      currentLang = target;
+      try { localStorage.setItem(LANG_KEY, target); } catch (e) {}
+      const sel = document.getElementById('langSelect');
+      if (sel) sel.value = target;
+      refreshLocalizedUI();
+    }
+
+    function setText(id, value) {
+      const el = document.getElementById(id);
+      if (el) el.textContent = value;
+    }
+
+    // Live Sync button: idle / syncing / synced / liveSynced states.
+    let syncButtonState = 'idle';
+    let syncTotal = 0;
+    function renderSyncButton() {
+      const btn = document.getElementById('liveSyncBtn');
+      if (!btn) return;
+      if (syncButtonState === 'syncing') {
+        btn.innerHTML = `<span class="animate-spin inline-block mr-1">↻</span> ${escapeHtml(tr('header.syncing', 'Syncing...'))}`;
+      } else if (syncButtonState === 'liveSynced') {
+        btn.innerHTML = `<span class="w-2 h-2 rounded-full bg-emerald-400"></span> ${escapeHtml(fmt(tr('header.liveSynced', 'Live Synced ({n})'), { n: syncTotal }))}`;
+      } else if (syncButtonState === 'synced') {
+        btn.innerHTML = `<span class="w-2 h-2 rounded-full bg-emerald-400"></span> ${escapeHtml(tr('header.synced', 'Synced'))}`;
+      } else {
+        btn.innerHTML = `<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> ${escapeHtml(tr('header.liveSync', 'Live Sync'))}`;
+      }
+    }
+
+    // Status filter buttons, rebuilt from status.buttonPattern while
+    // keeping the live count spans that updateCounts() writes to.
+    function renderStatusButtons() {
+      const defs = [
+        ['statusAll', 'status.all', 'All', 'countAll'],
+        ['statusReleased', 'status.released', 'Released', 'countReleased'],
+        ['statusUpcoming', 'status.upcoming', 'Upcoming', 'countUpcoming'],
+      ];
+      let pattern = tr('status.buttonPattern', '{label} ({n})');
+      if (!pattern.includes('{label}') || !pattern.includes('{n}')) pattern = '{label} ({n})';
+      for (const [btnId, key, fallback, countId] of defs) {
+        const btn = document.getElementById(btnId);
+        if (!btn) continue;
+        const countEl = document.getElementById(countId);
+        const n = countEl ? countEl.textContent : '0';
+        const span = `<span id="${countId}">${escapeHtml(n)}</span>`;
+        btn.innerHTML = pattern.split('{label}').join(escapeHtml(tr(key, fallback))).split('{n}').join(span);
+      }
+    }
+
+    function applyStaticStrings() {
+      document.documentElement.lang = currentLang;
+      document.title = tr('meta.title', 'Gundam Media Hub — Buyable Gundam manga, video games & discs in North America');
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) metaDesc.setAttribute('content', tr('meta.description', 'Gundam Media Hub — English-language Gundam manga, video games, and Blu-ray / DVD / 4K discs you can actually buy in North America. Buy links verified daily; only in-stock and upcoming items are shown.'));
+      setText('liveBadge', tr('header.liveBadge', 'Live Dashboard'));
+      const dcLink = document.getElementById('dcLink');
+      if (dcLink) dcLink.title = tr('header.sisterSiteTooltip', 'Sister site: DC Compact Comics dashboard');
+      const syncBtn = document.getElementById('liveSyncBtn');
+      if (syncBtn) syncBtn.title = tr('header.liveSyncTooltip', 'Check for the latest catalog data');
+      renderSyncButton();
+      setText('landingHeading', tr('landing.heading', 'Every Gundam story. One hub.'));
+      setText('landingSubtext', tr('landing.subtext', 'Manga, video games, and discs you can actually buy online in the USA, Canada, and Mexico. Pick a shelf.'));
+      const hubCard = document.getElementById('hubCard');
+      if (hubCard) hubCard.setAttribute('aria-label', tr('landing.mediaTypesAria', 'Media types'));
+      const strips = [
+        ['strip-manga', 'media.manga', 'Manga', 'landing.browseMangaAria', 'Browse manga', 'stripDetail-manga', 'landing.mangaDetail', 'English volumes, in print and upcoming'],
+        ['strip-games', 'media.videoGames', 'Video Games', 'landing.browseGamesAria', 'Browse video games', 'stripDetail-games', 'landing.gamesDetail', 'Buyable new in North America — no imports, no dead games'],
+        ['strip-discs', 'media.discs', 'Discs', 'landing.browseDiscsAria', 'Browse discs', 'stripDetail-discs', 'landing.discsDetail', 'Blu-ray, DVD & 4K Ultra HD, verified in stock'],
+      ];
+      for (const [stripId, labelKey, labelFallback, ariaKey, ariaFallback, detailId, detailKey, detailFallback] of strips) {
+        const strip = document.getElementById(stripId);
+        if (strip) {
+          strip.setAttribute('aria-label', tr(ariaKey, ariaFallback));
+          const labelEl = strip.querySelector('.hub-strip-label');
+          if (labelEl) labelEl.textContent = tr(labelKey, labelFallback);
+        }
+        setText(detailId, tr(detailKey, detailFallback));
+      }
+      setText('landingFootnote', tr('landing.footnote', 'Buy links verified daily · Only in-stock and upcoming items are shown · An item disappears only after two consecutive daily checks find it unavailable everywhere'));
+      setText('backLink', tr('browser.backLink', '← All media'));
+      const searchInput = document.getElementById('searchInput');
+      if (searchInput) searchInput.placeholder = tr('search.placeholder', 'Search titles, creators, publishers...');
+      setText('footerText', tr('footer.text', 'Gundam Media Hub · Buyable Gundam media across North America · Buy links verified daily'));
+      const closeX = document.getElementById('modalCloseX');
+      if (closeX) closeX.setAttribute('aria-label', tr('modal.close', 'Close'));
+      renderStatusButtons();
+      const cfg = CATALOGS[currentCatalog];
+      setText('browserTitle', tr(cfg.labelKey, cfg.label));
+      setText('browserSubtitle', tr(cfg.subtitleKey, cfg.subtitle));
+    }
+
+    // Re-render in place on a language switch. Route, filters, search
+    // text and scroll are preserved: no showView() (it resets filters),
+    // no landing-strip re-pick. An open modal re-renders for the same id.
+    function refreshLocalizedUI() {
+      applyStaticStrings();
+      if (document.getElementById('view-browser').classList.contains('hidden')) {
+        if (openModalId) showDetail(openModalId);
+        return;
+      }
+      const searchInput = document.getElementById('searchInput');
+      const searchValue = searchInput ? searchInput.value : '';
+      populateGroupSelect();
+      populateSortSelect();
+      updateCounts();
+      if (searchInput) searchInput.value = searchValue;
+      applyFilters();
+      if (openModalId) showDetail(openModalId);
+    }
+
     // Catalog configuration. One browser section, three catalogs.
     const CATALOGS = {
       manga: {
         label: 'Manga',
+        labelKey: 'media.manga',
         subtitle: 'English-language volumes, in print and upcoming.',
+        subtitleKey: 'browser.subtitleManga',
+        emptyKey: 'empty.manga',
+        allKey: 'filters.allSeries',
         file: 'data/gundam_manga.json',
         api: '/api/manga',
         apiKey: 'volumes',
@@ -478,7 +705,7 @@
         groupLabel: 'Series',
         groupLabelPlural: 'Series',
         groupValue: c => c.seriesId,
-        searchText: c => `${c.title} ${c.series} ${c.creators} ${c.publisher} ${c.isbn} ${c.format} ${c.subtitle || ''}`,
+        searchText: c => `${c.title} ${loc(c, 'title')} ${c.series} ${loc(c, 'series')} ${c.creators} ${c.publisher} ${c.isbn} ${c.format} ${trFormat(c.format)} ${c.subtitle || ''} ${loc(c, 'subtitle') || ''}`,
         sortOptions: [
           ['release-desc', 'Release Date: Newest First'],
           ['release-asc', 'Release Date: Oldest First'],
@@ -488,22 +715,26 @@
         defaultSort: 'release-desc',
         emptyMessage: 'No volumes matching your filter criteria.',
         stats: data => ([
-          { label: 'Total Catalog Volumes', value: data.length, valueClass: 'text-white', icon: '📚', iconClass: 'bg-red-500/20 text-red-400' },
-          { label: 'Series', value: new Set(data.map(c => c.seriesId)).size, valueClass: 'text-amber-400', icon: '🤖', iconClass: 'bg-amber-500/20 text-amber-400' },
-          { label: 'Ongoing Series', value: new Set(data.filter(c => c.status === 'Upcoming').map(c => c.seriesId)).size, valueClass: 'text-emerald-400', icon: '⏳', iconClass: 'bg-emerald-500/20 text-emerald-400' },
-          { label: 'Publishers', value: new Set(data.map(c => c.publisher)).size, valueClass: 'text-sky-400', icon: '🏷️', iconClass: 'bg-sky-500/20 text-sky-400' },
+          { label: tr('stats.totalCatalogVolumes', 'Total Catalog Volumes'), value: data.length, valueClass: 'text-white', icon: '📚', iconClass: 'bg-red-500/20 text-red-400' },
+          { label: tr('stats.series', 'Series'), value: new Set(data.map(c => c.seriesId)).size, valueClass: 'text-amber-400', icon: '🤖', iconClass: 'bg-amber-500/20 text-amber-400' },
+          { label: tr('stats.ongoingSeries', 'Ongoing Series'), value: new Set(data.filter(c => c.status === 'Upcoming').map(c => c.seriesId)).size, valueClass: 'text-emerald-400', icon: '⏳', iconClass: 'bg-emerald-500/20 text-emerald-400' },
+          { label: tr('stats.publishers', 'Publishers'), value: new Set(data.map(c => c.publisher)).size, valueClass: 'text-sky-400', icon: '🏷️', iconClass: 'bg-sky-500/20 text-sky-400' },
         ]),
       },
       games: {
         label: 'Video Games',
+        labelKey: 'media.videoGames',
         subtitle: 'Buyable new in North America. No imports, no dead games, no out-of-print.',
+        subtitleKey: 'browser.subtitleGames',
+        emptyKey: 'empty.games',
+        allKey: 'filters.allPlatforms',
         file: 'data/gundam_games.json',
         api: '/api/games',
         apiKey: 'games',
         storage: 'gundam_media_hub_games',
         groupLabel: 'Platform',
         groupValue: c => c.platforms || [],
-        searchText: c => `${c.title} ${c.publisher} ${(c.platforms || []).join(' ')} ${c.model} ${c.format}`,
+        searchText: c => `${c.title} ${loc(c, 'title')} ${c.publisher} ${(c.platforms || []).join(' ')} ${c.model} ${trModel(c.model)} ${c.format} ${trFormat(c.format)}`,
         sortOptions: [
           ['release-desc', 'Release Date: Newest First'],
           ['release-asc', 'Release Date: Oldest First'],
@@ -512,15 +743,19 @@
         defaultSort: 'release-desc',
         emptyMessage: 'No games matching your filter criteria.',
         stats: data => ([
-          { label: 'Total Games', value: data.length, valueClass: 'text-white', icon: '🎮', iconClass: 'bg-red-500/20 text-red-400' },
-          { label: 'Platforms', value: new Set(data.flatMap(c => c.platforms || [])).size, valueClass: 'text-amber-400', icon: '🖥️', iconClass: 'bg-amber-500/20 text-amber-400' },
-          { label: 'Released', value: data.filter(c => c.status === 'Released').length, valueClass: 'text-emerald-400', icon: '✅', iconClass: 'bg-emerald-500/20 text-emerald-400' },
-          { label: 'Upcoming', value: data.filter(c => c.status === 'Upcoming').length, valueClass: 'text-sky-400', icon: '🔜', iconClass: 'bg-sky-500/20 text-sky-400' },
+          { label: tr('stats.totalGames', 'Total Games'), value: data.length, valueClass: 'text-white', icon: '🎮', iconClass: 'bg-red-500/20 text-red-400' },
+          { label: tr('label.platforms', 'Platforms'), value: new Set(data.flatMap(c => c.platforms || [])).size, valueClass: 'text-amber-400', icon: '🖥️', iconClass: 'bg-amber-500/20 text-amber-400' },
+          { label: tr('status.released', 'Released'), value: data.filter(c => c.status === 'Released').length, valueClass: 'text-emerald-400', icon: '✅', iconClass: 'bg-emerald-500/20 text-emerald-400' },
+          { label: tr('status.upcoming', 'Upcoming'), value: data.filter(c => c.status === 'Upcoming').length, valueClass: 'text-sky-400', icon: '🔜', iconClass: 'bg-sky-500/20 text-sky-400' },
         ]),
       },
       discs: {
         label: 'Discs',
+        labelKey: 'media.discs',
         subtitle: 'Blu-ray, DVD, and 4K Ultra HD — only titles verified buyable-new are listed.',
+        subtitleKey: 'browser.subtitleDiscs',
+        emptyKey: 'empty.discs',
+        allKey: 'filters.allFormats',
         file: 'data/gundam_discs.json',
         api: '/api/discs',
         apiKey: 'discs',
@@ -528,7 +763,7 @@
         groupLabel: 'Format',
         groupValue: c => c.format,
         fixedGroups: ['Blu-ray', 'DVD', '4K Ultra HD'],
-        searchText: c => `${c.title} ${c.distributor} ${c.format} ${c.contents} ${c.upc || ''}`,
+        searchText: c => `${c.title} ${loc(c, 'title')} ${c.distributor} ${c.format} ${trFormat(c.format)} ${c.contents} ${loc(c, 'contents') || ''} ${c.upc || ''}`,
         sortOptions: [
           ['release-desc', 'Release Date: Newest First'],
           ['release-asc', 'Release Date: Oldest First'],
@@ -537,10 +772,10 @@
         defaultSort: 'release-desc',
         emptyMessage: 'No discs matching your filter criteria. No DVD title is currently verified in stock, so the DVD shelf is empty — it fills automatically when the daily check confirms one.',
         stats: data => ([
-          { label: 'Total Discs', value: data.length, valueClass: 'text-white', icon: '💿', iconClass: 'bg-red-500/20 text-red-400' },
-          { label: 'Blu-ray', value: data.filter(c => c.format === 'Blu-ray').length, valueClass: 'text-amber-400', icon: '📀', iconClass: 'bg-amber-500/20 text-amber-400' },
-          { label: 'DVD', value: data.filter(c => c.format === 'DVD').length, valueClass: 'text-emerald-400', icon: '📀', iconClass: 'bg-emerald-500/20 text-emerald-400' },
-          { label: '4K Ultra HD', value: data.filter(c => c.format === '4K Ultra HD').length, valueClass: 'text-sky-400', icon: '✨', iconClass: 'bg-sky-500/20 text-sky-400' },
+          { label: tr('stats.totalDiscs', 'Total Discs'), value: data.length, valueClass: 'text-white', icon: '💿', iconClass: 'bg-red-500/20 text-red-400' },
+          { label: tr('format.bluray', 'Blu-ray'), value: data.filter(c => c.format === 'Blu-ray').length, valueClass: 'text-amber-400', icon: '📀', iconClass: 'bg-amber-500/20 text-amber-400' },
+          { label: tr('format.dvd', 'DVD'), value: data.filter(c => c.format === 'DVD').length, valueClass: 'text-emerald-400', icon: '📀', iconClass: 'bg-emerald-500/20 text-emerald-400' },
+          { label: tr('format.ultraHd', '4K Ultra HD'), value: data.filter(c => c.format === '4K Ultra HD').length, valueClass: 'text-sky-400', icon: '✨', iconClass: 'bg-sky-500/20 text-sky-400' },
         ]),
       },
     };
@@ -554,18 +789,20 @@
     const DATA = { manga: [], games: [], discs: [] };
     let currentCatalog = 'manga';
     let currentStatus = 'all';
+    let openModalId = null;
 
     function escapeHtml(s) {
       return String(s ?? '').replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]));
     }
 
     function formatDate(dateStr, precision) {
-      if (!dateStr) return 'TBD';
+      if (!dateStr) return tr('common.tbd', 'TBD');
+      const locale = DATE_LOCALES[currentLang] || 'en-US';
       const [y, m, d] = dateStr.split('-').map(Number);
       if (precision === 'month') {
-        return new Date(y, m - 1, 1).toLocaleDateString('en-US', { year: 'numeric', month: 'long' });
+        return new Date(y, m - 1, 1).toLocaleDateString(locale, { year: 'numeric', month: 'long' });
       }
-      return new Date(y, m - 1, d).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+      return new Date(y, m - 1, d).toLocaleDateString(locale, { year: 'numeric', month: 'long', day: 'numeric' });
     }
 
     // Robust live loader with automatic background sync & zero-fail fallback
@@ -646,8 +883,8 @@
     }
 
     async function checkLiveUpdates() {
-      const btn = document.querySelector('button[onclick="checkLiveUpdates()"]');
-      if (btn) btn.innerHTML = `<span class="animate-spin inline-block mr-1">↻</span> Syncing...`;
+      syncButtonState = 'syncing';
+      renderSyncButton();
 
       try {
         await Promise.all([loadCatalog('manga'), loadCatalog('games'), loadCatalog('discs')]);
@@ -658,11 +895,12 @@
           updateCounts();
           applyFilters();
         }
-        const total = DATA.manga.length + DATA.games.length + DATA.discs.length;
-        if (btn) btn.innerHTML = `<span class="w-2 h-2 rounded-full bg-emerald-400"></span> Live Synced (${total})`;
+        syncTotal = DATA.manga.length + DATA.games.length + DATA.discs.length;
+        syncButtonState = 'liveSynced';
       } catch (e) {
-        if (btn) btn.innerHTML = `<span class="w-2 h-2 rounded-full bg-emerald-400"></span> Synced`;
+        syncButtonState = 'synced';
       }
+      renderSyncButton();
     }
 
     function populateGroupSelect() {
@@ -671,17 +909,28 @@
       const data = DATA[currentCatalog].filter(isVisible);
       let options;
       if (cfg.fixedGroups) {
-        options = cfg.fixedGroups.map(g => `<option value="${escapeHtml(g)}">${escapeHtml(g)}</option>`).join('');
+        // Values stay the English format strings (filtering depends on
+        // them); only the labels are localized.
+        options = cfg.fixedGroups.map(g => `<option value="${escapeHtml(g)}">${escapeHtml(trFormat(g))}</option>`).join('');
       } else if (currentCatalog === 'games') {
         const platforms = [...new Set(data.flatMap(c => c.platforms || []))].sort();
         options = platforms.map(p => `<option value="${escapeHtml(p)}">${escapeHtml(p)}</option>`).join('');
       } else {
-        const groups = [...new Map(data.map(c => [c.seriesId, c.series])).entries()]
-          .sort((a, b) => a[1].localeCompare(b[1]));
+        // Values stay seriesIds; labels use the localized series name
+        // (a translated name from any volume of the series wins over
+        // the English fallback) and ordering uses localized names.
+        const byId = new Map();
+        for (const c of data) {
+          const name = loc(c, 'series');
+          const prev = byId.get(c.seriesId);
+          if (prev === undefined) byId.set(c.seriesId, name);
+          else if (name !== c.series) byId.set(c.seriesId, name);
+        }
+        const groups = [...byId.entries()].sort((a, b) => a[1].localeCompare(b[1]));
         options = groups.map(([id, name]) => `<option value="${escapeHtml(id)}">${escapeHtml(name)}</option>`).join('');
       }
       const current = sel.value;
-      sel.innerHTML = `<option value="all">All ${cfg.groupLabelPlural || cfg.groupLabel + 's'}</option>` + options;
+      sel.innerHTML = `<option value="all">${escapeHtml(tr(cfg.allKey, 'All ' + (cfg.groupLabelPlural || cfg.groupLabel + 's')))}</option>` + options;
       if ([...sel.options].some(o => o.value === current)) sel.value = current;
     }
 
@@ -690,7 +939,7 @@
       const sel = document.getElementById('sortSelect');
       const current = sel.value;
       sel.innerHTML = cfg.sortOptions
-        .map(([v, l]) => `<option value="${v}">${l}</option>`).join('');
+        .map(([v, l]) => `<option value="${v}">${escapeHtml(tr(SORT_KEYS[v], l))}</option>`).join('');
       sel.value = cfg.sortOptions.some(([v]) => v === current) ? current : cfg.defaultSort;
     }
 
@@ -760,7 +1009,7 @@
     const STORE_META = {
       amazon: { label: 'Amazon', card: 'px-2.5 py-1 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/40 text-amber-200 text-xs font-semibold transition' },
       indigo: { label: 'Indigo', card: 'px-2.5 py-1 rounded-lg bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-500/30 text-indigo-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-indigo-500/20 hover:bg-indigo-500/30 border border-indigo-500/40 text-indigo-200 text-xs font-semibold transition' },
-      viz: { label: 'VIZ', card: 'px-2.5 py-1 rounded-lg bg-red-500/15 hover:bg-red-500/25 border border-red-500/30 text-red-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-red-500/20 hover:bg-red-500/30 border border-red-500/40 text-red-200 text-xs font-semibold transition' },
+      viz: { label: 'VIZ', card: 'px-2.5 py-1 rounded-lg bg-rose-600/15 hover:bg-rose-600/25 border border-rose-500/30 text-rose-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-rose-600/20 hover:bg-rose-600/30 border border-rose-500/40 text-rose-200 text-xs font-semibold transition' },
       prh: { label: 'Penguin', card: 'px-2.5 py-1 rounded-lg bg-orange-500/15 hover:bg-orange-500/25 border border-orange-500/30 text-orange-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-orange-500/20 hover:bg-orange-500/30 border border-orange-500/40 text-orange-200 text-xs font-semibold transition' },
       bookshop: { label: 'Bookshop', card: 'px-2.5 py-1 rounded-lg bg-teal-500/15 hover:bg-teal-500/25 border border-teal-500/30 text-teal-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-teal-500/20 hover:bg-teal-500/30 border border-teal-500/40 text-teal-200 text-xs font-semibold transition' },
       'barnes-noble': { label: 'Barnes & Noble', card: 'px-2.5 py-1 rounded-lg bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/30 text-emerald-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-500/40 text-emerald-200 text-xs font-semibold transition' },
@@ -768,7 +1017,22 @@
       yen: { label: 'Yen Press', card: 'px-2.5 py-1 rounded-lg bg-violet-500/15 hover:bg-violet-500/25 border border-violet-500/30 text-violet-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-violet-500/20 hover:bg-violet-500/30 border border-violet-500/40 text-violet-200 text-xs font-semibold transition' },
       kodansha: { label: 'Kodansha', card: 'px-2.5 py-1 rounded-lg bg-blue-500/15 hover:bg-blue-500/25 border border-blue-500/30 text-blue-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-blue-500/20 hover:bg-blue-500/30 border border-blue-500/40 text-blue-200 text-xs font-semibold transition' },
       // Crunchyroll Store shopping requires a Mega/Ultimate membership.
-      crunchyroll: { label: 'Crunchyroll (subscriber-only)', card: 'px-2.5 py-1 rounded-lg bg-orange-500/15 hover:bg-orange-500/25 border border-orange-500/30 text-orange-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-orange-500/20 hover:bg-orange-500/30 border border-orange-500/40 text-orange-200 text-xs font-semibold transition' }
+      crunchyroll: { label: 'Crunchyroll (subscriber-only)', card: 'px-2.5 py-1 rounded-lg bg-orange-500/15 hover:bg-orange-500/25 border border-orange-500/30 text-orange-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-orange-500/20 hover:bg-orange-500/30 border border-orange-500/40 text-orange-200 text-xs font-semibold transition' },
+      steam: { label: 'Steam', card: 'px-2.5 py-1 rounded-lg bg-blue-900/15 hover:bg-blue-900/25 border border-blue-500/30 text-blue-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-blue-900/20 hover:bg-blue-900/30 border border-blue-500/40 text-blue-200 text-xs font-semibold transition' },
+      playstation: { label: 'PlayStation Store', card: 'px-2.5 py-1 rounded-lg bg-blue-500/15 hover:bg-blue-500/25 border border-blue-400/30 text-blue-200 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-blue-500/20 hover:bg-blue-500/30 border border-blue-400/40 text-blue-100 text-xs font-semibold transition' },
+      xbox: { label: 'Xbox Store', card: 'px-2.5 py-1 rounded-lg bg-green-600/15 hover:bg-green-600/25 border border-green-500/30 text-green-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-green-600/20 hover:bg-green-600/30 border border-green-500/40 text-green-200 text-xs font-semibold transition' },
+      nintendo: { label: 'Nintendo eShop', card: 'px-2.5 py-1 rounded-lg bg-red-600/15 hover:bg-red-600/25 border border-red-500/30 text-red-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-red-600/20 hover:bg-red-600/30 border border-red-500/40 text-red-200 text-xs font-semibold transition' },
+      meta: { label: 'Meta Quest Store', card: 'px-2.5 py-1 rounded-lg bg-cyan-600/15 hover:bg-cyan-600/25 border border-cyan-500/30 text-cyan-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-cyan-600/20 hover:bg-cyan-600/30 border border-cyan-500/40 text-cyan-200 text-xs font-semibold transition' },
+      google: { label: 'Google Play', card: 'px-2.5 py-1 rounded-lg bg-sky-500/15 hover:bg-sky-500/25 border border-sky-400/30 text-sky-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-sky-500/20 hover:bg-sky-500/30 border border-sky-400/40 text-sky-200 text-xs font-semibold transition' },
+      'google-books': { label: 'Google Play Books', card: 'px-2.5 py-1 rounded-lg bg-sky-500/15 hover:bg-sky-500/25 border border-sky-400/30 text-sky-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-sky-500/20 hover:bg-sky-500/30 border border-sky-400/40 text-sky-200 text-xs font-semibold transition' },
+      apple: { label: 'App Store', card: 'px-2.5 py-1 rounded-lg bg-zinc-500/15 hover:bg-zinc-500/25 border border-zinc-300/30 text-zinc-200 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-zinc-500/20 hover:bg-zinc-500/30 border border-zinc-300/40 text-zinc-100 text-xs font-semibold transition' },
+      'apple-tv': { label: 'Apple TV', card: 'px-2.5 py-1 rounded-lg bg-zinc-500/15 hover:bg-zinc-500/25 border border-zinc-300/30 text-zinc-200 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-zinc-500/20 hover:bg-zinc-500/30 border border-zinc-300/40 text-zinc-100 text-xs font-semibold transition' },
+      kindle: { label: 'Kindle', card: 'px-2.5 py-1 rounded-lg bg-orange-700/15 hover:bg-orange-700/25 border border-orange-600/30 text-orange-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-orange-700/20 hover:bg-orange-700/30 border border-orange-600/40 text-orange-200 text-xs font-semibold transition' },
+      kobo: { label: 'Kobo', card: 'px-2.5 py-1 rounded-lg bg-red-700/15 hover:bg-red-700/25 border border-red-600/30 text-red-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-red-700/20 hover:bg-red-700/30 border border-red-600/40 text-red-200 text-xs font-semibold transition' },
+      justwatch: { label: 'JustWatch — all streaming options', card: 'px-2.5 py-1 rounded-lg bg-yellow-500/15 hover:bg-yellow-500/25 border border-yellow-400/30 text-yellow-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-yellow-500/20 hover:bg-yellow-500/30 border border-yellow-400/40 text-yellow-200 text-xs font-semibold transition' },
+      netflix: { label: 'Netflix', card: 'px-2.5 py-1 rounded-lg bg-red-600/15 hover:bg-red-600/25 border border-red-500/30 text-red-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-red-600/20 hover:bg-red-600/30 border border-red-500/40 text-red-200 text-xs font-semibold transition' },
+      'prime-video': { label: 'Prime Video', card: 'px-2.5 py-1 rounded-lg bg-sky-400/15 hover:bg-sky-400/25 border border-sky-300/30 text-sky-200 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-sky-400/20 hover:bg-sky-400/30 border border-sky-300/40 text-sky-100 text-xs font-semibold transition' },
+      'crunchyroll-stream': { label: 'Crunchyroll', card: 'px-2.5 py-1 rounded-lg bg-orange-500/15 hover:bg-orange-500/25 border border-orange-500/30 text-orange-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-orange-500/20 hover:bg-orange-500/30 border border-orange-500/40 text-orange-200 text-xs font-semibold transition' }
     };
     // Cover-art crop: PRH serves retail covers (with title text), so each
     // series gets a vertical window over its art band, zoomed to crop edge
@@ -815,7 +1079,7 @@
       list.sort((a, b) => {
         if (sort === 'release-desc') return byDate(a, b, true);
         if (sort === 'release-asc') return byDate(a, b, false);
-        if (sort === 'title-asc') return a.title.localeCompare(b.title);
+        if (sort === 'title-asc') return loc(a, 'title').localeCompare(loc(b, 'title'));
         if (sort === 'series-vol') return (a.seriesId || '').localeCompare(b.seriesId || '') || (a.volume || 0) - (b.volume || 0);
         return 0;
       });
@@ -831,7 +1095,7 @@
 
     function cardFace(c) {
       const glyph = currentCatalog === 'games' ? '🎮' : currentCatalog === 'discs' ? '💿' : '📚';
-      const fallback = placeholderFace(c.title, glyph);
+      const fallback = placeholderFace(loc(c, 'title'), glyph);
       if (c.coverUrl) {
         return fallback + `<img src="${escapeHtml(c.coverUrl)}" alt="" loading="lazy" decoding="async" onerror="this.style.display='none'">`;
       }
@@ -841,33 +1105,33 @@
     function briefInfo(c) {
       if (currentCatalog === 'manga') {
         return {
-          title: c.title,
-          lines: [c.series, [c.creators, c.publisher].filter(Boolean).join(' · '), [c.format, formatDate(c.releaseDate, c.datePrecision)].filter(Boolean).join(' · ')],
+          title: loc(c, 'title'),
+          lines: [loc(c, 'series'), [c.creators, c.publisher].filter(Boolean).join(' · '), [trFormat(c.format), formatDate(c.releaseDate, c.datePrecision)].filter(Boolean).join(' · ')],
         };
       }
       if (currentCatalog === 'games') {
         return {
-          title: c.title,
-          lines: [(c.platforms || []).join(' · '), [c.model, c.format].filter(Boolean).join(' · '), c.releaseDate ? formatDate(c.releaseDate) : (c.releaseNote || 'TBD')],
+          title: loc(c, 'title'),
+          lines: [(c.platforms || []).join(' · '), [trModel(c.model), trFormat(c.format)].filter(Boolean).join(' · '), c.releaseDate ? formatDate(c.releaseDate) : (loc(c, 'releaseNote') || tr('common.tbd', 'TBD'))],
         };
       }
       return {
-        title: c.title,
-        lines: [[c.format, c.contents].filter(Boolean).join(' · '), c.distributor, [c.region ? 'Region ' + c.region : null, c.releaseDate ? formatDate(c.releaseDate) : null].filter(Boolean).join(' · ')],
+        title: loc(c, 'title'),
+        lines: [[trFormat(c.format), loc(c, 'contents')].filter(Boolean).join(' · '), c.distributor, [c.region ? fmt(tr('common.regionPattern', 'Region {region}'), { region: c.region }) : null, c.releaseDate ? formatDate(c.releaseDate) : null].filter(Boolean).join(' · ')],
       };
     }
 
     function renderGrid(items) {
       const container = document.getElementById('gridSpace');
       if (items.length === 0) {
-        container.innerHTML = `<div class="col-span-full py-16 text-center text-slate-500 text-sm">${escapeHtml(CATALOGS[currentCatalog].emptyMessage)}</div>`;
+        container.innerHTML = `<div class="col-span-full py-16 text-center text-slate-500 text-sm">${escapeHtml(tr(CATALOGS[currentCatalog].emptyKey, CATALOGS[currentCatalog].emptyMessage))}</div>`;
         return;
       }
       container.innerHTML = items.map(c => {
         const brief = briefInfo(c);
-        const badge = c.status === 'Upcoming' ? `<span class="item-card__badge">Upcoming</span>` : '';
+        const badge = c.status === 'Upcoming' ? `<span class="item-card__badge">${escapeHtml(tr('status.upcoming', 'Upcoming'))}</span>` : '';
         return `
-        <div class="item-card" role="button" tabindex="0" aria-label="${escapeHtml(c.title)}"
+        <div class="item-card" role="button" tabindex="0" aria-label="${escapeHtml(brief.title)}"
             onclick="showDetail('${c.id}')"
             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showDetail('${c.id}')}">
           <div class="item-card__face">${cardFace(c)}</div>
@@ -875,47 +1139,61 @@
           <div class="item-card__content">
             <p class="item-card__title">${escapeHtml(brief.title)}</p>
             ${brief.lines.filter(Boolean).map(l => `<p class="item-card__description">${escapeHtml(l)}</p>`).join('')}
-            <p class="item-card__hint">Select for details &amp; buy links</p>
+            <p class="item-card__hint">${escapeHtml(tr('card.hint', 'Select for details & buy links'))}</p>
           </div>
         </div>`;
       }).join('');
     }
 
+    // One modal detail line, rendered from modal.detailLinePattern so
+    // the label/colon spacing follows the locale (FR: space before the
+    // colon). EN output is identical to the previous literal markup.
+    function detailLineHtml(k, v) {
+      const pattern = tr('modal.detailLinePattern', '{label}: {value}');
+      if (pattern.includes('{label}') && pattern.includes('{value}')) {
+        const parts = pattern.split('{value}');
+        const head = parts[0].replace('{label}', () => k).trimEnd();
+        return `<span><strong>${escapeHtml(head)}</strong> ${escapeHtml(v)}${escapeHtml(parts[1] || '')}</span>`;
+      }
+      return `<span><strong>${escapeHtml(k)}:</strong> ${escapeHtml(v)}</span>`;
+    }
+
     function detailRows(c) {
       if (currentCatalog === 'manga') {
         return [
-          ['Series', c.series],
-          ['Volume', c.volume ? `Volume ${c.volume}` : 'One-shot'],
-          ['Format', c.format],
-          ['Pages', c.pageCount || null],
-          ['ISBN', c.isbn],
-          ['Publisher', c.publisher],
-          ['Release Date', formatDate(c.releaseDate, c.datePrecision)],
-          ['Creators', c.creators],
+          [tr('label.series', 'Series'), loc(c, 'series')],
+          [tr('label.volume', 'Volume'), c.volume ? fmt(tr('common.volumePattern', 'Volume {n}'), { n: c.volume }) : tr('common.oneShot', 'One-shot')],
+          [tr('label.format', 'Format'), trFormat(c.format)],
+          [tr('label.pages', 'Pages'), c.pageCount || null],
+          [tr('label.isbn', 'ISBN'), c.isbn],
+          [tr('label.publisher', 'Publisher'), c.publisher],
+          [tr('label.releaseDate', 'Release Date'), formatDate(c.releaseDate, c.datePrecision)],
+          [tr('label.creators', 'Creators'), c.creators],
         ];
       }
       if (currentCatalog === 'games') {
         return [
-          ['Publisher', c.publisher],
-          ['Platforms', (c.platforms || []).join(', ')],
-          ['Release Date', c.releaseDate ? formatDate(c.releaseDate) : (c.releaseNote || 'TBD')],
-          ['Model', c.model],
-          ['Format', c.format],
+          [tr('label.publisher', 'Publisher'), c.publisher],
+          [tr('label.platforms', 'Platforms'), (c.platforms || []).join(', ')],
+          [tr('label.releaseDate', 'Release Date'), c.releaseDate ? formatDate(c.releaseDate) : (loc(c, 'releaseNote') || tr('common.tbd', 'TBD'))],
+          [tr('label.model', 'Model'), trModel(c.model)],
+          [tr('label.format', 'Format'), trFormat(c.format)],
         ];
       }
       return [
-        ['Distributor', c.distributor],
-        ['Format', c.format],
-        ['Contents', c.contents],
-        ['Region', c.region ? 'Region ' + c.region : null],
-        ['UPC', c.upc],
-        ['Release Date', c.releaseDate ? formatDate(c.releaseDate) : 'TBD'],
+        [tr('label.distributor', 'Distributor'), c.distributor],
+        [tr('label.format', 'Format'), trFormat(c.format)],
+        [tr('label.contents', 'Contents'), loc(c, 'contents')],
+        [tr('label.region', 'Region'), c.region ? fmt(tr('common.regionPattern', 'Region {region}'), { region: c.region }) : null],
+        [tr('label.upc', 'UPC'), c.upc],
+        [tr('label.releaseDate', 'Release Date'), c.releaseDate ? formatDate(c.releaseDate) : tr('common.tbd', 'TBD')],
       ];
     }
 
     function showDetail(id) {
       const c = DATA[currentCatalog].find(item => item.id === id);
       if (!c) return;
+      openModalId = id;
       const links = getBuyLinks(c);
       const buyLinks = links.filter(l => l.kind !== 'stream');
       const streamLinks = links.filter(l => l.kind === 'stream');
@@ -923,44 +1201,50 @@
       const buyBtns = buyLinks.map(linkBtn).join('');
       const buySection = buyBtns
         ? `<div class="flex flex-wrap gap-2 pt-1">${buyBtns}</div>`
-        : `<div class="text-xs text-slate-500 pt-1">No purchase links currently verified for this item — check back soon.</div>`;
+        : `<div class="text-xs text-slate-500 pt-1">${escapeHtml(tr('modal.noPurchaseLinks', 'No purchase links currently verified for this item — check back soon.'))}</div>`;
       const streamSection = streamLinks.length
         ? `<div class="p-3.5 rounded-2xl bg-slate-900/90 border border-white/10 space-y-2">
-            <div class="text-xs uppercase font-bold text-slate-400">Stream:</div>
+            <div class="text-xs uppercase font-bold text-slate-400">${escapeHtml(tr('modal.streamHeading', 'Stream:'))}</div>
             <div class="flex flex-wrap gap-2 pt-1">${streamLinks.map(linkBtn).join('')}</div>
           </div>`
         : '';
-      const notesSection = (c.notes && c.notes.length)
+      const notes = loc(c, 'notes');
+      const notesSection = (notes && notes.length)
         ? `<div class="p-3.5 rounded-2xl bg-amber-500/10 border border-amber-500/20 space-y-1.5">
-            <div class="text-xs uppercase font-bold text-amber-300">Research notes:</div>
-            ${c.notes.map(n => `<p class="text-xs text-amber-100/80 leading-relaxed">${escapeHtml(n)}</p>`).join('')}
+            <div class="text-xs uppercase font-bold text-amber-300">${escapeHtml(tr('modal.researchNotes', 'Research notes:'))}</div>
+            ${notes.map(n => `<p class="text-xs text-amber-100/80 leading-relaxed">${escapeHtml(n)}</p>`).join('')}
           </div>`
         : '';
-      const unverifiedSection = (c.unverified && c.unverified.length)
+      const unverified = loc(c, 'unverified');
+      const unverifiedSection = (unverified && unverified.length)
         ? `<div class="p-3.5 rounded-2xl bg-slate-900 border border-white/10 space-y-1.5">
-            <div class="text-xs uppercase font-bold text-slate-400">Unverified — treat as unconfirmed:</div>
-            ${c.unverified.map(n => `<p class="text-xs text-slate-400 leading-relaxed">${escapeHtml(n)}</p>`).join('')}
+            <div class="text-xs uppercase font-bold text-slate-400">${escapeHtml(tr('modal.unverifiedHeading', 'Unverified — treat as unconfirmed:'))}</div>
+            ${unverified.map(n => `<p class="text-xs text-slate-400 leading-relaxed">${escapeHtml(n)}</p>`).join('')}
           </div>`
         : '';
       const modal = document.getElementById('detailModal');
       const content = document.getElementById('modalContent');
       const modalCoverBg = c.coverUrl ? `<div aria-hidden="true" style="position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden"><img src="${escapeHtml(c.coverUrl)}" alt="" decoding="async" onerror="this.parentElement.style.display='none'" style="width:100%;height:100%;object-fit:cover;object-position:center ${COVER_POS[c.seriesId] || '40%'};transform:scale(1.5);filter:blur(4px)"><div style="position:absolute;inset:0;background:rgba(15,18,26,0.72)"></div></div>` : '';
-      const detailLine = detailRows(c).filter(([, v]) => v).map(([k, v]) => `<span><strong>${k}:</strong> ${escapeHtml(v)}</span>`).join('');
+      const detailLine = detailRows(c).filter(([, v]) => v).map(([k, v]) => detailLineHtml(k, v)).join('');
+      const subtitle = loc(c, 'subtitle');
+      const statusText = c.releaseDate
+        ? fmt(tr('modal.statusWithDate', '{status} ({date})'), { status: trStatus(c.status), date: formatDate(c.releaseDate, c.datePrecision) })
+        : trStatus(c.status);
       content.innerHTML = `
         ${modalCoverBg}
         <div class="space-y-4" style="position:relative;z-index:1">
           <div class="flex flex-wrap items-center gap-2 justify-between pr-6">
-            <span class="badge-pub px-3 py-1 rounded-xl text-sm font-black">${escapeHtml(c.publisher || c.distributor || CATALOGS[currentCatalog].label)}</span>
+            <span class="badge-pub px-3 py-1 rounded-xl text-sm font-black">${escapeHtml(c.publisher || c.distributor || tr(CATALOGS[currentCatalog].labelKey, CATALOGS[currentCatalog].label))}</span>
             <span class="${c.status === 'Released' ? 'badge-compact' : 'badge-upcoming'} px-3 py-1 rounded-full text-xs font-semibold">
-              ${c.status}${c.releaseDate ? ' (' + formatDate(c.releaseDate, c.datePrecision) + ')' : ''}
+              ${escapeHtml(statusText)}
             </span>
           </div>
 
-          <h2 class="text-xl font-bold text-white">${escapeHtml(c.title)}</h2>
-          ${c.subtitle ? `<p class="text-xs text-slate-300">${escapeHtml(c.subtitle)}</p>` : ''}
+          <h2 class="text-xl font-bold text-white">${escapeHtml(loc(c, 'title'))}</h2>
+          ${subtitle ? `<p class="text-xs text-slate-300">${escapeHtml(subtitle)}</p>` : ''}
 
           <div class="p-3.5 rounded-2xl bg-slate-900 border border-white/10 space-y-2">
-            <div class="text-xs uppercase font-bold text-slate-400">Details:</div>
+            <div class="text-xs uppercase font-bold text-slate-400">${escapeHtml(tr('modal.detailsHeading', 'Details:'))}</div>
             <div class="text-xs text-slate-400 pt-1 flex flex-wrap gap-4 border-t border-white/5">
               ${detailLine}
             </div>
@@ -968,9 +1252,9 @@
 
           <!-- Where to Buy Links -->
           <div class="p-3.5 rounded-2xl bg-slate-900/90 border border-white/10 space-y-2">
-            <div class="text-xs uppercase font-bold text-slate-400">Where to Buy:</div>
+            <div class="text-xs uppercase font-bold text-slate-400">${escapeHtml(tr('modal.whereToBuy', 'Where to Buy:'))}</div>
             ${buySection}
-            <p class="text-[11px] text-slate-500 pt-1">Availability is re-checked daily. Amazon links are title searches, not stock evidence.</p>
+            <p class="text-[11px] text-slate-500 pt-1">${escapeHtml(tr('modal.availabilityNote', 'Availability is re-checked daily. Amazon links are title searches, not stock evidence.'))}</p>
           </div>
 
           ${streamSection}
@@ -979,8 +1263,8 @@
           ${unverifiedSection}
 
           <div class="pt-3 border-t border-white/10 flex items-center justify-between">
-            <span class="text-xs text-slate-400">Buyable in North America · Buy links verified daily</span>
-            <button onclick="closeModal()" class="px-4 py-1.5 rounded-xl bg-red-600 hover:bg-red-500 text-white text-xs font-medium">Close</button>
+            <span class="text-xs text-slate-400">${escapeHtml(tr('modal.footerLine', 'Buyable in North America · Buy links verified daily'))}</span>
+            <button onclick="closeModal()" class="px-4 py-1.5 rounded-xl bg-red-600 hover:bg-red-500 text-white text-xs font-medium">${escapeHtml(tr('modal.close', 'Close'))}</button>
           </div>
         </div>
       `;
@@ -988,6 +1272,7 @@
     }
 
     function closeModal() {
+      openModalId = null;
       document.getElementById('detailModal').classList.add('hidden');
     }
 
@@ -1003,8 +1288,8 @@
         currentCatalog = name;
         currentStatus = 'all';
         document.getElementById('searchInput').value = '';
-        document.getElementById('browserTitle').textContent = CATALOGS[name].label;
-        document.getElementById('browserSubtitle').textContent = CATALOGS[name].subtitle;
+        document.getElementById('browserTitle').textContent = tr(CATALOGS[name].labelKey, CATALOGS[name].label);
+        document.getElementById('browserSubtitle').textContent = tr(CATALOGS[name].subtitleKey, CATALOGS[name].subtitle);
         setStatusFilter('all');
         populateGroupSelect();
         populateSortSelect();
@@ -1019,7 +1304,10 @@
 
     window.addEventListener('hashchange', showView);
 
-    // Initialize on page load
+    // Initialize on page load: resolve the language first (stored
+    // choice, else browser language; English needs no fetch and a
+    // failed locale fetch falls back to English), then load catalogs.
+    setLanguage(initialLang);
     loadAllCatalogs();
   </script>
 </body>
