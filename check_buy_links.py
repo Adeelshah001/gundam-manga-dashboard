@@ -78,6 +78,9 @@ Design principles:
   cannot be verified from a server. Bookshop links are recorded
   "unknown" with a title search URL, the same fail-open treatment as
   Amazon. An exact /p/books/ page is kept verbatim ("exact-kept").
+* Unverifiable stream links (Hulu, Crunchyroll Channel, Amazon Video,
+  YouTube, and any watch.amazon.com URL): recorded "unknown" with no
+  HTTP request, so a failed check can never hide them.
 * Publisher & other storefronts (VIZ, Yen Press, Denpa, Kodansha,
   Barnes & Noble, Crunchyroll, and any future store): the stored exact
   page is re-fetched. 200 + the item code (ISBN, or UPC for discs) in
@@ -129,6 +132,9 @@ BROWSER_UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
 )
+
+# Fail-open stream stores: Hulu geo-redirects, Amazon gates automated access, YouTube must never auto-hide.
+FAIL_OPEN_STORES = {"hulu", "crunchyroll-channel", "amazon-video", "youtube"}
 
 # ---------------------------------------------------------------------------
 # HTTP helpers (stdlib only)
@@ -526,6 +532,8 @@ def save_data(filename, data):
 
 def check_link(store, url, code, title, qualifier):
     """Dispatch one stored link to its storefront check."""
+    if store in FAIL_OPEN_STORES or "watch.amazon.com" in (url or ""):
+        return "unknown", url, "unverifiable"
     if store == "amazon":
         return check_amazon(code, title, qualifier, url)
     if store == "indigo":

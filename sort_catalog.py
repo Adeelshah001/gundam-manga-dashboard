@@ -9,7 +9,7 @@ diffs.
 
     data/gundam_manga.json  by series, then volume number
     data/gundam_games.json  by title
-    data/gundam_discs.json  by format (Blu-ray, DVD, 4K Ultra HD), then title
+    data/gundam_discs.json  by format (Streaming, Blu-ray, DVD, 4K Ultra HD), then title
 
 Usage:
     python sort_catalog.py            # sort in place, print the catalogs
@@ -23,7 +23,7 @@ import sys
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 
-FORMAT_ORDER = {"Blu-ray": 0, "DVD": 1, "4K Ultra HD": 2}
+FORMAT_ORDER = {"Streaming": 0, "Blu-ray": 1, "DVD": 2, "4K Ultra HD": 3}
 
 
 def manga_key(item):

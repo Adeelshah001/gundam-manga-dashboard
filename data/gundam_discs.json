@@ -1,6 +1,1687 @@
 [
   {
+    "id": "watch-a-boy-with-gundam",
+    "title": "A Boy with Gundam",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "Short",
+    "links": [
+      {
+        "store": "youtube",
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=Zt62nsFLqA0",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      }
+    ],
+    "countries": {
+      "us": "unknown",
+      "ca": "unknown",
+      "mx": "unknown"
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "5:46 short. Single upload on the official international channel (distinct from the Japanese-channel upload)."
+    ]
+  },
+  {
+    "id": "watch-gundam-x",
+    "title": "After War Gundam X",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "TV series",
+    "episodes": 39,
+    "links": [
+      {
+        "store": "tubi",
+        "label": "Tubi",
+        "url": "https://tubitv.com/series/300014179/after-war-gundam-x",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "free": true
+      },
+      {
+        "store": "youtube",
+        "label": "YouTube (full series)",
+        "url": "https://www.youtube.com/playlist?list=PLJV1h9xQ7Hx_RmW7By87bGVXlUSSd3Kgo",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      }
+    ],
+    "countries": {
+      "us": [
+        "tubi"
+      ],
+      "ca": [
+        "tubi"
+      ],
+      "mx": "unknown"
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Tubi is the only subscription/FAST offer. Tubi page lists 39 episodes × 25 min. No expiry text on the Tubi page."
+    ],
+    "unverified": [
+      "Tubi Mexico membership not established — do not infer.",
+      "Audio/subtitles: Japanese audio + English subtitles rests on a secondary source only; the Tubi page shows no audio/subtitle options."
+    ]
+  },
+  {
+    "id": "watch-build-divers",
+    "title": "Gundam Build Divers",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "TV series",
+    "episodes": 25,
+    "links": [
+      {
+        "store": "crunchyroll-stream",
+        "label": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/watch/GY4PVN036/prologue",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "crunchyroll-channel",
+        "label": "Crunchyroll Channel via Prime Video",
+        "url": "https://watch.amazon.com/detail?gti=27bbfd34-0b6f-4227-a9ef-98841c9ee1a4",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      },
+      {
+        "store": "youtube",
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=bktN_TdP6yI",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "episode1": true
+      }
+    ],
+    "countries": {
+      "us": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "ca": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "mx": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ]
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Subtitled on Crunchyroll (audio Japanese). JustWatch folds Build Divers Re:RISE in as Season 2 of this entry."
+    ]
+  },
+  {
+    "id": "watch-build-divers-rerise",
+    "title": "Gundam Build Divers Re:RISE",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "ONA",
+    "episodes": 26,
+    "links": [
+      {
+        "store": "crunchyroll-stream",
+        "label": "Crunchyroll (via Build Divers)",
+        "url": "https://www.crunchyroll.com/watch/GY4PVN036/prologue",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "crunchyroll-channel",
+        "label": "Crunchyroll Channel via Prime Video (via Build Divers)",
+        "url": "https://watch.amazon.com/detail?gti=27bbfd34-0b6f-4227-a9ef-98841c9ee1a4",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      }
+    ],
+    "countries": {
+      "us": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "ca": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "mx": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ]
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Rides entirely on the parent Build Divers entry — no separate JustWatch entry or Crunchyroll URL exists for Re:RISE; JustWatch folds it as Season 2."
+    ],
+    "unverified": [
+      "Whether the parent Crunchyroll page surfaces Re:RISE as a selectable season was not directly verified."
+    ]
+  },
+  {
+    "id": "watch-build-fighters",
+    "title": "Gundam Build Fighters",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "TV series",
+    "episodes": 25,
+    "links": [
+      {
+        "store": "crunchyroll-stream",
+        "label": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/watch/GYWE15DGY/sei-and-reiji",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      }
+    ],
+    "countries": {
+      "us": [
+        "crunchyroll-stream"
+      ],
+      "ca": [
+        "crunchyroll-stream"
+      ],
+      "mx": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ]
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Subtitled on Crunchyroll (audio Japanese). JustWatch folds Build Fighters Try in as Season 2 of this entry."
+    ],
+    "unverified": [
+      "Crunchyroll Channel is listed for Mexico on JustWatch but no Channel destination was captured — service name only, no link."
+    ]
+  },
+  {
+    "id": "watch-build-fighters-try",
+    "title": "Gundam Build Fighters Try",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "TV series",
+    "episodes": 25,
+    "links": [
+      {
+        "store": "crunchyroll-stream",
+        "label": "Crunchyroll (via Build Fighters)",
+        "url": "https://www.crunchyroll.com/watch/GYWE15DGY/sei-and-reiji",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      }
+    ],
+    "countries": {
+      "us": [
+        "crunchyroll-stream"
+      ],
+      "ca": [
+        "crunchyroll-stream"
+      ],
+      "mx": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ]
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Rides entirely on the parent Build Fighters entry — no separate JustWatch entry or Crunchyroll URL exists for Try; JustWatch folds it as Season 2."
+    ],
+    "unverified": [
+      "Whether the parent Crunchyroll page surfaces Try as a selectable season was not directly verified.",
+      "Try has no Channel destination — the parent Build Fighters page has no Channel row; the Mexico Channel listing is name-only, no link."
+    ]
+  },
+  {
+    "id": "watch-endless-waltz",
+    "title": "Gundam Wing: Endless Waltz",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "Film",
+    "links": [
+      {
+        "store": "crunchyroll-stream",
+        "label": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/series/GMTE00129209/mobile-suit-gundam-wing-endless-waltz",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "crunchyroll-channel",
+        "label": "Crunchyroll Channel via Prime Video",
+        "url": "https://watch.amazon.com/detail?gti=4e80fe81-86c7-462e-9ee5-cd6ce251c3e3",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      }
+    ],
+    "countries": {
+      "us": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "ca": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "mx": "unknown"
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Single 1h 30m entry on Crunchyroll (the film version). Subtitled only (audio Japanese)."
+    ],
+    "unverified": [
+      "Format discrepancy: Crunchyroll's search card says '2 Episodes' while the series page shows a single entry — unresolved.",
+      "Crunchyroll's series-page synopsis appears to be the Wing series synopsis (metadata quirk)."
+    ]
+  },
+  {
+    "id": "watch-g-gundam",
+    "title": "Mobile Fighter G Gundam",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "TV series",
+    "episodes": 49,
+    "links": [
+      {
+        "store": "crunchyroll-stream",
+        "label": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/watch/GRDQ8JMGY/gundam-fight-begins-the-gundam-that-fell-to-earth",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "crunchyroll-channel",
+        "label": "Crunchyroll Channel via Prime Video",
+        "url": "https://watch.amazon.com/detail?gti=a4ec7a04-d3dc-4fd5-a44c-cecde3ad0e31",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      },
+      {
+        "store": "youtube",
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=eKFM63BIxzY",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "episode1": true
+      }
+    ],
+    "countries": {
+      "us": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "ca": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "mx": "unknown"
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Subtitled on Crunchyroll (audio Japanese)."
+    ]
+  },
+  {
+    "id": "watch-gundam-1979",
+    "title": "Mobile Suit Gundam",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "TV series",
+    "links": [
+      {
+        "store": "crunchyroll-stream",
+        "label": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/watch/GPWUKQQZD/gundam-rising",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "crunchyroll-channel",
+        "label": "Crunchyroll Channel via Prime Video",
+        "url": "https://watch.amazon.com/detail?gti=1ee2d031-db66-4e6b-aa06-4326f8dc629f",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      }
+    ],
+    "countries": {
+      "us": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "ca": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "mx": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ]
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Subtitled and dubbed on Crunchyroll (audio Japanese/English)."
+    ],
+    "unverified": [
+      "Episode count conflict: sources list 42, 43, or 44 episodes (JustWatch counts 44 including a credits item) — no single count is verified."
+    ]
+  },
+  {
+    "id": "watch-00",
+    "title": "Mobile Suit Gundam 00",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "TV series",
+    "episodes": 50,
+    "links": [
+      {
+        "store": "crunchyroll-stream",
+        "label": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/watch/GY5V31VEY/the-angels-second-advent",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "crunchyroll-channel",
+        "label": "Crunchyroll Channel via Prime Video",
+        "url": "https://watch.amazon.com/detail?gti=24d879d7-9a96-4825-b485-a15801838ed5",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      },
+      {
+        "store": "hulu",
+        "label": "Hulu",
+        "url": "https://www.hulu.com/watch/08cf7677-361a-4392-bc20-fbf4398d2a4d",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      },
+      {
+        "store": "youtube",
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=7jLv_j-m8F4",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "episode1": true
+      }
+    ],
+    "countries": {
+      "us": [
+        "crunchyroll-stream",
+        "crunchyroll-channel",
+        "hulu"
+      ],
+      "ca": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "mx": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ]
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Season split: direct Crunchyroll covers Season 1 only in all 3 countries; Season 2 is Channel-only in Canada/Mexico (Channel carries 2 seasons in the US). Crunchyroll page is subtitled (audio Japanese)."
+    ]
+  },
+  {
+    "id": "watch-trailblazer",
+    "title": "Mobile Suit Gundam 00: Awakening of the Trailblazer",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "Film",
+    "links": [
+      {
+        "store": "crunchyroll-stream",
+        "label": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/watch/G7PU4X1ZJ/mobile-suit-gundam-00--awakening-of-the-trailblazer-",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "crunchyroll-channel",
+        "label": "Crunchyroll Channel via Prime Video",
+        "url": "https://watch.amazon.com/detail?gti=5f775158-27cc-496e-b38a-53bb73edd76a",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      }
+    ],
+    "countries": {
+      "us": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "ca": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "mx": "unknown"
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Subtitled on Crunchyroll (audio Japanese, English subtitles)."
+    ],
+    "unverified": [
+      "Runtime unverified (120–123 min range)."
+    ]
+  },
+  {
+    "id": "watch-age",
+    "title": "Mobile Suit Gundam AGE",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "TV series",
+    "episodes": 49,
+    "links": [
+      {
+        "store": "tubi",
+        "label": "Tubi",
+        "url": "https://tubitv.com/series/300013974/mobile-suit-gundam-age",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "free": true
+      }
+    ],
+    "countries": {
+      "us": [
+        "tubi"
+      ],
+      "ca": [
+        "tubi"
+      ],
+      "mx": "unknown"
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Tubi is the only subscription/FAST offer. Tubi page lists 49 episodes × 25 min. No expiry text on the Tubi page."
+    ],
+    "unverified": [
+      "Tubi Mexico membership not established — do not infer.",
+      "Audio/subtitles: Japanese audio + English subtitles rests on a secondary source only; the Tubi page shows no audio/subtitle options."
+    ]
+  },
+  {
+    "id": "watch-gquuuuuux",
+    "title": "Mobile Suit Gundam GQuuuuuuX",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "TV series",
+    "episodes": 12,
+    "links": [
+      {
+        "store": "prime-video",
+        "label": "Prime Video",
+        "url": "https://watch.amazon.com/detail?gti=f5ad8a9d-f1e5-4d09-934b-6d462852c8e3",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      }
+    ],
+    "countries": {
+      "us": [
+        "prime-video"
+      ],
+      "ca": [
+        "prime-video"
+      ],
+      "mx": [
+        "prime-video"
+      ]
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Audio English/Spanish/Japanese/German/French/Italian/Portuguese/Turkish with 21 subtitle languages (JustWatch listing detail)."
+    ],
+    "unverified": [
+      "No verified service URL — the Prime Video destination was captured from JustWatch and could not be title-confirmed (Amazon blocks verification).",
+      "Do not confuse with the -Beginning- film, which has no North American stream."
+    ]
+  },
+  {
+    "id": "watch-hathaway",
+    "title": "Mobile Suit Gundam Hathaway",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "Film",
+    "links": [
+      {
+        "store": "netflix",
+        "label": "Netflix",
+        "url": "https://www.netflix.com/title/81439253",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      }
+    ],
+    "countries": {
+      "us": [
+        "netflix"
+      ],
+      "ca": [
+        "netflix"
+      ],
+      "mx": [
+        "netflix"
+      ]
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Audio English/Spanish (Latin America)/French/Italian/Japanese; subtitles English/Spanish (Latin America)/French/Italian/Japanese (Netflix page)."
+    ],
+    "unverified": [
+      "Runtime unverified (95–96 min range)."
+    ]
+  },
+  {
+    "id": "watch-hathaway-film-2",
+    "title": "Mobile Suit Gundam Hathaway: The Sorcery of Nymph Circe",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "Film",
+    "links": [
+      {
+        "store": "netflix",
+        "label": "Netflix",
+        "url": "https://www.netflix.com/title/82854665",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      }
+    ],
+    "countries": {
+      "us": [
+        "netflix"
+      ],
+      "ca": [
+        "netflix"
+      ],
+      "mx": [
+        "netflix"
+      ]
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "2026, PG-13. English dub exists; audio English/Spanish (Latin America)/French/Italian/Japanese (original). Japan theatrical Jan 30, 2026; North American theatrical May 15, 2026; Netflix outside Japan Aug 31, 2026."
+    ],
+    "unverified": [
+      "Runtime unresolved: 107–108 min (Netflix UI screenshots, Reelgood, JustWatch Mexico) vs 115 min (theatrical listing) — Netflix's title page shows no runtime."
+    ]
+  },
+  {
+    "id": "watch-gundam-i",
+    "title": "Mobile Suit Gundam I",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "Film",
+    "links": [
+      {
+        "store": "youtube",
+        "label": "YouTube (trilogy playlist, subtitled)",
+        "url": "https://www.youtube.com/playlist?list=PLJV1h9xQ7Hx_F2iiXzXxYpAZ_ZxFYy3mW",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "youtube",
+        "label": "YouTube (Film I video)",
+        "url": "https://www.youtube.com/watch?v=YYqJMKhaLhk",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      }
+    ],
+    "countries": {
+      "us": "none",
+      "ca": "unknown",
+      "mx": "none"
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Film compilation, subtitled (upload runs 2:19:53). Shares one playlist with Films II and III. Formerly on Netflix (2021–~2025)."
+    ],
+    "unverified": [
+      "Runtime unverified."
+    ]
+  },
+  {
+    "id": "watch-gundam-ii",
+    "title": "Mobile Suit Gundam II: Soldiers of Sorrow",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "Film",
+    "links": [
+      {
+        "store": "youtube",
+        "label": "YouTube (trilogy playlist, subtitled)",
+        "url": "https://www.youtube.com/playlist?list=PLJV1h9xQ7Hx_F2iiXzXxYpAZ_ZxFYy3mW",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      }
+    ],
+    "countries": {
+      "us": "none",
+      "ca": "unknown",
+      "mx": "unknown"
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Film, subtitled (upload runs 2:13:47). Shares one playlist with Films I and III."
+    ],
+    "unverified": [
+      "Runtime unverified (134 min, finding-aid sourced).",
+      "No individual Film II video URL was captured — playlist only."
+    ]
+  },
+  {
+    "id": "watch-gundam-iii",
+    "title": "Mobile Suit Gundam III: Encounters in Space",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "Film",
+    "links": [
+      {
+        "store": "youtube",
+        "label": "YouTube (trilogy playlist, subtitled)",
+        "url": "https://www.youtube.com/playlist?list=PLJV1h9xQ7Hx_F2iiXzXxYpAZ_ZxFYy3mW",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      }
+    ],
+    "countries": {
+      "us": "none",
+      "ca": "unknown",
+      "mx": "unknown"
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Film, subtitled (upload runs 2:20:47). Shares one playlist with Films I and II. The US negative was refreshed Nov 16, 2026 (375 services checked)."
+    ],
+    "unverified": [
+      "Runtime unverified (144 min, finding-aid sourced).",
+      "No individual Film III video URL was captured — playlist only."
+    ]
+  },
+  {
+    "id": "watch-narrative",
+    "title": "Mobile Suit Gundam Narrative",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "Film",
+    "links": [
+      {
+        "store": "crunchyroll-stream",
+        "label": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/watch/G14U4M9D3/mobile-suit-gundam-narrative",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "crunchyroll-channel",
+        "label": "Crunchyroll Channel via Prime Video",
+        "url": "https://watch.amazon.com/detail?gti=d0176de7-34c1-4a0c-9297-891921a29609",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      }
+    ],
+    "countries": {
+      "us": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "ca": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "mx": "unknown"
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "unverified": [
+      "Runtime unverified (89–90 min range).",
+      "Dub carriage rests on the JustWatch listing and Crunchyroll Sub|Dub flag; sub-only at the 2023 launch."
+    ]
+  },
+  {
+    "id": "watch-seed",
+    "title": "Mobile Suit Gundam SEED",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "TV series",
+    "links": [
+      {
+        "store": "crunchyroll-stream",
+        "label": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/watch/GR0922DMR/phase-01-false-peace",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "netflix",
+        "label": "Netflix",
+        "url": "https://www.netflix.com/title/80146549",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "crunchyroll-channel",
+        "label": "Crunchyroll Channel via Prime Video",
+        "url": "https://watch.amazon.com/detail?gti=28a77422-cf51-426b-ac09-d16cb450d954",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      },
+      {
+        "store": "hulu",
+        "label": "Hulu",
+        "url": "https://www.hulu.com/watch/9572cd5c-6655-4f3a-9eb8-e9ea8d19653d",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      },
+      {
+        "store": "youtube",
+        "label": "YouTube (English dub, full series)",
+        "url": "https://www.youtube.com/playlist?list=PLGpoKWN7Bq4g",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "youtube",
+        "label": "YouTube (English sub, HD Remaster)",
+        "url": "https://www.youtube.com/playlist?list=PLGCy0ANGbKCM",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      }
+    ],
+    "countries": {
+      "us": [
+        "crunchyroll-stream",
+        "netflix",
+        "crunchyroll-channel",
+        "hulu"
+      ],
+      "ca": [
+        "crunchyroll-stream",
+        "netflix",
+        "crunchyroll-channel"
+      ],
+      "mx": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ]
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "No Netflix in Mexico. Crunchyroll page is subtitled (audio Japanese)."
+    ],
+    "unverified": [
+      "Episode count conflict: 48 (Netflix/HD Remaster), 50 (English dub), 53 (JustWatch incl. specials) — no single count is verified."
+    ]
+  },
+  {
+    "id": "watch-seed-destiny",
+    "title": "Mobile Suit Gundam SEED Destiny",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "TV series",
+    "episodes": 50,
+    "links": [
+      {
+        "store": "netflix",
+        "label": "Netflix",
+        "url": "https://www.netflix.com/title/81724493",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "crunchyroll-channel",
+        "label": "Crunchyroll Channel via Prime Video",
+        "url": "https://watch.amazon.com/detail?gti=0dd73e30-bfdc-45cb-b6b6-82058a2b0096",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      },
+      {
+        "store": "hulu",
+        "label": "Hulu",
+        "url": "https://www.hulu.com/watch/a38e26c5-65cb-4199-8183-8c1459374b33",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      },
+      {
+        "store": "youtube",
+        "label": "YouTube (English sub, full series)",
+        "url": "https://www.youtube.com/playlist?list=PLH28wqlpBLfA",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "youtube",
+        "label": "YouTube (English dub, rolling premiere)",
+        "url": "https://www.youtube.com/playlist?list=PLLlBv52XOt4I",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      }
+    ],
+    "countries": {
+      "us": [
+        "netflix",
+        "crunchyroll-channel",
+        "hulu"
+      ],
+      "ca": [
+        "netflix",
+        "crunchyroll-channel"
+      ],
+      "mx": [
+        "crunchyroll-channel"
+      ]
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "No standalone Crunchyroll offer exists in any country — Channel only for Crunchyroll content. Netflix page shows 50 episodes (2004)."
+    ],
+    "unverified": [
+      "The YouTube English-dub run is a rolling daily premiere (episodes 1–5 out at check time; episode 6 premiered Nov 17, 2026) — completeness as of any later date is unverified."
+    ]
+  },
+  {
+    "id": "watch-seed-freedom",
+    "title": "Mobile Suit Gundam SEED Freedom",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "Film",
+    "links": [
+      {
+        "store": "crunchyroll-stream",
+        "label": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/series/GJ0H7QG5M/mobile-suit-gundam-seed-freedom",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "netflix",
+        "label": "Netflix",
+        "url": "https://www.netflix.com/title/81747912",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "prime-video",
+        "label": "Prime Video",
+        "url": "https://www.primevideo.com/detail/0ISL9XR81DEFQZFTT28ARAEUTE/",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "crunchyroll-channel",
+        "label": "Crunchyroll Channel via Prime Video",
+        "url": "https://watch.amazon.com/detail?gti=3d74deb1-b462-44b9-a8bc-df6f1de8c982",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      },
+      {
+        "store": "hulu",
+        "label": "Hulu",
+        "url": "https://www.hulu.com/watch/393cd98f-3990-4eaa-9bf3-3642ca4cecb6",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      },
+      {
+        "store": "apple-tv",
+        "label": "Apple TV — Rent + Buy",
+        "url": "https://tv.apple.com/us/movie/mobile-suit-gundam-seed-freedom/umc.cmc.415oz2t7zcn7c9sq1o6q1898m",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "rentbuy"
+      },
+      {
+        "store": "amazon-video",
+        "label": "Amazon Video — Rent + Buy",
+        "url": "https://watch.amazon.com/detail?gti=3d74deb1-b462-44b9-a8bc-df6f1de8c982",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "rentbuy",
+        "unverified": true
+      }
+    ],
+    "countries": {
+      "us": [
+        "crunchyroll-stream",
+        "netflix",
+        "crunchyroll-channel",
+        "hulu"
+      ],
+      "ca": [
+        "crunchyroll-stream",
+        "netflix",
+        "crunchyroll-channel"
+      ],
+      "mx": "none"
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Subtitled and dubbed on Crunchyroll. The Amazon Video rent/buy destination shares its ID with the Channel stream link. A second Prime Video page showing 'currently unavailable' is not linked; the linked Prime Video page is the Crunchyroll Channel offer."
+    ],
+    "unverified": [
+      "Runtime variant: 125 min vs 2h 4m (124 min) on the Prime Video page — recorded, not resolved."
+    ],
+    "coverUrl": "https://mediacdn.aent-m.com/prod-img/500/01/4488701-3516778.jpg?ae=4621895150"
+  },
+  {
+    "id": "watch-unicorn-re0096",
+    "title": "Mobile Suit Gundam Unicorn RE:0096",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "TV series",
+    "episodes": 22,
+    "links": [
+      {
+        "store": "crunchyroll-stream",
+        "label": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/watch/G63VM204Y/departure-0096",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "crunchyroll-channel",
+        "label": "Crunchyroll Channel via Prime Video",
+        "url": "https://watch.amazon.com/detail?gti=44973743-f1c6-44a7-980c-588e095515e8",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      },
+      {
+        "store": "youtube",
+        "label": "YouTube (full series)",
+        "url": "https://www.youtube.com/playlist?list=PLNnxffb3X1XE",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      }
+    ],
+    "countries": {
+      "us": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "ca": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "mx": "unknown"
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "TV recut of Mobile Suit Gundam Unicorn. Subtitled only on Crunchyroll. No Unicorn title exists in the Mexico catalogue."
+    ],
+    "unverified": [
+      "An English dub exists; current Crunchyroll dub carriage is unverified.",
+      "Do not list Hulu for this title — Hulu carries the OVA form, not this recut."
+    ]
+  },
+  {
+    "id": "watch-wing",
+    "title": "Mobile Suit Gundam Wing",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "TV series",
+    "episodes": 49,
+    "links": [
+      {
+        "store": "crunchyroll-stream",
+        "label": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/watch/GR2PDVDMR/the-shooting-star-she-saw",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "crunchyroll-channel",
+        "label": "Crunchyroll Channel via Prime Video",
+        "url": "https://watch.amazon.com/detail?gti=3ea2bebe-d24c-488e-9084-95451e0bc760",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      },
+      {
+        "store": "hulu",
+        "label": "Hulu",
+        "url": "https://www.hulu.com/watch/4285e71d-c6a2-4f00-b620-769a152041e0",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      }
+    ],
+    "countries": {
+      "us": [
+        "crunchyroll-stream",
+        "crunchyroll-channel",
+        "hulu"
+      ],
+      "ca": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "mx": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ]
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Subtitled and dubbed on Crunchyroll (audio Japanese/English)."
+    ]
+  },
+  {
+    "id": "watch-zz",
+    "title": "Mobile Suit Gundam ZZ",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "TV series",
+    "episodes": 47,
+    "links": [
+      {
+        "store": "crunchyroll-stream",
+        "label": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/series/G0XHWM435/mobile-suit-zeta-gundam-zz",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      }
+    ],
+    "countries": {
+      "us": [
+        "crunchyroll-stream"
+      ],
+      "ca": [
+        "crunchyroll-stream"
+      ],
+      "mx": [
+        "crunchyroll-stream"
+      ]
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Subtitled only on Crunchyroll (audio Japanese, English subtitles). Crunchyroll names the title 'Mobile Suit Zeta Gundam: ZZ'."
+    ],
+    "coverUrl": "https://m.media-amazon.com/images/I/51NrjFPTBVL._SL1500_.jpg"
+  },
+  {
+    "id": "watch-chars-counterattack",
+    "title": "Mobile Suit Gundam: Char's Counterattack",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "Film",
+    "links": [
+      {
+        "store": "crunchyroll-channel",
+        "label": "Crunchyroll Channel via Prime Video",
+        "url": "https://watch.amazon.com/detail?gti=70454933-857f-4bf7-a6f7-652b1d40c462",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      },
+      {
+        "store": "youtube",
+        "label": "YouTube (full film)",
+        "url": "https://www.youtube.com/playlist?list=PLJV1h9xQ7Hx_MCQBJ-qX_SFxKRckH54Ch",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      }
+    ],
+    "countries": {
+      "us": [
+        "crunchyroll-channel"
+      ],
+      "ca": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "mx": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ]
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "US has no direct-Crunchyroll offer — Channel only. YouTube playlist contains the single film (2:00:14 upload)."
+    ],
+    "unverified": [
+      "Runtime unverified (119–120 min range).",
+      "Sub/dub unknown for the Crunchyroll/Channel offers.",
+      "Crunchyroll is listed for Canada/Mexico on JustWatch but no Crunchyroll page URL was captured — name only, no link."
+    ]
+  },
+  {
+    "id": "watch-cucuruz-doans-island",
+    "title": "Mobile Suit Gundam: Cucuruz Doan's Island",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "Film",
+    "links": [
+      {
+        "store": "crunchyroll-stream",
+        "label": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/series/GMTE00199339/mobile-suit-gundam-cucuruz-doans-island",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "prime-video",
+        "label": "Prime Video",
+        "url": "https://www.primevideo.com/detail/0L3YG80WCTJV964FUQ5GYIFJ2G/",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "crunchyroll-channel",
+        "label": "Crunchyroll Channel via Prime Video",
+        "url": "https://watch.amazon.com/detail?gti=649263c6-ed5d-4ac8-9be2-1474746c6848",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      },
+      {
+        "store": "apple-tv",
+        "label": "Apple TV — Buy",
+        "url": "https://tv.apple.com/us/movie/mobile-suit-gundam-cucuruz-doans-island/umc.cmc.5zb9mopv7r5x4pa879kw1gbil",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "rentbuy"
+      }
+    ],
+    "countries": {
+      "us": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "ca": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "mx": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ]
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "108 min. Subtitled and dubbed on Crunchyroll (audio Japanese/English/German). Apple TV buy is US-only."
+    ],
+    "unverified": [
+      "Crunchyroll's watch page wrongly says 'Originally released Jul 14, 1979' (Crunchyroll metadata error — ignore)."
+    ],
+    "coverUrl": "https://mediacdn.aent-m.com/prod-img/500/62/4354362-3197556.jpg"
+  },
+  {
+    "id": "watch-iron-blooded-orphans",
+    "title": "Mobile Suit Gundam: Iron-Blooded Orphans",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "TV series",
+    "episodes": 50,
+    "links": [
+      {
+        "store": "crunchyroll-stream",
+        "label": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/watch/GRWE2ZEMR/iron-and-blood",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "crunchyroll-channel",
+        "label": "Crunchyroll Channel via Prime Video",
+        "url": "https://watch.amazon.com/detail?gti=4c2e3b9b-3097-44ea-8e54-18d84546eb05",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      },
+      {
+        "store": "hulu",
+        "label": "Hulu",
+        "url": "https://www.hulu.com/watch/a781de51-ac9e-4290-a3d4-ce5e1bbec7a7",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      },
+      {
+        "store": "youtube",
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=QurnL3bCllY",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "episode1": true
+      },
+      {
+        "store": "apple-tv",
+        "label": "Apple TV — Buy",
+        "url": "https://tv.apple.com/us/show/mobile-suit-gundam-iron-blooded-orphans/umc.cmc.3k465cqw0yntvfzahn7kzzx26",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "rentbuy"
+      }
+    ],
+    "countries": {
+      "us": [
+        "crunchyroll-stream",
+        "crunchyroll-channel",
+        "hulu"
+      ],
+      "ca": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "mx": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ]
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Subtitled and dubbed on Crunchyroll (audio Japanese/English). Channel carries 2 seasons in Canada/Mexico; direct Crunchyroll covers 1 season there. The reported Nov 2025 YouTube full-series run is not current — Episode 1 only."
+    ],
+    "unverified": [
+      "Netflix is NOT listed on the current JustWatch US page (consistent with a reported ~Nov 2026 expiry, which was not independently verified) — Netflix is not counted as a current offer."
+    ]
+  },
+  {
+    "id": "watch-08th-ms-team",
+    "title": "Mobile Suit Gundam: The 08th MS Team",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "OVA",
+    "episodes": 12,
+    "links": [
+      {
+        "store": "hulu",
+        "label": "Hulu",
+        "url": "https://www.hulu.com/watch/cca92eef-f3ee-42ff-bb83-6e794675e4e9",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      }
+    ],
+    "countries": {
+      "us": [
+        "hulu"
+      ],
+      "ca": "none",
+      "mx": "unknown"
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "'Hulu via Disney+' means the Hulu hub inside Disney+ US — standalone Disney+ is not listed for Canada/Mexico. August 2026 Hulu expiry tags did not remove the listing (still listed Nov 2026)."
+    ],
+    "unverified": [
+      "No verified service URL — the Hulu destination was captured from JustWatch and could not be title-confirmed.",
+      "Sub/dub unknown.",
+      "Unverified whether Hulu's 12-episode listing includes Miller's Report.",
+      "Canada 'none' rests on a secondary source (Reelgood); no JustWatch Canada page was located."
+    ]
+  },
+  {
+    "id": "watch-witch-from-mercury",
+    "title": "Mobile Suit Gundam: The Witch from Mercury",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "TV series",
+    "links": [
+      {
+        "store": "crunchyroll-stream",
+        "label": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/series/G79H2307W/mobile-suit-gundam-the-witch-from-mercury",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "crunchyroll-channel",
+        "label": "Crunchyroll Channel via Prime Video",
+        "url": "https://watch.amazon.com/detail?gti=be9279f5-c720-4751-b7fa-ce3f87f80e77",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      },
+      {
+        "store": "youtube",
+        "label": "YouTube (English sub, full series)",
+        "url": "https://www.youtube.com/playlist?list=PLWjd5-5xOmvw",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "youtube",
+        "label": "YouTube (English dub, full series)",
+        "url": "https://www.youtube.com/playlist?list=PLJV1h9xQ7Hx-MSngXeq-sRbelh5zCVRNI",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "amazon-video",
+        "label": "Amazon Video — Buy",
+        "url": "https://watch.amazon.com/detail?gti=6e763c1a-efa9-418e-a492-863c8d11a38e",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "rentbuy",
+        "unverified": true
+      },
+      {
+        "store": "apple-tv",
+        "label": "Apple TV — Buy",
+        "url": "https://tv.apple.com/us/show/mobile-suit-gundam-the-witch-from-mercury/umc.cmc.4eur3ov9tcbcfz060ijh3ytrr",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "rentbuy"
+      }
+    ],
+    "countries": {
+      "us": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "ca": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "mx": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ]
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "The Prologue special is bundled as episode 1 on Crunchyroll (25 episodes listed) and inside the YouTube playlists — it has no standalone listing. Subtitled and dubbed on Crunchyroll. The Amazon Video buy link uses a different destination ID than the Crunchyroll Channel stream link."
+    ],
+    "unverified": [
+      "Episode count: 24 episodes + Prologue special; Crunchyroll and YouTube list 25 videos including the Prologue."
+    ]
+  },
+  {
+    "id": "watch-zeta",
+    "title": "Mobile Suit Zeta Gundam",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "TV series",
+    "episodes": 50,
+    "links": [
+      {
+        "store": "crunchyroll-stream",
+        "label": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/watch/GK9U3D2W5/the-black-gundam",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "crunchyroll-channel",
+        "label": "Crunchyroll Channel via Prime Video",
+        "url": "https://watch.amazon.com/detail?gti=742e75ed-2596-47ae-b819-9f42d94778f5",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      }
+    ],
+    "countries": {
+      "us": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "ca": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "mx": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ]
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Subtitled and dubbed on Crunchyroll (audio Japanese/English; subtitles English/French)."
+    ],
+    "unverified": [
+      "Spanish-subtitle availability unverified (fan complaints Jul 2026).",
+      "Channel link anomaly: the redirect wrapper on the Zeta page embedded a Wing page URL (JustWatch tracking quirk); the destination ID differs from Wing's — treat as unverified."
+    ]
+  },
+  {
+    "id": "watch-sd-world-heroes",
+    "title": "SD Gundam World Heroes",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "episodes": 24,
+    "links": [
+      {
+        "store": "crunchyroll-stream",
+        "label": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/series/G9VHN9W0V/sd-gundam-world-heroes",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "crunchyroll-channel",
+        "label": "Crunchyroll Channel via Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=c2f85fcf-2f2a-4962-ac40-e4d0f6036a7c",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "unverified": true
+      },
+      {
+        "store": "youtube",
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=a_ai9Ekrg58",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "episode1": true
+      }
+    ],
+    "countries": {
+      "us": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "ca": [
+        "crunchyroll-stream",
+        "crunchyroll-channel"
+      ],
+      "mx": "unknown"
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "24 episodes on Crunchyroll (E1 'Falling Destiny' – E24 'Chosen Future'). Subtitled only."
+    ],
+    "unverified": [
+      "Type unresolved: TV per the survey brief, ONA per MAL.",
+      "US offer evidence is the weakest in the catalog: no US JustWatch page was recovered (snippet-level survey verdict + a search failure); the Crunchyroll series page and the fresh JustWatch Canada page are verified. Whether the series is playable in the US specifically was not tested."
+    ]
+  },
+  {
+    "id": "watch-sangoku-soketsuden",
+    "title": "SD Gundam World Sangoku Soketsuden",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Released",
+    "mediaType": "ONA",
+    "links": [
+      {
+        "store": "youtube",
+        "label": "YouTube (SOSHOKI playlist, English sub)",
+        "url": "https://www.youtube.com/playlist?list=PLJV1h9xQ7Hx8Uvah6r27rnaBzjZ-VXG9g",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "youtube",
+        "label": "YouTube (Episode 1 upload)",
+        "url": "https://www.youtube.com/watch?v=ML9nOcMWeUM",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream",
+        "episode1": true
+      }
+    ],
+    "countries": {
+      "us": "unknown",
+      "ca": "unknown",
+      "mx": "unknown"
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "12-episode 'SOSHOKI' playlist (English sub) plus a newer Episode 1 upload. Not found in a direct Crunchyroll catalog search."
+    ],
+    "unverified": [
+      "Episode count conflict: 7 vs 10 vs 12 — no single count is verified."
+    ]
+  },
+  {
     "id": "zz-collection-2-bd",
+    "watchId": "watch-zz",
     "title": "Mobile Suit Gundam ZZ — Collection 2",
     "distributor": "Right Stuf / Nozomi (for Sunrise)",
     "format": "Blu-ray",
@@ -15,29 +1696,13 @@
         "url": "https://www.amazon.com/s?k=Mobile+Suit+Gundam+ZZ+%E2%80%94+Collection+2+Blu-ray",
         "status": "unknown",
         "reason": "unverifiable"
-      },
-      {
-        "store": "justwatch",
-        "label": "JustWatch — all streaming options",
-        "url": "https://www.justwatch.com/us/tv-show/mobile-suit-gundam-zz",
-        "status": "unknown",
-        "reason": "unverifiable",
-        "kind": "stream"
-      },
-      {
-        "store": "crunchyroll-stream",
-        "label": "Crunchyroll",
-        "url": "https://www.crunchyroll.com/series/G0XHWM435/mobile-suit-zeta-gundam-zz",
-        "status": "unknown",
-        "reason": "unverifiable",
-        "kind": "stream"
       }
     ],
     "availability": "available",
     "unavailableStreak": 0,
     "notes": [
       "Verified in stock at Barnes & Noble on a live fetch, 16 Nov 2026 (remaining stock; in-print status not confirmed).",
-      "Streaming (JustWatch, Nov 2026): Crunchyroll in the US, Canada, and Mexico; no digital buy/rent option listed in any region."
+      "See the Watch entry for streaming options."
     ],
     "unverified": [
       "Release date rests on Gundam Wiki only — the weakest date in the survey.",
@@ -48,6 +1713,7 @@
   },
   {
     "id": "cucuruz-doans-island-bd",
+    "watchId": "watch-cucuruz-doans-island",
     "title": "Mobile Suit Gundam: Cucuruz Doan's Island",
     "distributor": "Crunchyroll, LLC",
     "format": "Blu-ray",
@@ -69,38 +1735,6 @@
         "url": "https://www.crunchyroll.com/store/search?q=Mobile+Suit+Gundam%3A+Cucuruz+Doan%27s+Island",
         "status": "unknown",
         "reason": "unverifiable"
-      },
-      {
-        "store": "justwatch",
-        "label": "JustWatch — all streaming options",
-        "url": "https://www.justwatch.com/us/movie/kido-senshi-gundam-cucuruz-doan-no-shima",
-        "status": "unknown",
-        "reason": "unverifiable",
-        "kind": "stream"
-      },
-      {
-        "store": "crunchyroll-stream",
-        "label": "Crunchyroll",
-        "url": "https://www.crunchyroll.com/series/GMTE00199339/mobile-suit-gundam-cucuruz-doans-island",
-        "status": "unknown",
-        "reason": "unverifiable",
-        "kind": "stream"
-      },
-      {
-        "store": "apple-tv",
-        "label": "Apple TV",
-        "url": "https://tv.apple.com/us/movie/mobile-suit-gundam-cucuruz-doans-island/umc.cmc.5zb9mopv7r5x4pa879kw1gbil",
-        "status": "unknown",
-        "reason": "unverifiable",
-        "kind": "digital"
-      },
-      {
-        "store": "prime-video",
-        "label": "Prime Video",
-        "url": "https://www.primevideo.com/detail/0L3YG80WCTJV964FUQ5GYIFJ2G/",
-        "status": "unknown",
-        "reason": "unverifiable",
-        "kind": "stream"
       }
     ],
     "availability": "available",
@@ -110,7 +1744,7 @@
     "notes": [
       "Verified in stock at Barnes & Noble on a live fetch, 16 Nov 2026 (remaining stock; in-print status not distributor-confirmed).",
       "Region A verified on the YesAsia retailer page.",
-      "Streaming (JustWatch, Nov 2026): Crunchyroll and Crunchyroll Amazon Channel in the US, Canada, and Mexico. Digital buy on the Apple TV Store in the US only — not listed in Canada or Mexico.",
+      "See the Watch entry for streaming options.",
       "Live check 17 Nov 2026 resolved the aggregator conflict: the YouTube Movies listing shows 'Video unavailable' with no buy/rent option; Microsoft no longer sells movies online (legacy listing only); Google Play and Fandango at Home pages are geo-blocked from Canada and could not be confirmed. The Apple TV Store (US) remains the only verified digital buy option."
     ],
     "unverified": [
@@ -124,6 +1758,7 @@
   },
   {
     "id": "seed-freedom-4k",
+    "watchId": "watch-seed-freedom",
     "title": "Mobile Suit Gundam SEED Freedom — SteelBook",
     "distributor": "Crunchyroll, LLC",
     "format": "4K Ultra HD",
@@ -145,46 +1780,6 @@
         "url": "https://www.crunchyroll.com/store/search?q=Mobile+Suit+Gundam+SEED+Freedom+%E2%80%94+SteelBook",
         "status": "unknown",
         "reason": "unverifiable"
-      },
-      {
-        "store": "justwatch",
-        "label": "JustWatch — all streaming options",
-        "url": "https://www.justwatch.com/us/movie/kido-senshi-gundam-seed-freedom",
-        "status": "unknown",
-        "reason": "unverifiable",
-        "kind": "stream"
-      },
-      {
-        "store": "netflix",
-        "label": "Netflix",
-        "url": "https://www.netflix.com/title/81747912",
-        "status": "unknown",
-        "reason": "unverifiable",
-        "kind": "stream"
-      },
-      {
-        "store": "crunchyroll-stream",
-        "label": "Crunchyroll",
-        "url": "https://www.crunchyroll.com/series/GJ0H7QG5M/mobile-suit-gundam-seed-freedom",
-        "status": "unknown",
-        "reason": "unverifiable",
-        "kind": "stream"
-      },
-      {
-        "store": "apple-tv",
-        "label": "Apple TV",
-        "url": "https://tv.apple.com/us/movie/mobile-suit-gundam-seed-freedom/umc.cmc.415oz2t7zcn7c9sq1o6q1898m",
-        "status": "unknown",
-        "reason": "unverifiable",
-        "kind": "digital"
-      },
-      {
-        "store": "prime-video",
-        "label": "Prime Video",
-        "url": "https://www.primevideo.com/detail/0ISL9XR81DEFQZFTT28ARAEUTE",
-        "status": "unknown",
-        "reason": "unverifiable",
-        "kind": "stream"
       }
     ],
     "availability": "unknown",
@@ -195,15 +1790,14 @@
       "The only North American 4K Gundam release found.",
       "Backordered at ImportCDs on a live fetch, 16 Nov 2026 (backorder is not out-of-print).",
       "Orderable at the Crunchyroll Store on a live check, Nov 2026 (Add to cart button; no explicit in-stock wording).",
-      "Streaming (JustWatch, Nov 2026): Netflix and Crunchyroll (plus Crunchyroll Amazon Channel) in the US and Canada; Hulu in the US only; no streaming options listed in Mexico. Digital buy/rent on the Apple TV Store and Amazon Video in the US only.",
+      "See the Watch entry for streaming options.",
       "A second Prime Video detail page for this title shows 'currently unavailable' and is not linked; the linked Prime Video page is the Crunchyroll Channel offer."
     ],
     "unverified": [
       "4K-only with no standard Blu-ray is UNVERIFIED (forum correction of the initial '4K & Blu-ray' listing).",
       "Date conflict: 14 Apr 2026 (press/retailers) vs 13 Apr (one forum schedule).",
       "Region-free status UNVERIFIED (blu-ray.com).",
-      "The UK Anime Limited 4K edition is a different product — do not confuse.",
-      "Hulu (US) title page could not be page-confirmed — Hulu redirects Canadian visitors to Disney+; a search-derived URL exists but is unverified."
+      "The UK Anime Limited 4K edition is a different product — do not confuse."
     ],
     "coverUrl": "https://mediacdn.aent-m.com/prod-img/500/01/4488701-3516778.jpg?ae=4621895150"
   }

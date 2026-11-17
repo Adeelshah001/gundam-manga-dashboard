@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gundam Media Hub — Buyable Gundam manga, video games &amp; discs in North America</title>
-  <meta name="description" content="Gundam Media Hub — English-language Gundam manga, video games, and Blu-ray / DVD / 4K discs you can actually buy in North America. Buy links verified daily; only in-stock and upcoming items are shown.">
+  <title>Gundam Media Hub — Gundam manga, video games, discs &amp; streaming in North America</title>
+  <meta name="description" content="Gundam Media Hub — English-language Gundam manga, video games, Blu-ray / DVD / 4K discs, and streaming titles available in North America. Buy links verified daily.">
   <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
   <style>
     :root {
@@ -538,7 +538,9 @@ One hub.</h2>
       'Blu-ray': 'format.bluray',
       'DVD': 'format.dvd',
       '4K Ultra HD': 'format.ultraHd',
+      'Streaming': 'format.streaming',
     };
+    const MEDIA_TYPE_KEYS = { 'TV series': 'mediatype.tvSeries', 'Film': 'mediatype.film', 'OVA': 'mediatype.ova', 'ONA': 'mediatype.ona', 'Short': 'mediatype.short' };
     const MODEL_KEYS = { 'Paid': 'model.paid', 'Free-to-play': 'model.freeToPlay' };
     const SORT_KEYS = {
       'release-desc': 'sort.releaseDesc',
@@ -548,6 +550,10 @@ One hub.</h2>
     };
     function trFormat(value) {
       const key = FORMAT_KEYS[value];
+      return key ? tr(key, value) : value;
+    }
+    function trMediaType(value) {
+      const key = MEDIA_TYPE_KEYS[value];
       return key ? tr(key, value) : value;
     }
     function trModel(value) {
@@ -644,9 +650,9 @@ One hub.</h2>
 
     function applyStaticStrings() {
       document.documentElement.lang = currentLang;
-      document.title = tr('meta.title', 'Gundam Media Hub — Buyable Gundam manga, video games & discs in North America');
+      document.title = tr('meta.title', 'Gundam Media Hub — Gundam manga, video games, discs & streaming in North America');
       const metaDesc = document.querySelector('meta[name="description"]');
-      if (metaDesc) metaDesc.setAttribute('content', tr('meta.description', 'Gundam Media Hub — English-language Gundam manga, video games, and Blu-ray / DVD / 4K discs you can actually buy in North America. Buy links verified daily; only in-stock and upcoming items are shown.'));
+      if (metaDesc) metaDesc.setAttribute('content', tr('meta.description', 'Gundam Media Hub — English-language Gundam manga, video games, Blu-ray / DVD / 4K discs, and streaming titles available in North America. Buy links verified daily.'));
       setText('liveBadge', tr('header.liveBadge', 'Live Dashboard'));
       const dcLink = document.getElementById('dcLink');
       if (dcLink) dcLink.title = tr('header.sisterSiteTooltip', 'Sister site: DC Compact Comics dashboard');
@@ -763,7 +769,7 @@ One hub.</h2>
       discs: {
         label: 'Watch',
         labelKey: 'media.discs',
-        subtitle: 'Blu-ray, DVD, and 4K Ultra HD — only titles verified buyable-new are listed.',
+        subtitle: 'Streaming titles, plus Blu-ray, DVD, and 4K Ultra HD discs verified buyable-new.',
         subtitleKey: 'browser.subtitleDiscs',
         emptyKey: 'empty.discs',
         allKey: 'filters.allFormats',
@@ -773,8 +779,8 @@ One hub.</h2>
         storage: 'gundam_media_hub_discs',
         groupLabel: 'Format',
         groupValue: c => c.format,
-        fixedGroups: ['Blu-ray', 'DVD', '4K Ultra HD'],
-        searchText: c => `${c.title} ${loc(c, 'title')} ${c.distributor} ${c.format} ${trFormat(c.format)} ${c.contents} ${loc(c, 'contents') || ''} ${c.upc || ''}`,
+        fixedGroups: ['Streaming', 'Blu-ray', 'DVD', '4K Ultra HD'],
+        searchText: c => `${c.title} ${loc(c, 'title')} ${c.distributor} ${c.format} ${trFormat(c.format)} ${c.contents} ${loc(c, 'contents') || ''} ${c.upc || ''} ${c.mediaType || ''} ${(c.links || []).map(l => l.label || '').join(' ')}`,
         sortOptions: [
           ['release-desc', 'Release Date: Newest First'],
           ['release-asc', 'Release Date: Oldest First'],
@@ -783,7 +789,8 @@ One hub.</h2>
         defaultSort: 'release-desc',
         emptyMessage: 'No discs matching your filter criteria. No DVD title is currently verified in stock, so the DVD shelf is empty — it fills automatically when the daily check confirms one.',
         stats: data => ([
-          { label: tr('stats.totalDiscs', 'Total Discs'), value: data.length, valueClass: 'text-white', icon: '💿', iconClass: 'bg-red-500/20 text-red-400' },
+          { label: tr('stats.totalWatch', 'Total'), value: data.length, valueClass: 'text-white', icon: '💿', iconClass: 'bg-red-500/20 text-red-400' },
+          { label: tr('format.streaming', 'Streaming'), value: data.filter(c => c.format === 'Streaming').length, valueClass: 'text-violet-400', icon: '▶️', iconClass: 'bg-violet-500/20 text-violet-400' },
           { label: tr('format.bluray', 'Blu-ray'), value: data.filter(c => c.format === 'Blu-ray').length, valueClass: 'text-blue-400', icon: '<svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 6.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z"/></svg>', iconClass: 'bg-blue-500/20 text-blue-400' },
           { label: tr('format.dvd', 'DVD'), value: data.filter(c => c.format === 'DVD').length, valueClass: 'text-emerald-400', icon: '📀', iconClass: 'bg-emerald-500/20 text-emerald-400' },
           { label: tr('format.ultraHd', '4K Ultra HD'), value: data.filter(c => c.format === '4K Ultra HD').length, valueClass: 'text-sky-400', icon: '✨', iconClass: 'bg-sky-500/20 text-sky-400' },
@@ -965,7 +972,10 @@ One hub.</h2>
       document.getElementById('countAll').innerText = groupList.length;
       document.getElementById('countReleased').innerText = groupList.filter(c => c.status === 'Released').length;
       document.getElementById('countUpcoming').innerText = groupList.filter(c => c.status === 'Upcoming').length;
-      document.getElementById('statsBar').innerHTML = cfg.stats(data).map(s => `
+      const tiles = cfg.stats(data);
+      const statsBar = document.getElementById('statsBar');
+      statsBar.className = tiles.length === 5 ? 'grid grid-cols-2 sm:grid-cols-5 gap-3 text-xs' : 'grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs';
+      statsBar.innerHTML = tiles.map(s => `
         <div class="space-glass p-3 rounded-2xl flex items-center justify-between">
           <div>
             <p class="text-slate-400">${s.label}</p>
@@ -1043,7 +1053,12 @@ One hub.</h2>
       justwatch: { label: 'JustWatch — all streaming options', card: 'px-2.5 py-1 rounded-lg bg-yellow-500/15 hover:bg-yellow-500/25 border border-yellow-400/30 text-yellow-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-yellow-500/20 hover:bg-yellow-500/30 border border-yellow-400/40 text-yellow-200 text-xs font-semibold transition' },
       netflix: { label: 'Netflix', card: 'px-2.5 py-1 rounded-lg bg-red-600/15 hover:bg-red-600/25 border border-red-500/30 text-red-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-red-600/20 hover:bg-red-600/30 border border-red-500/40 text-red-200 text-xs font-semibold transition' },
       'prime-video': { label: 'Prime Video', card: 'px-2.5 py-1 rounded-lg bg-sky-400/15 hover:bg-sky-400/25 border border-sky-300/30 text-sky-200 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-sky-400/20 hover:bg-sky-400/30 border border-sky-300/40 text-sky-100 text-xs font-semibold transition' },
-      'crunchyroll-stream': { label: 'Crunchyroll', card: 'px-2.5 py-1 rounded-lg bg-orange-500/15 hover:bg-orange-500/25 border border-orange-500/30 text-orange-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-orange-500/20 hover:bg-orange-500/30 border border-orange-500/40 text-orange-200 text-xs font-semibold transition' }
+      'crunchyroll-stream': { label: 'Crunchyroll', card: 'px-2.5 py-1 rounded-lg bg-orange-500/15 hover:bg-orange-500/25 border border-orange-500/30 text-orange-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-orange-500/20 hover:bg-orange-500/30 border border-orange-500/40 text-orange-200 text-xs font-semibold transition' },
+      hulu: { label: 'Hulu', card: 'px-2.5 py-1 rounded-lg bg-lime-400/15 hover:bg-lime-400/25 border border-lime-300/30 text-lime-200 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-lime-400/20 hover:bg-lime-400/30 border border-lime-300/40 text-lime-100 text-xs font-semibold transition' },
+      tubi: { label: 'Tubi', card: 'px-2.5 py-1 rounded-lg bg-fuchsia-500/15 hover:bg-fuchsia-500/25 border border-fuchsia-500/30 text-fuchsia-300 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-fuchsia-500/20 hover:bg-fuchsia-500/30 border border-fuchsia-500/40 text-fuchsia-200 text-xs font-semibold transition' },
+      youtube: { label: 'YouTube', card: 'px-2.5 py-1 rounded-lg bg-red-500/15 hover:bg-red-500/25 border border-red-400/30 text-red-200 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-red-500/20 hover:bg-red-500/30 border border-red-400/40 text-red-100 text-xs font-semibold transition' },
+      'crunchyroll-channel': { label: 'Crunchyroll Channel via Prime Video', card: 'px-2.5 py-1 rounded-lg bg-sky-600/15 hover:bg-sky-600/25 border border-sky-500/30 text-sky-200 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-sky-600/20 hover:bg-sky-600/30 border border-sky-500/40 text-sky-100 text-xs font-semibold transition' },
+      'amazon-video': { label: 'Amazon Video', card: 'px-2.5 py-1 rounded-lg bg-amber-600/15 hover:bg-amber-600/25 border border-amber-500/30 text-amber-200 text-[11px] font-medium transition', modal: 'flex-1 min-w-[120px] text-center py-2 px-3 rounded-xl bg-amber-600/20 hover:bg-amber-600/30 border border-amber-500/40 text-amber-100 text-xs font-semibold transition' }
     };
     // Cover-art crop: PRH serves retail covers (with title text), so each
     // series gets a vertical window over its art band, zoomed to crop edge
@@ -1057,7 +1072,7 @@ One hub.</h2>
         const meta = STORE_META[entry.store] || STORE_FALLBACK;
         let url = entry.url;
         if (entry.store === 'amazon') url = localizeAmazon(url);
-        out.push({ label: entry.label || (STORE_META[entry.store] || {}).label || entry.store, url, kind: entry.kind || 'buy', cardClass: meta.card, modalClass: meta.modal });
+        out.push({ label: entry.label || (STORE_META[entry.store] || {}).label || entry.store, url, kind: entry.kind || 'buy', store: entry.store, unverified: entry.unverified, episode1: entry.episode1, free: entry.free, cardClass: meta.card, modalClass: meta.modal });
       }
       return out;
     }
@@ -1105,7 +1120,7 @@ One hub.</h2>
     }
 
     function cardFace(c) {
-      const glyph = currentCatalog === 'games' ? '🎮' : currentCatalog === 'discs' ? '💿' : '📚';
+      const glyph = c.type === 'stream' ? '▶️' : currentCatalog === 'games' ? '🎮' : currentCatalog === 'discs' ? '💿' : '📚';
       const fallback = placeholderFace(loc(c, 'title'), glyph);
       if (c.coverUrl) {
         return fallback + `<img src="${escapeHtml(c.coverUrl)}" alt="" loading="lazy" decoding="async" onerror="this.style.display='none'">`;
@@ -1124,6 +1139,16 @@ One hub.</h2>
         return {
           title: loc(c, 'title'),
           lines: [(c.platforms || []).join(' · '), [trModel(c.model), trFormat(c.format)].filter(Boolean).join(' · '), c.releaseDate ? formatDate(c.releaseDate) : (loc(c, 'releaseNote') || tr('common.tbd', 'TBD'))],
+        };
+      }
+      if (c.type === 'stream') {
+        const services = [...new Set((c.links || []).filter(l => l && l.kind === 'stream' && l.status !== 'unavailable').map(l => (STORE_META[l.store] || {}).label || l.label || l.store))];
+        return {
+          title: loc(c, 'title'),
+          lines: [
+            [trMediaType(c.mediaType), c.episodes ? fmt(tr('common.episodesPattern', '{n} episodes'), { n: c.episodes }) : null].filter(Boolean).join(' · '),
+            services.join(' · '),
+          ],
         };
       }
       return {
@@ -1150,7 +1175,7 @@ One hub.</h2>
           <div class="item-card__content">
             <p class="item-card__title">${escapeHtml(brief.title)}</p>
             ${brief.lines.filter(Boolean).map(l => `<p class="item-card__description">${escapeHtml(l)}</p>`).join('')}
-            <p class="item-card__hint">${escapeHtml(tr('card.hint', 'Select for details & buy links'))}</p>
+            <p class="item-card__hint">${escapeHtml(c.type === 'stream' ? tr('card.hintWatch', 'Select for details & watch links') : tr('card.hint', 'Select for details & buy links'))}</p>
           </div>
         </div>`;
       }).join('');
@@ -1167,6 +1192,24 @@ One hub.</h2>
         return `<span><strong>${escapeHtml(head)}</strong> ${escapeHtml(v)}${escapeHtml(parts[1] || '')}</span>`;
       }
       return `<span><strong>${escapeHtml(k)}:</strong> ${escapeHtml(v)}</span>`;
+    }
+
+    function formatCountries(c) {
+      if (!c.countries) return null;
+      const links = c.links || [];
+      return [['US', 'us'], ['CA', 'ca'], ['MX', 'mx']].map(([label, key]) => {
+        const v = c.countries[key];
+        if (v === 'unknown') return label + ': ' + tr('common.unknown', 'Unknown');
+        if (v === 'none') return label + ': ' + tr('common.notAvailable', 'Not available');
+        if (Array.isArray(v)) {
+          return label + ': ' + v.map(store => {
+            const name = (STORE_META[store] || {}).label || store;
+            const link = links.find(l => l && l.store === store);
+            return (!link || link.unverified) ? name + ' (' + tr('modal.unverifiedLink', 'Unverified') + ')' : name;
+          }).join(', ');
+        }
+        return label + ': ' + tr('common.unknown', 'Unknown');
+      }).join(' · ');
     }
 
     function detailRows(c) {
@@ -1191,6 +1234,13 @@ One hub.</h2>
           [tr('label.format', 'Format'), trFormat(c.format)],
         ];
       }
+      if (c.type === 'stream') {
+        return [
+          [tr('label.type', 'Type'), trMediaType(c.mediaType)],
+          [tr('label.episodes', 'Episodes'), c.episodes || null],
+          [tr('label.availability', 'Availability'), formatCountries(c)],
+        ];
+      }
       return [
         [tr('label.distributor', 'Distributor'), c.distributor],
         [tr('label.format', 'Format'), trFormat(c.format)],
@@ -1206,17 +1256,36 @@ One hub.</h2>
       if (!c) return;
       openModalId = id;
       const links = getBuyLinks(c);
-      const buyLinks = links.filter(l => l.kind !== 'stream');
+      const buyLinks = links.filter(l => l.kind !== 'stream' && l.kind !== 'rentbuy');
       const streamLinks = links.filter(l => l.kind === 'stream');
-      const linkBtn = l => `<a href="${escapeHtml(l.url)}" target="_blank" rel="noopener noreferrer" class="${l.modalClass}">${escapeHtml(l.label)} ↗</a>`;
+      const rentBuyLinks = links.filter(l => l.kind === 'rentbuy');
+      const linkBtn = l => `<a href="${escapeHtml(l.url)}" target="_blank" rel="noopener noreferrer" class="${l.modalClass}">${escapeHtml(l.label + (l.episode1 ? ' — ' + tr('modal.episode1Only', 'Episode 1 only') : '') + (l.unverified ? ' (' + tr('modal.unverifiedLink', 'Unverified') + ')' : '') + (l.free ? ' (' + tr('modal.freeBadge', 'Free') + ')' : ''))} ↗</a>`;
       const buyBtns = buyLinks.map(linkBtn).join('');
       const buySection = buyBtns
         ? `<div class="flex flex-wrap gap-2 pt-1">${buyBtns}</div>`
         : `<div class="text-xs text-slate-500 pt-1">${escapeHtml(tr('modal.noPurchaseLinks', 'No purchase links currently verified for this item — check back soon.'))}</div>`;
+      const buyBox = (buyLinks.length > 0 || (streamLinks.length === 0 && rentBuyLinks.length === 0))
+        ? `<div class="p-3.5 rounded-2xl bg-slate-900/90 border border-white/10 space-y-2">
+            <div class="text-xs uppercase font-bold text-slate-400">${escapeHtml(tr('modal.whereToBuy', 'Where to Buy:'))}</div>
+            ${buySection}
+            <p class="text-[11px] text-slate-500 pt-1">${escapeHtml(tr('modal.availabilityNote', 'Availability is re-checked daily. Amazon links are title searches, not stock evidence.'))}</p>
+          </div>`
+        : '';
+      const watchLinkThrough = c.watchId
+        ? `<button onclick="showDetail('${escapeHtml(c.watchId)}')" class="w-full text-center py-2 px-3 rounded-xl bg-sky-500/20 hover:bg-sky-500/30 border border-sky-500/40 text-sky-200 text-xs font-semibold transition">${escapeHtml(tr('modal.watchLinkThrough', 'Streaming options'))} →</button>`
+        : '';
       const streamSection = streamLinks.length
         ? `<div class="p-3.5 rounded-2xl bg-slate-900/90 border border-white/10 space-y-2">
             <div class="text-xs uppercase font-bold text-slate-400">${escapeHtml(tr('modal.streamHeading', 'Stream:'))}</div>
             <div class="flex flex-wrap gap-2 pt-1">${streamLinks.map(linkBtn).join('')}</div>
+            ${streamLinks.some(l => l.unverified) ? `<p class="text-[11px] text-slate-500">${escapeHtml(tr('modal.unverifiedLinksNote', 'Links marked Unverified were captured from JustWatch and could not be title-confirmed.'))}</p>` : ''}
+            ${streamLinks.some(l => l.store === 'youtube') ? `<p class="text-[11px] text-slate-500">${escapeHtml(tr('modal.youtubeEndNote', 'YouTube: free until March 31, 2027; availability may vary by country.'))}</p>` : ''}
+          </div>`
+        : '';
+      const rentBuySection = rentBuyLinks.length
+        ? `<div class="p-3.5 rounded-2xl bg-slate-900/90 border border-white/10 space-y-2">
+            <div class="text-xs uppercase font-bold text-slate-400">${escapeHtml(tr('modal.rentBuyHeading', 'Rent / Buy:'))}</div>
+            <div class="flex flex-wrap gap-2 pt-1">${rentBuyLinks.map(linkBtn).join('')}</div>
           </div>`
         : '';
       const notes = loc(c, 'notes');
@@ -1261,20 +1330,19 @@ One hub.</h2>
             </div>
           </div>
 
-          <!-- Where to Buy Links -->
-          <div class="p-3.5 rounded-2xl bg-slate-900/90 border border-white/10 space-y-2">
-            <div class="text-xs uppercase font-bold text-slate-400">${escapeHtml(tr('modal.whereToBuy', 'Where to Buy:'))}</div>
-            ${buySection}
-            <p class="text-[11px] text-slate-500 pt-1">${escapeHtml(tr('modal.availabilityNote', 'Availability is re-checked daily. Amazon links are title searches, not stock evidence.'))}</p>
-          </div>
+          ${buyBox}
+
+          ${watchLinkThrough}
 
           ${streamSection}
+
+          ${rentBuySection}
 
           ${notesSection}
           ${unverifiedSection}
 
           <div class="pt-3 border-t border-white/10 flex items-center justify-between">
-            <span class="text-xs text-slate-400">${escapeHtml(tr('modal.footerLine', 'Buyable in North America · Buy links verified daily'))}</span>
+            <span class="text-xs text-slate-400">${escapeHtml(c.type === 'stream' ? tr('modal.footerLineWatch', 'Streaming availability in North America') : tr('modal.footerLine', 'Buyable in North America · Buy links verified daily'))}</span>
             <button onclick="closeModal()" class="px-4 py-1.5 rounded-xl bg-red-600 hover:bg-red-500 text-white text-xs font-medium">${escapeHtml(tr('modal.close', 'Close'))}</button>
           </div>
         </div>
