@@ -1072,8 +1072,8 @@
       const byDate = (a, b, desc) => {
         const da = a.releaseDate || '', db = b.releaseDate || '';
         if (!da && !db) return 0;
-        if (!da) return 1;
-        if (!db) return -1;
+        if (!da) return desc ? -1 : 1;
+        if (!db) return desc ? 1 : -1;
         return desc ? db.localeCompare(da) : da.localeCompare(db);
       };
       list.sort((a, b) => {

@@ -1,5 +1,266 @@
 [
   {
+    "id": "blitz-order",
+    "title": "Gundam Blitz Order",
+    "publisher": "Bandai Namco Entertainment",
+    "platforms": [
+      "iOS",
+      "Android"
+    ],
+    "releaseDate": null,
+    "model": "Free-to-play",
+    "format": "Digital only",
+    "status": "Upcoming",
+    "type": "game",
+    "links": [],
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "releaseNote": "Announced 15 Oct 2026; closed network test 18–24 Nov 2026; no release date.",
+    "notes": [
+      "Free-to-play idle simulation (reported)."
+    ],
+    "unverified": [
+      "Canada launch UNVERIFIED — the English network test covers residents of the US and England only; Canada was not listed."
+    ],
+    "coverUrl": "https://gundam-blitzorder.ggame.jp/images/localized/en/ogp.jpg"
+  },
+  {
+    "id": "breaker-4",
+    "title": "Gundam Breaker 4",
+    "publisher": "Bandai Namco Entertainment",
+    "platforms": [
+      "PS4",
+      "PS5",
+      "Switch",
+      "Steam"
+    ],
+    "releaseDate": "2024-08-29",
+    "model": "Paid",
+    "format": "Physical + digital",
+    "status": "Released",
+    "type": "game",
+    "links": [
+      {
+        "store": "amazon",
+        "label": "Amazon",
+        "url": "https://www.amazon.com/s?k=Gundam+Breaker+4+game",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "steam",
+        "label": "Steam",
+        "url": "https://store.steampowered.com/app/1672500/GUNDAM_BREAKER_4/",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "playstation",
+        "label": "PlayStation Store",
+        "url": "https://store.playstation.com/en-us/product/UP0700-PPSA08065_00-GUNDAMBREAKER4P1/",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "nintendo",
+        "label": "Nintendo eShop",
+        "url": "https://www.nintendo.com/store/products/gundam-breaker-4-switch",
+        "status": "unknown",
+        "reason": "unverifiable"
+      }
+    ],
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Global launch 29 Aug 2024 (Steam US shows 28 Aug — timezone artifact)."
+    ],
+    "unverified": [
+      "Whether a North American PS4 physical disc exists is UNVERIFIED — Bandai's page names only PS5/Switch physical pre-orders.",
+      "Online co-op activity not independently verified; no shutdown announced as of 16 Nov 2026."
+    ],
+    "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1672500/header.jpg"
+  },
+  {
+    "id": "rogue-orbit",
+    "title": "Gundam Rogue Orbit",
+    "publisher": "Bandai Namco Entertainment",
+    "platforms": [
+      "PS5",
+      "Xbox Series X|S",
+      "Steam"
+    ],
+    "releaseDate": "2027-03-05",
+    "model": "Paid",
+    "format": "Physical + digital",
+    "status": "Upcoming",
+    "type": "game",
+    "links": [
+      {
+        "store": "amazon",
+        "label": "Amazon",
+        "url": "https://www.amazon.com/s?k=Gundam+Rogue+Orbit+game",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "steam",
+        "label": "Steam",
+        "url": "https://store.steampowered.com/app/1963680/GUNDAM_ROGUE_ORBIT/",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "playstation",
+        "label": "PlayStation Store",
+        "url": "https://www.playstation.com/en-us/games/gundam-rogue-orbit/",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "xbox",
+        "label": "Xbox Store",
+        "url": "https://www.xbox.com/en-us/games/store/productid/9PND4CGSV9SX",
+        "status": "unknown",
+        "reason": "unverifiable"
+      }
+    ],
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Announced at Summer Game Fest, 5 Jun 2026; release date set 3 Sep 2026. Pre-orders open.",
+      "Pre-orders confirmed at Best Buy Canada and Best Buy US (live checks, Nov 2026).",
+      "No Switch / Switch 2 version announced."
+    ],
+    "unverified": [
+      "Steam US displays 4 Mar 2027 (timezone artifact).",
+      "A single retailer's social post claimed a Switch 2 logo — UNVERIFIED / likely erroneous.",
+      "Physical/digital split per platform UNVERIFIED."
+    ],
+    "coverUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202605/2502/84dce1a62f92c2df911d171b79a819defd8ec5e1d0b69f81.png"
+  },
+  {
+    "id": "gundam-versus",
+    "title": "Gundam Versus",
+    "publisher": "Bandai Namco Entertainment America",
+    "platforms": [
+      "PS4"
+    ],
+    "releaseDate": "2017-09-29",
+    "model": "Paid",
+    "format": "Digital only",
+    "status": "Released",
+    "type": "game",
+    "links": [
+      {
+        "store": "amazon",
+        "label": "Amazon",
+        "url": "https://www.amazon.com/s?k=Gundam+Versus+game",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "playstation",
+        "label": "PlayStation Store",
+        "url": "https://store.playstation.com/en-us/product/UP0700-CUSA08790_00-GUNDAMVSPKG00001",
+        "status": "unknown",
+        "reason": "unverifiable"
+      }
+    ],
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "PS4 exclusive arena battler.",
+      "Physical edition is pre-owned/marketplace only; listed here for its digital availability."
+    ],
+    "unverified": [
+      "Release date reported as both 28 and 29 Sep 2017 (UNVERIFIED which is canonical).",
+      "Online server status UNVERIFIED — no shutdown found and no 2026 liveness proof; versus modes are online-only on console."
+    ],
+    "coverUrl": "https://image.api.playstation.com/cdn/UP0700/CUSA08790_00/M7yhDEE3OpagZox4mevaMrmiSsWStIne.png"
+  },
+  {
+    "id": "seed-battle-destiny-remastered",
+    "title": "Mobile Suit Gundam SEED Battle Destiny Remastered",
+    "publisher": "Bandai Namco Entertainment",
+    "platforms": [
+      "Switch",
+      "Steam"
+    ],
+    "releaseDate": "2025-05-22",
+    "model": "Paid",
+    "format": "Digital only",
+    "status": "Released",
+    "type": "game",
+    "links": [
+      {
+        "store": "steam",
+        "label": "Steam",
+        "url": "https://store.steampowered.com/app/1857740/MOBILE_SUIT_GUNDAM_SEED_BATTLE_DESTINY_REMASTERED/",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "nintendo",
+        "label": "Nintendo eShop",
+        "url": "https://www.nintendo.com/us/store/products/mobile-suit-gundam-seed-battle-destiny-remastered-switch/",
+        "status": "unknown",
+        "reason": "unverifiable"
+      }
+    ],
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Worldwide digital release with the game's first-ever official English localization.",
+      "Digital-only in the West."
+    ],
+    "unverified": [
+      "Whether the Japan physical edition includes English text is UNVERIFIED.",
+      "Some listings show 21 May 2025 (timezone/unlock artifact).",
+      "A Switch 2 compatibility note seen in one forum snippet is UNVERIFIED."
+    ],
+    "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1857740/header.jpg"
+  },
+  {
+    "id": "uc-engage",
+    "title": "Mobile Suit Gundam U.C. ENGAGE",
+    "publisher": "Bandai Namco Entertainment",
+    "platforms": [
+      "iOS",
+      "Android"
+    ],
+    "releaseDate": "2023-10-17",
+    "model": "Free-to-play",
+    "format": "Digital only",
+    "status": "Released",
+    "type": "game",
+    "links": [
+      {
+        "store": "apple",
+        "label": "App Store",
+        "url": "https://apps.apple.com/us/app/mobile-suit-gundam-u-c-engage/id6448015376",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "google",
+        "label": "Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.bandainamcoent.gundamucengage_ww",
+        "status": "unknown",
+        "reason": "unverifiable"
+      }
+    ],
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Worldwide version (separate app from the Japan version); live — Google Play updated 29 Oct 2026."
+    ],
+    "unverified": [
+      "Worldwide-version date (17 Oct 2023) is UNVERIFIED.",
+      "Canada store presence UNVERIFIED."
+    ],
+    "coverUrl": "https://play-lh.googleusercontent.com/8-wxMnTOhi11pghfbSIt0pwGkVl80a1IXs6YxTGmWTnRkQKIeMsPt2ZITyW5VwvFTicttv7RMJq7qRVZ9pu9bw=w1052-h592"
+  },
+  {
     "id": "battle-operation-2",
     "title": "Mobile Suit Gundam: Battle Operation 2",
     "publisher": "Bandai Namco Entertainment America",
@@ -43,6 +304,47 @@
     "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1367080/header.jpg"
   },
   {
+    "id": "battle-operation-3",
+    "title": "Mobile Suit Gundam: Battle Operation 3",
+    "publisher": "Bandai Namco Entertainment",
+    "platforms": [
+      "PS5",
+      "Steam"
+    ],
+    "releaseDate": null,
+    "model": "Free-to-play",
+    "format": "Digital only",
+    "status": "Upcoming",
+    "type": "game",
+    "links": [
+      {
+        "store": "steam",
+        "label": "Steam",
+        "url": "https://store.steampowered.com/app/2303000/MOBILE_SUIT_GUNDAM_BATTLE_OPERATION_3/",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "playstation",
+        "label": "PlayStation Store",
+        "url": "https://store.playstation.com/en-us/concept/10011044",
+        "status": "unknown",
+        "reason": "unverifiable"
+      }
+    ],
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "releaseNote": "Announced 28 Oct 2026; no release date announced.",
+    "notes": [
+      "Announced 28 Oct 2026 during the Gundam Games 40th Anniversary livestream. Free-to-play team combat with cross-play.",
+      "Closed network test is Japan-only (20 & 22 Nov 2026)."
+    ],
+    "unverified": [
+      "North American launch UNVERIFIED — no launch-country list announced; Battle Operation 2 took ~14 months to reach NA after Japan."
+    ],
+    "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2303000/a5a86be4fc6b62ecfe4969fd836cbbc4180f286c/header.jpg"
+  },
+  {
     "id": "code-fairy",
     "title": "Mobile Suit Gundam: Battle Operation Code Fairy",
     "publisher": "Bandai Namco Entertainment America",
@@ -74,6 +376,120 @@
       "Whether the Deluxe Edition is currently purchasable on the US PlayStation Store is UNVERIFIED (conflicting evidence) — needs a live storefront check."
     ],
     "coverUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202110/1516/E9KUroj85R1W0N86rHqs8mtd.png"
+  },
+  {
+    "id": "maxiboost-on",
+    "title": "Mobile Suit Gundam: Extreme Vs. Maxiboost ON",
+    "publisher": "Bandai Namco Entertainment America",
+    "platforms": [
+      "PS4"
+    ],
+    "releaseDate": "2020-07-30",
+    "model": "Paid",
+    "format": "Digital only",
+    "status": "Released",
+    "type": "game",
+    "links": [
+      {
+        "store": "playstation",
+        "label": "PlayStation Store",
+        "url": "https://store.playstation.com/en-us/product/UP0700-CUSA18758_00-EXTREMEVSMBONPKG",
+        "status": "unknown",
+        "reason": "unverifiable"
+      }
+    ],
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Digital-only in North America and Europe; physical editions exist only in Japan and Asia (imports, excluded here)."
+    ],
+    "unverified": [
+      "No explicit publisher 'digital-only in the West' statement was found — strong retailer/blog evidence only.",
+      "Online matchmaking status UNVERIFIED — no shutdown found; offline play against CPU available regardless."
+    ],
+    "coverUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202006/0913/TeXq1rCfgUpptXglhNL9rLC8.png"
+  },
+  {
+    "id": "silver-phantom",
+    "title": "Mobile Suit Gundam: Silver Phantom",
+    "publisher": "Bandai Namco Filmworks",
+    "platforms": [
+      "Meta Quest 2",
+      "Meta Quest 3"
+    ],
+    "releaseDate": "2024-10-03",
+    "model": "Paid",
+    "format": "Digital only",
+    "status": "Released",
+    "type": "game",
+    "links": [
+      {
+        "store": "meta",
+        "label": "Meta Quest Store",
+        "url": "https://www.meta.com/experiences/mobile-suit-gundam-silver-phantom/6811683248909506/",
+        "status": "unknown",
+        "reason": "unverifiable"
+      }
+    ],
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Interactive VR film (paid VR experience), not a conventional game. Worldwide release on the Meta Quest Store.",
+      "Meta Quest Store page confirmed live with Canadian storefront pricing on a live check, 17 Nov 2026."
+    ],
+    "unverified": [
+      "Release date reported as 3/4 Oct 2024 (timezone artifact).",
+      "Meta Quest 3S support UNVERIFIED.",
+      "English + Japanese audio UNVERIFIED."
+    ],
+    "coverUrl": "https://gundam-official.com/media/i/gundaminfo/jp/news/2024/03/240322_SilverPhantom/thumbnail.jpg"
+  },
+  {
+    "id": "new-gundam-breaker",
+    "title": "New Gundam Breaker",
+    "publisher": "Bandai Namco Entertainment",
+    "platforms": [
+      "PS4",
+      "Steam"
+    ],
+    "releaseDate": "2018-06-22",
+    "model": "Paid",
+    "format": "Digital only",
+    "status": "Released",
+    "type": "game",
+    "links": [
+      {
+        "store": "amazon",
+        "label": "Amazon",
+        "url": "https://www.amazon.com/s?k=New+Gundam+Breaker+game",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "steam",
+        "label": "Steam",
+        "url": "https://store.steampowered.com/app/738530/New_Gundam_Breaker/",
+        "status": "unknown",
+        "reason": "unverifiable"
+      },
+      {
+        "store": "playstation",
+        "label": "PlayStation Store",
+        "url": "https://store.playstation.com/en-us/product/UP0700-CUSA11566_00-NGUNDAMBREAKER1M",
+        "status": "unknown",
+        "reason": "unverifiable"
+      }
+    ],
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "PS4 release 22 Jun 2018; Steam release 24 Sep 2018.",
+      "Physical edition is used/marketplace only; listed here for its digital availability."
+    ],
+    "unverified": [
+      "Current PlayStation Store US listing UNVERIFIED — no direct PS Store page was fetched."
+    ],
+    "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/738530/header.jpg"
   },
   {
     "id": "battle-alliance",
@@ -135,181 +551,6 @@
     "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/824550/header.jpg"
   },
   {
-    "id": "breaker-4",
-    "title": "Gundam Breaker 4",
-    "publisher": "Bandai Namco Entertainment",
-    "platforms": [
-      "PS4",
-      "PS5",
-      "Switch",
-      "Steam"
-    ],
-    "releaseDate": "2024-08-29",
-    "model": "Paid",
-    "format": "Physical + digital",
-    "status": "Released",
-    "type": "game",
-    "links": [
-      {
-        "store": "amazon",
-        "label": "Amazon",
-        "url": "https://www.amazon.com/s?k=Gundam+Breaker+4+game",
-        "status": "unknown",
-        "reason": "unverifiable"
-      },
-      {
-        "store": "steam",
-        "label": "Steam",
-        "url": "https://store.steampowered.com/app/1672500/GUNDAM_BREAKER_4/",
-        "status": "unknown",
-        "reason": "unverifiable"
-      },
-      {
-        "store": "playstation",
-        "label": "PlayStation Store",
-        "url": "https://store.playstation.com/en-us/product/UP0700-PPSA08065_00-GUNDAMBREAKER4P1/",
-        "status": "unknown",
-        "reason": "unverifiable"
-      },
-      {
-        "store": "nintendo",
-        "label": "Nintendo eShop",
-        "url": "https://www.nintendo.com/store/products/gundam-breaker-4-switch",
-        "status": "unknown",
-        "reason": "unverifiable"
-      }
-    ],
-    "availability": "unknown",
-    "unavailableStreak": 0,
-    "notes": [
-      "Global launch 29 Aug 2024 (Steam US shows 28 Aug — timezone artifact)."
-    ],
-    "unverified": [
-      "Whether a North American PS4 physical disc exists is UNVERIFIED — Bandai's page names only PS5/Switch physical pre-orders.",
-      "Online co-op activity not independently verified; no shutdown announced as of 16 Nov 2026."
-    ],
-    "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1672500/header.jpg"
-  },
-  {
-    "id": "new-gundam-breaker",
-    "title": "New Gundam Breaker",
-    "publisher": "Bandai Namco Entertainment",
-    "platforms": [
-      "PS4",
-      "Steam"
-    ],
-    "releaseDate": "2018-06-22",
-    "model": "Paid",
-    "format": "Digital only",
-    "status": "Released",
-    "type": "game",
-    "links": [
-      {
-        "store": "amazon",
-        "label": "Amazon",
-        "url": "https://www.amazon.com/s?k=New+Gundam+Breaker+game",
-        "status": "unknown",
-        "reason": "unverifiable"
-      },
-      {
-        "store": "steam",
-        "label": "Steam",
-        "url": "https://store.steampowered.com/app/738530/New_Gundam_Breaker/",
-        "status": "unknown",
-        "reason": "unverifiable"
-      },
-      {
-        "store": "playstation",
-        "label": "PlayStation Store",
-        "url": "https://store.playstation.com/en-us/product/UP0700-CUSA11566_00-NGUNDAMBREAKER1M",
-        "status": "unknown",
-        "reason": "unverifiable"
-      }
-    ],
-    "availability": "unknown",
-    "unavailableStreak": 0,
-    "notes": [
-      "PS4 release 22 Jun 2018; Steam release 24 Sep 2018.",
-      "Physical edition is used/marketplace only; listed here for its digital availability."
-    ],
-    "unverified": [
-      "Current PlayStation Store US listing UNVERIFIED — no direct PS Store page was fetched."
-    ],
-    "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/738530/header.jpg"
-  },
-  {
-    "id": "gundam-versus",
-    "title": "Gundam Versus",
-    "publisher": "Bandai Namco Entertainment America",
-    "platforms": [
-      "PS4"
-    ],
-    "releaseDate": "2017-09-29",
-    "model": "Paid",
-    "format": "Digital only",
-    "status": "Released",
-    "type": "game",
-    "links": [
-      {
-        "store": "amazon",
-        "label": "Amazon",
-        "url": "https://www.amazon.com/s?k=Gundam+Versus+game",
-        "status": "unknown",
-        "reason": "unverifiable"
-      },
-      {
-        "store": "playstation",
-        "label": "PlayStation Store",
-        "url": "https://store.playstation.com/en-us/product/UP0700-CUSA08790_00-GUNDAMVSPKG00001",
-        "status": "unknown",
-        "reason": "unverifiable"
-      }
-    ],
-    "availability": "unknown",
-    "unavailableStreak": 0,
-    "notes": [
-      "PS4 exclusive arena battler.",
-      "Physical edition is pre-owned/marketplace only; listed here for its digital availability."
-    ],
-    "unverified": [
-      "Release date reported as both 28 and 29 Sep 2017 (UNVERIFIED which is canonical).",
-      "Online server status UNVERIFIED — no shutdown found and no 2026 liveness proof; versus modes are online-only on console."
-    ],
-    "coverUrl": "https://image.api.playstation.com/cdn/UP0700/CUSA08790_00/M7yhDEE3OpagZox4mevaMrmiSsWStIne.png"
-  },
-  {
-    "id": "maxiboost-on",
-    "title": "Mobile Suit Gundam: Extreme Vs. Maxiboost ON",
-    "publisher": "Bandai Namco Entertainment America",
-    "platforms": [
-      "PS4"
-    ],
-    "releaseDate": "2020-07-30",
-    "model": "Paid",
-    "format": "Digital only",
-    "status": "Released",
-    "type": "game",
-    "links": [
-      {
-        "store": "playstation",
-        "label": "PlayStation Store",
-        "url": "https://store.playstation.com/en-us/product/UP0700-CUSA18758_00-EXTREMEVSMBONPKG",
-        "status": "unknown",
-        "reason": "unverifiable"
-      }
-    ],
-    "availability": "unknown",
-    "unavailableStreak": 0,
-    "notes": [
-      "Digital-only in North America and Europe; physical editions exist only in Japan and Asia (imports, excluded here)."
-    ],
-    "unverified": [
-      "No explicit publisher 'digital-only in the West' statement was found — strong retailer/blog evidence only.",
-      "Online matchmaking status UNVERIFIED — no shutdown found; offline play against CPU available regardless."
-    ],
-    "coverUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202006/0913/TeXq1rCfgUpptXglhNL9rLC8.png"
-  },
-  {
     "id": "cross-rays",
     "title": "SD Gundam G Generation Cross Rays",
     "publisher": "Bandai Namco Entertainment America",
@@ -337,48 +578,6 @@
       "Single-player tactical RPG; no server question."
     ],
     "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/728530/header.jpg"
-  },
-  {
-    "id": "seed-battle-destiny-remastered",
-    "title": "Mobile Suit Gundam SEED Battle Destiny Remastered",
-    "publisher": "Bandai Namco Entertainment",
-    "platforms": [
-      "Switch",
-      "Steam"
-    ],
-    "releaseDate": "2025-05-22",
-    "model": "Paid",
-    "format": "Digital only",
-    "status": "Released",
-    "type": "game",
-    "links": [
-      {
-        "store": "steam",
-        "label": "Steam",
-        "url": "https://store.steampowered.com/app/1857740/MOBILE_SUIT_GUNDAM_SEED_BATTLE_DESTINY_REMASTERED/",
-        "status": "unknown",
-        "reason": "unverifiable"
-      },
-      {
-        "store": "nintendo",
-        "label": "Nintendo eShop",
-        "url": "https://www.nintendo.com/us/store/products/mobile-suit-gundam-seed-battle-destiny-remastered-switch/",
-        "status": "unknown",
-        "reason": "unverifiable"
-      }
-    ],
-    "availability": "unknown",
-    "unavailableStreak": 0,
-    "notes": [
-      "Worldwide digital release with the game's first-ever official English localization.",
-      "Digital-only in the West."
-    ],
-    "unverified": [
-      "Whether the Japan physical edition includes English text is UNVERIFIED.",
-      "Some listings show 21 May 2025 (timezone/unlock artifact).",
-      "A Switch 2 compatibility note seen in one forum snippet is UNVERIFIED."
-    ],
-    "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1857740/header.jpg"
   },
   {
     "id": "g-generation-eternal",
@@ -419,81 +618,6 @@
       "Google Play Games for PC availability (from 16 Oct 2025) rests on a single source — UNVERIFIED."
     ],
     "coverUrl": "https://play-lh.googleusercontent.com/8gvHIJI39Ei6vCTdWaI4UIKgMLzGuWI5eI29empk9EoBVEhfaaat3Bj9mLlXMZpzCkpos7qmJ936yiv5_edSew=s0-br30"
-  },
-  {
-    "id": "uc-engage",
-    "title": "Mobile Suit Gundam U.C. ENGAGE",
-    "publisher": "Bandai Namco Entertainment",
-    "platforms": [
-      "iOS",
-      "Android"
-    ],
-    "releaseDate": "2023-10-17",
-    "model": "Free-to-play",
-    "format": "Digital only",
-    "status": "Released",
-    "type": "game",
-    "links": [
-      {
-        "store": "apple",
-        "label": "App Store",
-        "url": "https://apps.apple.com/us/app/mobile-suit-gundam-u-c-engage/id6448015376",
-        "status": "unknown",
-        "reason": "unverifiable"
-      },
-      {
-        "store": "google",
-        "label": "Google Play",
-        "url": "https://play.google.com/store/apps/details?id=com.bandainamcoent.gundamucengage_ww",
-        "status": "unknown",
-        "reason": "unverifiable"
-      }
-    ],
-    "availability": "unknown",
-    "unavailableStreak": 0,
-    "notes": [
-      "Worldwide version (separate app from the Japan version); live — Google Play updated 29 Oct 2026."
-    ],
-    "unverified": [
-      "Worldwide-version date (17 Oct 2023) is UNVERIFIED.",
-      "Canada store presence UNVERIFIED."
-    ],
-    "coverUrl": "https://play-lh.googleusercontent.com/8-wxMnTOhi11pghfbSIt0pwGkVl80a1IXs6YxTGmWTnRkQKIeMsPt2ZITyW5VwvFTicttv7RMJq7qRVZ9pu9bw=w1052-h592"
-  },
-  {
-    "id": "silver-phantom",
-    "title": "Mobile Suit Gundam: Silver Phantom",
-    "publisher": "Bandai Namco Filmworks",
-    "platforms": [
-      "Meta Quest 2",
-      "Meta Quest 3"
-    ],
-    "releaseDate": "2024-10-03",
-    "model": "Paid",
-    "format": "Digital only",
-    "status": "Released",
-    "type": "game",
-    "links": [
-      {
-        "store": "meta",
-        "label": "Meta Quest Store",
-        "url": "https://www.meta.com/experiences/mobile-suit-gundam-silver-phantom/6811683248909506/",
-        "status": "unknown",
-        "reason": "unverifiable"
-      }
-    ],
-    "availability": "unknown",
-    "unavailableStreak": 0,
-    "notes": [
-      "Interactive VR film (paid VR experience), not a conventional game. Worldwide release on the Meta Quest Store.",
-      "Meta Quest Store page confirmed live with Canadian storefront pricing on a live check, 17 Nov 2026."
-    ],
-    "unverified": [
-      "Release date reported as 3/4 Oct 2024 (timezone artifact).",
-      "Meta Quest 3S support UNVERIFIED.",
-      "English + Japanese audio UNVERIFIED."
-    ],
-    "coverUrl": "https://gundam-official.com/media/i/gundaminfo/jp/news/2024/03/240322_SilverPhantom/thumbnail.jpg"
   },
   {
     "id": "srw-30",
@@ -572,129 +696,5 @@
       "Canada console presence UNVERIFIED."
     ],
     "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1909950/0140613381aeca94a47c0edc87d3056e059b8abc/header.jpg"
-  },
-  {
-    "id": "rogue-orbit",
-    "title": "Gundam Rogue Orbit",
-    "publisher": "Bandai Namco Entertainment",
-    "platforms": [
-      "PS5",
-      "Xbox Series X|S",
-      "Steam"
-    ],
-    "releaseDate": "2027-03-05",
-    "model": "Paid",
-    "format": "Physical + digital",
-    "status": "Upcoming",
-    "type": "game",
-    "links": [
-      {
-        "store": "amazon",
-        "label": "Amazon",
-        "url": "https://www.amazon.com/s?k=Gundam+Rogue+Orbit+game",
-        "status": "unknown",
-        "reason": "unverifiable"
-      },
-      {
-        "store": "steam",
-        "label": "Steam",
-        "url": "https://store.steampowered.com/app/1963680/GUNDAM_ROGUE_ORBIT/",
-        "status": "unknown",
-        "reason": "unverifiable"
-      },
-      {
-        "store": "playstation",
-        "label": "PlayStation Store",
-        "url": "https://www.playstation.com/en-us/games/gundam-rogue-orbit/",
-        "status": "unknown",
-        "reason": "unverifiable"
-      },
-      {
-        "store": "xbox",
-        "label": "Xbox Store",
-        "url": "https://www.xbox.com/en-us/games/store/productid/9PND4CGSV9SX",
-        "status": "unknown",
-        "reason": "unverifiable"
-      }
-    ],
-    "availability": "unknown",
-    "unavailableStreak": 0,
-    "notes": [
-      "Announced at Summer Game Fest, 5 Jun 2026; release date set 3 Sep 2026. Pre-orders open.",
-      "Pre-orders confirmed at Best Buy Canada and Best Buy US (live checks, Nov 2026).",
-      "No Switch / Switch 2 version announced."
-    ],
-    "unverified": [
-      "Steam US displays 4 Mar 2027 (timezone artifact).",
-      "A single retailer's social post claimed a Switch 2 logo — UNVERIFIED / likely erroneous.",
-      "Physical/digital split per platform UNVERIFIED."
-    ],
-    "coverUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202605/2502/84dce1a62f92c2df911d171b79a819defd8ec5e1d0b69f81.png"
-  },
-  {
-    "id": "battle-operation-3",
-    "title": "Mobile Suit Gundam: Battle Operation 3",
-    "publisher": "Bandai Namco Entertainment",
-    "platforms": [
-      "PS5",
-      "Steam"
-    ],
-    "releaseDate": null,
-    "model": "Free-to-play",
-    "format": "Digital only",
-    "status": "Upcoming",
-    "type": "game",
-    "links": [
-      {
-        "store": "steam",
-        "label": "Steam",
-        "url": "https://store.steampowered.com/app/2303000/MOBILE_SUIT_GUNDAM_BATTLE_OPERATION_3/",
-        "status": "unknown",
-        "reason": "unverifiable"
-      },
-      {
-        "store": "playstation",
-        "label": "PlayStation Store",
-        "url": "https://store.playstation.com/en-us/concept/10011044",
-        "status": "unknown",
-        "reason": "unverifiable"
-      }
-    ],
-    "availability": "unknown",
-    "unavailableStreak": 0,
-    "releaseNote": "Announced 28 Oct 2026; no release date announced.",
-    "notes": [
-      "Announced 28 Oct 2026 during the Gundam Games 40th Anniversary livestream. Free-to-play team combat with cross-play.",
-      "Closed network test is Japan-only (20 & 22 Nov 2026)."
-    ],
-    "unverified": [
-      "North American launch UNVERIFIED — no launch-country list announced; Battle Operation 2 took ~14 months to reach NA after Japan."
-    ],
-    "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2303000/a5a86be4fc6b62ecfe4969fd836cbbc4180f286c/header.jpg"
-  },
-  {
-    "id": "blitz-order",
-    "title": "Gundam Blitz Order",
-    "publisher": "Bandai Namco Entertainment",
-    "platforms": [
-      "iOS",
-      "Android"
-    ],
-    "releaseDate": null,
-    "model": "Free-to-play",
-    "format": "Digital only",
-    "status": "Upcoming",
-    "type": "game",
-    "links": [],
-    "availability": "unknown",
-    "unavailableStreak": 0,
-    "releaseNote": "Announced 15 Oct 2026; closed network test 18–24 Nov 2026; no release date.",
-    "notes": [
-      "Free-to-play idle simulation (reported)."
-    ],
-    "unverified": [
-      "Canada launch UNVERIFIED — the English network test covers residents of the US and England only; Canada was not listed."
-    ],
-    "coverUrl": "https://gundam-blitzorder.ggame.jp/images/localized/en/ogp.jpg"
   }
 ]
