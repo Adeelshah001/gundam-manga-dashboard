@@ -366,7 +366,8 @@
   <!-- LANDING VIEW -->
   <section id="view-landing" class="flex-1 px-4 lg:px-8 py-8">
     <div class="text-center mb-8">
-      <h2 id="landingHeading" class="text-3xl sm:text-4xl font-bold text-white tracking-tight leading-tight">Every Gundam story. One hub.</h2>
+      <h2 id="landingHeading" class="text-3xl sm:text-4xl font-bold text-white tracking-tight leading-tight whitespace-pre-line">Every Gundam story.
+One hub.</h2>
     </div>
 
     <div id="hubCard" class="hub-card" role="group" aria-label="Media types">
@@ -633,7 +634,7 @@
       const syncBtn = document.getElementById('liveSyncBtn');
       if (syncBtn) syncBtn.title = tr('header.liveSyncTooltip', 'Check for the latest catalog data');
       renderSyncButton();
-      setText('landingHeading', tr('landing.heading', 'Every Gundam story. One hub.'));
+      setText('landingHeading', tr('landing.heading', 'Every Gundam story.\nOne hub.'));
       const hubCard = document.getElementById('hubCard');
       if (hubCard) hubCard.setAttribute('aria-label', tr('landing.mediaTypesAria', 'Media types'));
       const strips = [
