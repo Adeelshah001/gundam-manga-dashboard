@@ -91,6 +91,7 @@
     "model.freeToPlay": "Gratuito",
     "model.paid": "De pago",
     "search.placeholder": "Buscar títulos, creadores, editoriales...",
+    "sort.originalDesc": "Fecha de lanzamiento original: más recientes primero",
     "sort.releaseAsc": "Fecha de lanzamiento: más antiguos primero",
     "sort.releaseDesc": "Fecha de lanzamiento: más recientes primero",
     "sort.seriesVol": "Por serie y luego por volumen",

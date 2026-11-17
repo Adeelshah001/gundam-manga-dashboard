@@ -35,6 +35,7 @@
       "Steam"
     ],
     "releaseDate": "2024-08-29",
+    "originalDate": "2024-08-29",
     "model": "Paid",
     "format": "Physical + digital",
     "status": "Released",
@@ -90,6 +91,7 @@
       "Steam"
     ],
     "releaseDate": "2027-03-05",
+    "originalDate": "2027-03-05",
     "model": "Paid",
     "format": "Physical + digital",
     "status": "Upcoming",
@@ -146,6 +148,7 @@
       "PS4"
     ],
     "releaseDate": "2017-09-29",
+    "originalDate": "2017-07-06",
     "model": "Paid",
     "format": "Digital only",
     "status": "Released",
@@ -187,6 +190,7 @@
       "Steam"
     ],
     "releaseDate": "2025-05-22",
+    "originalDate": "2025-05-22",
     "model": "Paid",
     "format": "Digital only",
     "status": "Released",
@@ -229,6 +233,7 @@
       "Android"
     ],
     "releaseDate": "2023-10-17",
+    "originalDate": "2021-11-30",
     "model": "Free-to-play",
     "format": "Digital only",
     "status": "Released",
@@ -270,6 +275,7 @@
       "Steam"
     ],
     "releaseDate": "2019-10-01",
+    "originalDate": "2018-07-26",
     "model": "Free-to-play",
     "format": "Digital only",
     "status": "Released",
@@ -353,6 +359,7 @@
       "PS5"
     ],
     "releaseDate": "2021-11-05",
+    "originalDate": "2021-11-05",
     "model": "Paid",
     "format": "Digital only",
     "status": "Released",
@@ -385,6 +392,7 @@
       "PS4"
     ],
     "releaseDate": "2020-07-30",
+    "originalDate": "2020-07-30",
     "model": "Paid",
     "format": "Digital only",
     "status": "Released",
@@ -418,6 +426,7 @@
       "Meta Quest 3"
     ],
     "releaseDate": "2024-10-03",
+    "originalDate": "2024-10-03",
     "model": "Paid",
     "format": "Digital only",
     "status": "Released",
@@ -453,6 +462,7 @@
       "Steam"
     ],
     "releaseDate": "2018-06-22",
+    "originalDate": "2018-06-21",
     "model": "Paid",
     "format": "Digital only",
     "status": "Released",
@@ -504,6 +514,7 @@
       "Steam"
     ],
     "releaseDate": "2022-08-25",
+    "originalDate": "2022-08-25",
     "model": "Paid",
     "format": "Digital only",
     "status": "Released",
@@ -558,6 +569,7 @@
       "Steam"
     ],
     "releaseDate": "2019-11-27",
+    "originalDate": "2019-11-27",
     "model": "Paid",
     "format": "Digital only",
     "status": "Released",
@@ -588,6 +600,7 @@
       "Android"
     ],
     "releaseDate": "2025-04-16",
+    "originalDate": "2025-04-16",
     "model": "Free-to-play",
     "format": "Digital only",
     "status": "Released",
@@ -627,6 +640,7 @@
       "Steam"
     ],
     "releaseDate": "2021-10-28",
+    "originalDate": "2021-10-27",
     "model": "Paid",
     "format": "Digital only",
     "status": "Released",
@@ -658,6 +672,7 @@
       "Steam"
     ],
     "releaseDate": "2025-08-28",
+    "originalDate": "2025-08-28",
     "model": "Paid",
     "format": "Digital only",
     "status": "Released",

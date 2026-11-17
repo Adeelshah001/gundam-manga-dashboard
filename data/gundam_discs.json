@@ -7,6 +7,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "Short",
+    "originalDate": "2026-05-15",
     "links": [
       {
         "store": "youtube",
@@ -36,6 +37,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "TV series",
+    "originalDate": "1996-04-05",
     "episodes": 39,
     "links": [
       {
@@ -103,6 +105,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "TV series",
+    "originalDate": "2018-04-03",
     "episodes": 25,
     "links": [
       {
@@ -160,6 +163,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "ONA",
+    "originalDate": "2019-10-10",
     "episodes": 26,
     "links": [
       {
@@ -211,6 +215,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "TV series",
+    "originalDate": "2013-10-07",
     "episodes": 25,
     "links": [
       {
@@ -251,6 +256,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "TV series",
+    "originalDate": "2014-10-08",
     "episodes": 25,
     "links": [
       {
@@ -292,6 +298,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "Film",
+    "originalDate": "1997-01-25",
     "links": [
       {
         "store": "crunchyroll-stream",
@@ -340,6 +347,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "TV series",
+    "originalDate": "1994-04-22",
     "episodes": 49,
     "links": [
       {
@@ -394,6 +402,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "TV series",
+    "originalDate": "1979-04-07",
     "links": [
       {
         "store": "crunchyroll-stream",
@@ -444,6 +453,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "TV series",
+    "originalDate": "2007-10-06",
     "episodes": 50,
     "links": [
       {
@@ -511,6 +521,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "Film",
+    "originalDate": "2010-09-18",
     "links": [
       {
         "store": "crunchyroll-stream",
@@ -558,6 +569,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "TV series",
+    "originalDate": "2011-10-09",
     "episodes": 49,
     "links": [
       {
@@ -597,6 +609,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "TV series",
+    "originalDate": "2025-04-08",
     "episodes": 12,
     "links": [
       {
@@ -638,6 +651,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "Film",
+    "originalDate": "2021-06-11",
     "links": [
       {
         "store": "netflix",
@@ -676,6 +690,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "Film",
+    "originalDate": "2026-01-30",
     "links": [
       {
         "store": "netflix",
@@ -711,6 +726,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "Film",
+    "originalDate": "1981-03-14",
     "links": [
       {
         "store": "youtube",
@@ -751,6 +767,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "Film",
+    "originalDate": "1981-07-11",
     "links": [
       {
         "store": "youtube",
@@ -784,6 +801,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "Film",
+    "originalDate": "1982-03-13",
     "links": [
       {
         "store": "youtube",
@@ -817,6 +835,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "Film",
+    "originalDate": "2018-11-30",
     "links": [
       {
         "store": "crunchyroll-stream",
@@ -862,6 +881,7 @@
     "format": "Streaming",
     "status": "Upcoming",
     "mediaType": "TV series",
+    "originalDate": "2027-04",
     "links": [],
     "countries": {
       "us": "unknown",
@@ -871,7 +891,7 @@
     "availability": "unknown",
     "unavailableStreak": 0,
     "notes": [
-      "TV series coming in 2027 — no exact date or streaming platform announced yet. Directed by Kenji Kamiyama, animated by SOLA ANIMATION. Set in A.A. 45, roughly 100 years before the game Gundam Rogue Orbit: war orphan Ray Azumi pilots the Gundam Zero after the alien Apocalypse drives humanity from Earth. Announced at San Diego Comic-Con 2026."
+      "TV series coming in April 2027 — no exact date or streaming platform announced yet. Directed by Kenji Kamiyama, animated by SOLA ANIMATION. Set in A.A. 45, roughly 100 years before the game Gundam Rogue Orbit: war orphan Ray Azumi pilots the Gundam Zero after the alien Apocalypse drives humanity from Earth. Announced at San Diego Comic-Con 2026."
     ]
   },
   {
@@ -882,6 +902,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "TV series",
+    "originalDate": "2002-10-05",
     "links": [
       {
         "store": "crunchyroll-stream",
@@ -968,6 +989,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "TV series",
+    "originalDate": "2004-10-09",
     "episodes": 50,
     "links": [
       {
@@ -1043,6 +1065,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "Film",
+    "originalDate": "2024-01-26",
     "links": [
       {
         "store": "crunchyroll-stream",
@@ -1138,6 +1161,7 @@
     "format": "Streaming",
     "status": "Upcoming",
     "mediaType": "Film",
+    "originalDate": "2027-01-15",
     "links": [],
     "countries": {
       "us": "unknown",
@@ -1158,6 +1182,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "TV series",
+    "originalDate": "2016-04-03",
     "episodes": 22,
     "links": [
       {
@@ -1215,6 +1240,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "TV series",
+    "originalDate": "1995-04-07",
     "episodes": 49,
     "links": [
       {
@@ -1272,6 +1298,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "TV series",
+    "originalDate": "1986-03-01",
     "episodes": 47,
     "links": [
       {
@@ -1309,6 +1336,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "Film",
+    "originalDate": "1988-03-12",
     "links": [
       {
         "store": "crunchyroll-channel",
@@ -1359,6 +1387,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "Film",
+    "originalDate": "2022-06-03",
     "links": [
       {
         "store": "crunchyroll-stream",
@@ -1427,6 +1456,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "TV series",
+    "originalDate": "2015-10-04",
     "episodes": 50,
     "links": [
       {
@@ -1506,6 +1536,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "OVA",
+    "originalDate": "1996-01-25",
     "episodes": 12,
     "links": [
       {
@@ -1545,6 +1576,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "TV series",
+    "originalDate": "2022-10-02",
     "links": [
       {
         "store": "crunchyroll-stream",
@@ -1630,6 +1662,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "TV series",
+    "originalDate": "1985-03-02",
     "episodes": 50,
     "links": [
       {
@@ -1681,6 +1714,7 @@
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
+    "originalDate": "2021-04-08",
     "episodes": 24,
     "links": [
       {
@@ -1739,6 +1773,7 @@
     "format": "Streaming",
     "status": "Released",
     "mediaType": "ONA",
+    "originalDate": "2019-07-26",
     "links": [
       {
         "store": "youtube",
@@ -1779,6 +1814,7 @@
     "distributor": "Right Stuf / Nozomi (for Sunrise)",
     "format": "Blu-ray",
     "releaseDate": "2016-07-05",
+    "originalDate": "1986-03-01",
     "contents": "Episodes 23–47",
     "status": "Released",
     "type": "disc",
@@ -1811,6 +1847,7 @@
     "distributor": "Crunchyroll, LLC",
     "format": "Blu-ray",
     "releaseDate": "2024-09-24",
+    "originalDate": "2022-06-03",
     "contents": "Film",
     "status": "Released",
     "type": "disc",
@@ -1856,6 +1893,7 @@
     "distributor": "Crunchyroll, LLC",
     "format": "4K Ultra HD",
     "releaseDate": "2026-04-14",
+    "originalDate": "2024-01-26",
     "contents": "Film; 4K Ultra HD only — no standard Blu-ray disc included",
     "status": "Released",
     "type": "disc",

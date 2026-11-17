@@ -539,6 +539,7 @@ One hub.</h2>
     const MEDIA_TYPE_KEYS = { 'TV series': 'mediatype.tvSeries', 'Film': 'mediatype.film', 'OVA': 'mediatype.ova', 'ONA': 'mediatype.ona', 'Short': 'mediatype.short' };
     const MODEL_KEYS = { 'Paid': 'model.paid', 'Free-to-play': 'model.freeToPlay' };
     const SORT_KEYS = {
+      'original-desc': 'sort.originalDesc',
       'release-desc': 'sort.releaseDesc',
       'release-asc': 'sort.releaseAsc',
       'title-asc': 'sort.titleAsc',
@@ -721,6 +722,7 @@ One hub.</h2>
         searchText: c => `${c.title} ${loc(c, 'title')} ${c.series} ${loc(c, 'series')} ${c.creators} ${c.publisher} ${c.isbn} ${c.format} ${trFormat(c.format)} ${c.subtitle || ''} ${loc(c, 'subtitle') || ''}`,
         sortOptions: [
           ['release-desc', 'Release Date: Newest First'],
+          ['original-desc', 'Original Release Date: Newest First'],
           ['release-asc', 'Release Date: Oldest First'],
           ['title-asc', 'Title: A → Z'],
           ['series-vol', 'Series, then Volume'],
@@ -750,6 +752,7 @@ One hub.</h2>
         searchText: c => `${c.title} ${loc(c, 'title')} ${c.publisher} ${(c.platforms || []).join(' ')} ${c.model} ${trModel(c.model)} ${c.format} ${trFormat(c.format)}`,
         sortOptions: [
           ['release-desc', 'Release Date: Newest First'],
+          ['original-desc', 'Original Release Date: Newest First'],
           ['release-asc', 'Release Date: Oldest First'],
           ['title-asc', 'Title: A → Z'],
         ],
@@ -779,6 +782,7 @@ One hub.</h2>
         searchText: c => `${c.title} ${loc(c, 'title')} ${c.distributor} ${c.format} ${trFormat(c.format)} ${c.contents} ${loc(c, 'contents') || ''} ${c.upc || ''} ${c.mediaType || ''} ${(c.links || []).map(l => l.label || '').join(' ')}`,
         sortOptions: [
           ['release-desc', 'Release Date: Newest First'],
+          ['original-desc', 'Original Release Date: Newest First'],
           ['release-asc', 'Release Date: Oldest First'],
           ['title-asc', 'Title: A → Z'],
         ],
@@ -1102,10 +1106,10 @@ One hub.</h2>
         return true;
       });
 
-      const byDate = (a, b, desc) => {
+      const byDate = (a, b, desc, field = 'releaseDate') => {
         const ua = a.status === 'Upcoming' ? 0 : 1, ub = b.status === 'Upcoming' ? 0 : 1;
         if (ua !== ub) return desc ? ua - ub : ub - ua;
-        const da = a.releaseDate || '', db = b.releaseDate || '';
+        const da = a[field] || '', db = b[field] || '';
         if (!da && !db) return 0;
         if (!da) return desc ? -1 : 1;
         if (!db) return desc ? 1 : -1;
@@ -1114,6 +1118,7 @@ One hub.</h2>
       list.sort((a, b) => {
         if (sort === 'release-desc') return byDate(a, b, true);
         if (sort === 'release-asc') return byDate(a, b, false);
+        if (sort === 'original-desc') return byDate(a, b, true, 'originalDate');
         if (sort === 'title-asc') return loc(a, 'title').localeCompare(loc(b, 'title'));
         if (sort === 'series-vol') return (a.seriesId || '').localeCompare(b.seriesId || '') || (a.volume || 0) - (b.volume || 0);
         return 0;
