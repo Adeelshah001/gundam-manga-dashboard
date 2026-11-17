@@ -2302,6 +2302,14 @@
         "status": "available",
         "reason": "page-verified",
         "label": "Yen Press"
+      },
+      {
+        "store": "google-books",
+        "url": "https://play.google.com/store/books/details/Chika_Tojo_Mobile_Suit_Gundam_The_Witch_from_Mercu?id=486hEQAAQBAJ",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "label": "Google Play Books",
+        "kind": "digital"
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
@@ -2347,6 +2355,14 @@
         "status": "available",
         "reason": "page-verified",
         "label": "Yen Press"
+      },
+      {
+        "store": "google-books",
+        "url": "https://play.google.com/store/books/details/Chika_Tojo_Mobile_Suit_Gundam_the_Witch_from_Mercu?id=F37LEQAAQBAJ",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "label": "Google Play Books",
+        "kind": "digital"
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
@@ -2386,6 +2402,14 @@
         "status": "available",
         "reason": "exact-verified",
         "label": "Indigo"
+      },
+      {
+        "store": "google-books",
+        "url": "https://play.google.com/store/books/details/Chika_Tojo_Mobile_Suit_Gundam_the_Witch_from_Mercu?id=o_QEEgAAQBAJ",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "label": "Google Play Books",
+        "kind": "digital"
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",

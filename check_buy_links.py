@@ -590,9 +590,11 @@ def check_item(item, delay, qualifier):
         else:
             status, new_url, reason = check_link(store, url, code, title, qualifier)
             time.sleep(delay)
-        new_entry = {"store": store, "url": new_url, "status": status, "reason": reason}
-        if entry.get("label"):
-            new_entry["label"] = entry["label"]
+        # Preserve every extra field the entry carries (label, kind, ...):
+        # rebuilding from scratch would silently drop them, and `kind`
+        # drives the modal's Stream section.
+        new_entry = dict(entry)
+        new_entry.update({"store": store, "url": new_url, "status": status, "reason": reason})
         new_links.append(new_entry)
         counts[status] += 1
         if status == "unavailable":
