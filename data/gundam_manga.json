@@ -2310,6 +2310,22 @@
         "reason": "unverifiable",
         "label": "Google Play Books",
         "kind": "digital"
+      },
+      {
+        "store": "kobo",
+        "label": "Kobo",
+        "url": "https://www.kobo.com/us/en/ebook/mobile-suit-gundam-the-witch-from-mercury-vanadis-heart-vol-1",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "digital"
+      },
+      {
+        "store": "kindle",
+        "label": "Kindle",
+        "url": "https://www.amazon.com/Mobile-Gundam-Witch-Mercury-Vanadis-Heart-ebook/dp/B0G6YWK9DF",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "digital"
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
@@ -2363,6 +2379,22 @@
         "reason": "unverifiable",
         "label": "Google Play Books",
         "kind": "digital"
+      },
+      {
+        "store": "kobo",
+        "label": "Kobo",
+        "url": "https://www.kobo.com/us/en/ebook/mobile-suit-gundam-the-witch-from-mercury-vanadis-heart-vol-2",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "digital"
+      },
+      {
+        "store": "kindle",
+        "label": "Kindle",
+        "url": "https://www.amazon.com/Mobile-Gundam-Witch-Mercury-Vanadis-Heart-ebook/dp/B0GTTZ4ZR7",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "digital"
       }
     ],
     "linksCheckedAt": "2026-11-16T04:20:25.295974Z",
@@ -2409,6 +2441,22 @@
         "status": "unknown",
         "reason": "unverifiable",
         "label": "Google Play Books",
+        "kind": "digital"
+      },
+      {
+        "store": "kobo",
+        "label": "Kobo",
+        "url": "https://www.kobo.com/us/en/ebook/mobile-suit-gundam-the-witch-from-mercury-vanadis-heart-vol-3",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "digital"
+      },
+      {
+        "store": "kindle",
+        "label": "Kindle",
+        "url": "https://www.amazon.com/Mobile-Gundam-Witch-Mercury-Vanadis-Heart-ebook/dp/B0HG8WR79B",
+        "status": "unknown",
+        "reason": "unverifiable",
         "kind": "digital"
       }
     ],
