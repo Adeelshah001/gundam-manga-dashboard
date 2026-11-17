@@ -443,6 +443,7 @@
         apiKey: 'volumes',
         storage: 'gundam_media_hub_manga',
         groupLabel: 'Series',
+        groupLabelPlural: 'Series',
         groupValue: c => c.seriesId,
         searchText: c => `${c.title} ${c.series} ${c.creators} ${c.publisher} ${c.isbn} ${c.format} ${c.subtitle || ''}`,
         sortOptions: [
@@ -617,7 +618,7 @@
         options = groups.map(([id, name]) => `<option value="${escapeHtml(id)}">${escapeHtml(name)}</option>`).join('');
       }
       const current = sel.value;
-      sel.innerHTML = `<option value="all">All ${cfg.groupLabel}s</option>` + options;
+      sel.innerHTML = `<option value="all">All ${cfg.groupLabelPlural || cfg.groupLabel + 's'}</option>` + options;
       if ([...sel.options].some(o => o.value === current)) sel.value = current;
     }
 
