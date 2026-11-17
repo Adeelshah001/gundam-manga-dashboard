@@ -106,12 +106,13 @@
       flex: 4;
     }
 
-    /* One rotating row per strip: label + icon + count. Collapsed, the
-       row reads bottom-to-top with the icon first (below the word);
-       on hover it swings horizontal with the icon centred between the
-       word and the count. The icon counter-rotates so it stays upright
-       through the swing; its `order` flips instantly at hover onset,
-       masked by the rotation. */
+    /* One rotating row per strip: label + icon + count, in that fixed
+       order in both states — no reordering, so the word never jumps
+       relative to the icon. Collapsed, the row reads bottom-to-top
+       with the icon above the word (at the word's end); on hover it
+       swings horizontal with the icon centred between the word and
+       the count. The icon counter-rotates so it stays upright through
+       the swing, and the count fades in as the strip expands. */
     .hub-strip-row {
       position: relative;
       z-index: 1;
@@ -141,7 +142,6 @@
     }
 
     .hub-strip-icon {
-      order: -1;
       display: flex;
       flex: none;
       color: var(--strip-accent, #ef4444);
@@ -151,7 +151,6 @@
 
     .hub-strip:hover .hub-strip-icon,
     .hub-strip:focus-visible .hub-strip-icon {
-      order: 0;
       transform: rotate(0deg);
     }
 
@@ -221,7 +220,6 @@
         min-width: 0;
       }
       .hub-strip-icon {
-        order: 0;
         transform: rotate(0deg);
       }
       .hub-strip-detail {
