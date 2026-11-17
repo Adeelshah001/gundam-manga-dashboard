@@ -300,10 +300,10 @@
     },
     "battle-alliance": {
       "notes": [
-        "Sortie mondiale simultanée, le 25 Aug 2022."
+        "Sortie mondiale simultanée, le 25 Aug 2022.",
+        "L’édition physique n’est vendue qu’en Asie du Sud-Est ; la sortie nord-américaine est uniquement numérique."
       ],
       "unverified": [
-        "L'état des stocks neufs physiques en 2026 est NON VÉRIFIÉ — probablement en diminution pour un titre de 2022.",
         "L'activité coopérative en ligne n'a pas été vérifiée de façon indépendante; aucune fermeture annoncée au 16 Nov 2026.",
         "La disponibilité sur Xbox Game Pass NON VÉRIFIÉE — ne pas présumer."
       ]
@@ -331,7 +331,8 @@
     },
     "srw-y": {
       "notes": [
-        "La première sortie mondiale de Super Robot Wars en anglais sur console et Steam."
+        "La première sortie mondiale de Super Robot Wars en anglais sur console et Steam.",
+        "Les éditions physiques sont des versions asiatiques ; la sortie occidentale est uniquement numérique."
       ],
       "unverified": [
         "La date de sortie est rapportée comme étant le 27/28 Aug 2025.",
