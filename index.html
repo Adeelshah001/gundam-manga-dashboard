@@ -1297,11 +1297,12 @@ One hub.</h2>
       const buySection = buyBtns
         ? `<div class="flex flex-wrap gap-2 pt-1">${buyBtns}</div>`
         : `<div class="text-xs text-slate-500 pt-1">${escapeHtml(tr('modal.noPurchaseLinks', 'No purchase links currently verified for this item — check back soon.'))}</div>`;
+      const hasAmazonLink = buyLinks.some(l => l.store === 'amazon');
       const buyBox = (buyLinks.length > 0 || (c.type !== 'stream' && streamLinks.length === 0 && rentBuyLinks.length === 0))
         ? `<div class="p-3.5 rounded-2xl bg-slate-900/90 border border-white/10 space-y-2">
             <div class="text-xs uppercase font-bold text-slate-400">${escapeHtml(tr('modal.whereToBuy', 'Where to Buy:'))}</div>
             ${buySection}
-            <p class="text-[11px] text-slate-500 pt-1">${escapeHtml(tr('modal.availabilityNote', 'Availability is re-checked daily. Amazon links are title searches, not stock evidence.'))}</p>
+            ${hasAmazonLink ? `<p class="text-[11px] text-slate-500 pt-1">${escapeHtml(tr('modal.availabilityNote', 'Availability is re-checked daily. Amazon links are title searches, not stock evidence.'))}</p>` : ''}
           </div>`
         : '';
       const watchLinkThrough = c.watchId
