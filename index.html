@@ -66,6 +66,8 @@
        joe-watson-sbf (MIT). Three expanding strips, one per media type.
        Accents recoloured to the hub's red/amber theme; strip detail
        (count + blurb) fades in on hover/focus alongside the label.
+       Strip icons: "Open book" by Lorc, "Gamepad" and "TV" by
+       Delapouite, from game-icons.net, CC BY 3.0.
        ================================================================== */
     .hub-card {
       display: flex;
@@ -104,12 +106,32 @@
       flex: 4;
     }
 
-    .hub-strip-label {
+    /* One rotating row per strip: label + icon + count. Collapsed, the
+       row reads bottom-to-top with the icon first (below the word);
+       on hover it swings horizontal with the icon centred between the
+       word and the count. The icon counter-rotates so it stays upright
+       through the swing; its `order` flips instantly at hover onset,
+       masked by the rotation. */
+    .hub-strip-row {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6em;
       min-width: 12em;
-      padding: 0.5em;
-      text-align: center;
       transform: rotate(-90deg);
       transition: transform 0.5s ease;
+    }
+
+    .hub-strip:hover .hub-strip-row,
+    .hub-strip:focus-visible .hub-strip-row {
+      transform: rotate(0deg);
+    }
+
+    .hub-strip-label {
+      padding: 0.5em;
+      text-align: center;
       text-transform: uppercase;
       color: var(--strip-accent, #ef4444);
       letter-spacing: 0.1em;
@@ -118,9 +140,25 @@
       white-space: nowrap;
     }
 
-    .hub-strip:hover .hub-strip-label,
-    .hub-strip:focus-visible .hub-strip-label {
+    .hub-strip-icon {
+      order: -1;
+      display: flex;
+      flex: none;
+      color: var(--strip-accent, #ef4444);
+      transform: rotate(90deg);
+      transition: transform 0.5s ease;
+    }
+
+    .hub-strip:hover .hub-strip-icon,
+    .hub-strip:focus-visible .hub-strip-icon {
+      order: 0;
       transform: rotate(0deg);
+    }
+
+    .hub-strip-icon svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      display: block;
     }
 
     .hub-strip-detail {
@@ -169,12 +207,6 @@
       background: rgba(15, 18, 26, 0.72);
     }
 
-    .hub-strip-label,
-    .hub-strip-detail {
-      position: relative;
-      z-index: 1;
-    }
-
     /* Narrow screens: stack the strips, labels stay horizontal. */
     @media (max-width: 640px) {
       .hub-card {
@@ -184,9 +216,13 @@
       .hub-strip {
         min-height: 96px;
       }
-      .hub-strip-label {
+      .hub-strip-row {
         transform: rotate(0deg);
         min-width: 0;
+      }
+      .hub-strip-icon {
+        order: 0;
+        transform: rotate(0deg);
       }
       .hub-strip-detail {
         opacity: 1;
@@ -387,21 +423,30 @@ One hub.</h2>
 
     <div id="hubCard" class="hub-card" role="group" aria-label="Media types">
       <button type="button" id="strip-manga" class="hub-strip" style="--strip-accent: #ef4444" onclick="location.hash='#/manga'" aria-label="Browse manga">
-        <span class="hub-strip-label">Read</span>
-        <span class="hub-strip-detail">
-          <span class="hub-strip-count" id="count-manga">–</span>
+        <span class="hub-strip-row">
+          <span class="hub-strip-label">Read</span>
+          <span class="hub-strip-icon" aria-hidden="true"><svg viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M149.688 85.625c-1.234.005-2.465.033-3.72.063-33.913.806-75.48 10.704-127.25 33.718V362.78c60.77-28.82 106.718-37.067 144.22-33.092 33.502 3.55 59.685 16.66 83.562 31.187v-242.97c-23.217-17.744-50.195-30.04-85.97-32a184.47 184.47 0 0 0-10.843-.28zm211.968 0c-3.7-.016-7.322.088-10.844.28-35.773 1.96-62.75 14.256-85.968 32v242.97c23.876-14.527 50.06-27.637 83.562-31.188 37.502-3.974 83.45 4.272 144.22 33.094V119.407c-51.77-23.014-93.337-32.912-127.25-33.72-1.255-.028-2.486-.056-3.72-.06zm5.72 261.78c-1.038-.002-2.074.017-3.095.033-4.808.075-9.43.37-13.905.843-33.932 3.597-59.603 17.976-85.53 34.44v.28c-6.554-1.99-13.02-2.37-19.408-.97-25.566-16.177-51.003-30.202-84.468-33.75-5.595-.592-11.44-.883-17.564-.842-32.04.213-71.833 9.778-124.687 35.937v42.53c60.77-28.823 106.714-37.067 144.218-33.092 18.545 1.965 34.837 6.845 49.75 13.28-4.682 6.064-9.308 13.268-13.875 21.688h117.156c-5.93-8.22-11.798-15.414-17.626-21.56 14.996-6.503 31.39-11.43 50.062-13.408 37.503-3.974 83.448 4.27 144.22 33.094v-42.53c-53.16-26.31-93.115-35.863-125.25-35.97z"/></svg></span>
+          <span class="hub-strip-detail">
+            <span class="hub-strip-count" id="count-manga">–</span>
+          </span>
         </span>
       </button>
       <button type="button" id="strip-games" class="hub-strip" style="--strip-accent: #f59e0b" onclick="location.hash='#/games'" aria-label="Browse video games">
-        <span class="hub-strip-label">Play</span>
-        <span class="hub-strip-detail">
-          <span class="hub-strip-count" id="count-games">–</span>
+        <span class="hub-strip-row">
+          <span class="hub-strip-label">Play</span>
+          <span class="hub-strip-icon" aria-hidden="true"><svg viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M155.084 125.945c-.46 0-.926.01-1.397.034-5.646.285-12.097 2.464-20.707 8.204-21.824 14.55-51.912 60.395-67.834 110.005-15.92 49.61-18.046 102.25 5.936 132.966 4.142 5.306 13.387 8.93 23.756 8.846 10.216-.084 20.682-3.838 26.482-9.44 1.022-1.47 9.296-13.336 21.39-27.404 12.863-14.96 28.716-31.686 45.835-38.777 41.863-17.34 93.024-17.34 134.887 0 17.118 7.092 32.97 23.818 45.834 38.778 12.095 14.068 20.37 25.933 21.39 27.404 5.8 5.602 16.267 9.356 26.483 9.44 10.368.085 19.612-3.54 23.755-8.846 23.973-30.704 21.885-83.575 5.978-133.287-15.907-49.713-46.054-95.526-67.783-109.624-11.498-7.46-19.198-8.73-26.285-7.64-7.088 1.093-14.347 5.197-22.866 11.07-17.038 11.746-38.898 30.02-73.952 30.02-35.212 0-57.115-18.514-74.13-30.356-8.505-5.92-15.73-10.025-22.743-11.078a27.615 27.615 0 0 0-4.03-.317zm212.904 48.75a16 16 0 0 1 16 16 16 16 0 0 1-16 16 16 16 0 0 1-16-16 16 16 0 0 1 16-16zM135 183h18v32h32v18h-32v32h-18v-32h-32v-18h32v-32zm200.988 23.695a16 16 0 0 1 16 16 16 16 0 0 1-16 16 16 16 0 0 1-16-16 16 16 0 0 1 16-16zm64 0a16 16 0 0 1 16 16 16 16 0 0 1-16 16 16 16 0 0 1-16-16 16 16 0 0 1 16-16zm-32 32a16 16 0 0 1 16 16 16 16 0 0 1-16 16 16 16 0 0 1-16-16 16 16 0 0 1 16-16zm-160 7h32v18h-32v-18zm64 0h27.897v18h-27.897v-18z"/></svg></span>
+          <span class="hub-strip-detail">
+            <span class="hub-strip-count" id="count-games">–</span>
+          </span>
         </span>
       </button>
       <button type="button" id="strip-discs" class="hub-strip" style="--strip-accent: #f97316" onclick="location.hash='#/discs'" aria-label="Browse discs">
-        <span class="hub-strip-label">Watch</span>
-        <span class="hub-strip-detail">
-          <span class="hub-strip-count" id="count-discs">–</span>
+        <span class="hub-strip-row">
+          <span class="hub-strip-label">Watch</span>
+          <span class="hub-strip-icon" aria-hidden="true"><svg viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="m132.992 48.756-9.984 14.976 77.287 51.524c4.32-4.192 9.542-8.012 15.703-11.162l-83.006-55.338zm246.016 0-83.006 55.338c6.16 3.15 11.383 6.97 15.703 11.162l77.287-51.524-9.984-14.976zM256 113.244c-22 0-35.334 7.06-43.637 15.363-4.703 4.704-7.58 9.97-9.316 14.637h105.906c-1.736-4.668-4.613-9.933-9.316-14.637-8.303-8.303-21.637-15.363-43.637-15.363zm-191.936 48c-5.044 0-11.106 2.784-15.697 7.37-4.59 4.584-7.367 10.63-7.367 15.63v279h430V184.2c.026-5.457-2.764-11.393-7.227-15.87-4.463-4.477-10.346-7.086-14.826-7.086H64.064zm30.295 23h257.745c10.374 0 20.79 6.818 26.776 16H112c-16 0-32 16-32 32v160c25.924-162.54 145.877-185.697 299.016-191.795 3.106 4.836 4.984 10.315 4.984 15.794v192c0 16-16 32-33.88 32H95.35c-15.35 0-31.35-16-31.35-32v-192c0-16 16-32 30.36-32zm328.663 7c13.7 0 25 11.3 25 25s-11.3 25-25 25-25-11.3-25-25 11.3-25 25-25zm-23.023 144h48v18h-48v-18zm0 32h48v18h-48v-18zm0 32h48v18h-48v-18z"/></svg></span>
+          <span class="hub-strip-detail">
+            <span class="hub-strip-count" id="count-discs">–</span>
+          </span>
         </span>
       </button>
     </div>
