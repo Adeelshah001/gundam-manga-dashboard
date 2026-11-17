@@ -30,6 +30,7 @@
   {
     "id": "watch-gundam-x",
     "title": "After War Gundam X",
+    "coverUrl": "https://thumb.wikimedia.org/wikipedia/en/thumb/6/6f/AFTERWARGUNDAMXPOSTER.jpg/250px-AFTERWARGUNDAMXPOSTER.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -76,6 +77,7 @@
   {
     "id": "watch-build-divers",
     "title": "Gundam Build Divers",
+    "coverUrl": "https://image.tmdb.org/t/p/w220_and_h330_face/xncxq5xi391TNVdo9wMRWruY0C.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -132,6 +134,7 @@
   {
     "id": "watch-build-divers-rerise",
     "title": "Gundam Build Divers Re:RISE",
+    "coverUrl": "https://www.animenewsnetwork.com/thumbnails/max450x450/cms/news.3/149550/newvisual.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -182,6 +185,7 @@
   {
     "id": "watch-build-fighters",
     "title": "Gundam Build Fighters",
+    "coverUrl": "https://image.tmdb.org/t/p/w300_and_h450_face/dzvm78n4yOmeO2FdtD2aAbjDTuG.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -221,6 +225,7 @@
   {
     "id": "watch-build-fighters-try",
     "title": "Gundam Build Fighters Try",
+    "coverUrl": "https://image.tmdb.org/t/p/w220_and_h330_face/tFKUljC0GQ0gsIADWlKi7kMFc6N.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -261,6 +266,7 @@
   {
     "id": "watch-endless-waltz",
     "title": "Gundam Wing: Endless Waltz",
+    "coverUrl": "https://image.tmdb.org/t/p/w300_and_h450_face/xbnN0pQwbveJnMi7xKkUEX8rjbr.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -308,6 +314,7 @@
   {
     "id": "watch-g-gundam",
     "title": "Mobile Fighter G Gundam",
+    "coverUrl": "https://thumb.wikimedia.org/wikipedia/en/thumb/6/6c/MobileFighterGGundamPoster.jpg/250px-MobileFighterGGundamPoster.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -361,6 +368,7 @@
   {
     "id": "watch-gundam-1979",
     "title": "Mobile Suit Gundam",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/d/d5/MOBILESUITGUNDAMPoster.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -410,6 +418,7 @@
   {
     "id": "watch-00",
     "title": "Mobile Suit Gundam 00",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/2/21/MobileSuitGundam00Poster.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -476,6 +485,7 @@
   {
     "id": "watch-trailblazer",
     "title": "Mobile Suit Gundam 00: Awakening of the Trailblazer",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/c/c3/Awakening_of_the_Trailblazer.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -522,6 +532,7 @@
   {
     "id": "watch-age",
     "title": "Mobile Suit Gundam AGE",
+    "coverUrl": "https://image.tmdb.org/t/p/w300_and_h450_face/ApcwLXh9JOf3B5gl4i2Gna9ssc1.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -560,6 +571,7 @@
   {
     "id": "watch-gquuuuuux",
     "title": "Mobile Suit Gundam GQuuuuuuX",
+    "coverUrl": "https://thumb.wikimedia.org/wikipedia/en/thumb/8/8f/Mobile_Suit_Gundam_GQuuuuuuX_key_visual.jpg/250px-Mobile_Suit_Gundam_GQuuuuuuX_key_visual.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -600,6 +612,7 @@
   {
     "id": "watch-hathaway",
     "title": "Mobile Suit Gundam Hathaway",
+    "coverUrl": "https://image.tmdb.org/t/p/w300_and_h450_face/6gw8onh4FKsruBA7Oouv01EFxzn.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -637,6 +650,7 @@
   {
     "id": "watch-hathaway-film-2",
     "title": "Mobile Suit Gundam Hathaway: The Sorcery of Nymph Circe",
+    "coverUrl": "https://gundam-official.com/media/hathaway2_FIX_EN_9bb64a157a/hathaway2_FIX_EN_9bb64a157a.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -674,6 +688,7 @@
   {
     "id": "watch-gundam-i",
     "title": "Mobile Suit Gundam I",
+    "coverUrl": "https://image.tmdb.org/t/p/w300_and_h450_face/kzyMAqagPK6wuvDzA5FeJU6n71Y.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -713,6 +728,7 @@
   {
     "id": "watch-gundam-ii",
     "title": "Mobile Suit Gundam II: Soldiers of Sorrow",
+    "coverUrl": "https://image.tmdb.org/t/p/w300_and_h450_face/i1J5u0bhbcCghFWnwmvsTi5RzQf.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -745,6 +761,7 @@
   {
     "id": "watch-gundam-iii",
     "title": "Mobile Suit Gundam III: Encounters in Space",
+    "coverUrl": "https://image.tmdb.org/t/p/w300_and_h450_face/lXeLWEuUV5dVIhHmQt5z5RyawT4.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -777,6 +794,7 @@
   {
     "id": "watch-narrative",
     "title": "Mobile Suit Gundam Narrative",
+    "coverUrl": "https://image.tmdb.org/t/p/w300_and_h450_face/rX0jSZIPbCRL1Qg7kM1gI88L9Hw.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -821,6 +839,7 @@
   {
     "id": "watch-seed",
     "title": "Mobile Suit Gundam SEED",
+    "coverUrl": "https://thumb.wikimedia.org/wikipedia/en/thumb/a/a1/MobileSuitGundamSEEDPoster.jpg/250px-MobileSuitGundamSEEDPoster.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -906,6 +925,7 @@
   {
     "id": "watch-seed-destiny",
     "title": "Mobile Suit Gundam SEED Destiny",
+    "coverUrl": "https://thumb.wikimedia.org/wikipedia/en/thumb/6/60/MobileSuitGundamSEEDDESTINYPoster.jpg/250px-MobileSuitGundamSEEDDESTINYPoster.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -1075,6 +1095,7 @@
   {
     "id": "watch-unicorn-re0096",
     "title": "Mobile Suit Gundam Unicorn RE:0096",
+    "coverUrl": "https://image.tmdb.org/t/p/w300_and_h450_face/unGyvP0EGK1LMkDOJRHFUOHKO3p.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -1131,6 +1152,7 @@
   {
     "id": "watch-wing",
     "title": "Mobile Suit Gundam Wing",
+    "coverUrl": "https://thumb.wikimedia.org/wikipedia/en/thumb/e/e1/MobileSuitGundamWingPoster.jpg/250px-MobileSuitGundamWingPoster.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -1224,6 +1246,7 @@
   {
     "id": "watch-chars-counterattack",
     "title": "Mobile Suit Gundam: Char's Counterattack",
+    "coverUrl": "https://image.tmdb.org/t/p/w300_and_h450_face/8I8gWpTtzMLt2lBlBoS7lM436nA.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -1341,6 +1364,7 @@
   {
     "id": "watch-iron-blooded-orphans",
     "title": "Mobile Suit Gundam: Iron-Blooded Orphans",
+    "coverUrl": "https://thumb.wikimedia.org/wikipedia/en/thumb/7/78/MobileSuitGundamIronBloodedOrphansPoster.jpg/250px-MobileSuitGundamIronBloodedOrphansPoster.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -1419,6 +1443,7 @@
   {
     "id": "watch-08th-ms-team",
     "title": "Mobile Suit Gundam: The 08th MS Team",
+    "coverUrl": "https://image.tmdb.org/t/p/w300_and_h450_face/tzr1YdnPSIWMMgyb6Uzi3f9I8p3.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -1457,6 +1482,7 @@
   {
     "id": "watch-witch-from-mercury",
     "title": "Mobile Suit Gundam: The Witch from Mercury",
+    "coverUrl": "https://image.tmdb.org/t/p/w300_and_h450_face/gBkDlMaAVOVMRWWlRUHhkLAhNE3.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -1541,6 +1567,7 @@
   {
     "id": "watch-zeta",
     "title": "Mobile Suit Zeta Gundam",
+    "coverUrl": "https://image.tmdb.org/t/p/w300_and_h450_face/dGH9LyV1UMgvbkv1WUEobcTqK5W.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -1592,6 +1619,7 @@
   {
     "id": "watch-sd-world-heroes",
     "title": "SD Gundam World Heroes",
+    "coverUrl": "https://image.tmdb.org/t/p/w300_and_h450_face/7erAYO2Uj6aKYO3BkcESbGFEs4t.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
@@ -1648,6 +1676,7 @@
   {
     "id": "watch-sangoku-soketsuden",
     "title": "SD Gundam World Sangoku Soketsuden",
+    "coverUrl": "https://www.animenewsnetwork.com/thumbnails/fit750x750/cms/news.2/143818/mv-3.jpg",
     "type": "stream",
     "format": "Streaming",
     "status": "Released",
