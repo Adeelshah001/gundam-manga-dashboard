@@ -478,7 +478,7 @@
       {
         "store": "meta",
         "label": "Meta Quest Store",
-        "url": "https://www.meta.com/experiences/6811683248909506/",
+        "url": "https://www.meta.com/experiences/mobile-suit-gundam-silver-phantom/6811683248909506/",
         "status": "unknown",
         "reason": "unverifiable"
       }
@@ -486,12 +486,12 @@
     "availability": "unknown",
     "unavailableStreak": 0,
     "notes": [
-      "Interactive VR film (paid VR experience), not a conventional game. Worldwide release on the Meta Quest Store."
+      "Interactive VR film (paid VR experience), not a conventional game. Worldwide release on the Meta Quest Store.",
+      "Meta Quest Store page confirmed live with Canadian storefront pricing on a live check, 17 Nov 2026."
     ],
     "unverified": [
       "Release date reported as 3/4 Oct 2024 (timezone artifact).",
       "Meta Quest 3S support UNVERIFIED.",
-      "Canada Meta Quest Store presence UNVERIFIED by direct check.",
       "English + Japanese audio UNVERIFIED."
     ]
   },

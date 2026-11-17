@@ -23,6 +23,14 @@
         "status": "unknown",
         "reason": "unverifiable",
         "kind": "stream"
+      },
+      {
+        "store": "crunchyroll-stream",
+        "label": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/series/G0XHWM435/mobile-suit-zeta-gundam-zz",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
       }
     ],
     "availability": "available",
@@ -34,8 +42,7 @@
     "unverified": [
       "Release date rests on Gundam Wiki only — the weakest date in the survey.",
       "A specialty retailer calls this title out of print; remaining stock does not prove in-print status.",
-      "An older listing snippet said out of stock (conflicts with the Nov 2026 live fetch).",
-      "No exact Crunchyroll title-page URL verified — needs a live-browser check."
+      "An older listing snippet said out of stock (conflicts with the Nov 2026 live fetch)."
     ],
     "coverUrl": "https://www.fandompost.com/wp-content/uploads/2016/04/Mobile-Suit-ZZ-Gunadm-Collection-2-Blu-ray-Cover.jpg"
   },
@@ -70,6 +77,30 @@
         "status": "unknown",
         "reason": "unverifiable",
         "kind": "stream"
+      },
+      {
+        "store": "crunchyroll-stream",
+        "label": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/series/GMTE00199339/mobile-suit-gundam-cucuruz-doans-island",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "apple-tv",
+        "label": "Apple TV",
+        "url": "https://tv.apple.com/us/movie/mobile-suit-gundam-cucuruz-doans-island/umc.cmc.5zb9mopv7r5x4pa879kw1gbil",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "digital"
+      },
+      {
+        "store": "prime-video",
+        "label": "Prime Video",
+        "url": "https://www.primevideo.com/detail/0L3YG80WCTJV964FUQ5GYIFJ2G/",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
       }
     ],
     "availability": "available",
@@ -79,15 +110,15 @@
     "notes": [
       "Verified in stock at Barnes & Noble on a live fetch, 16 Nov 2026 (remaining stock; in-print status not distributor-confirmed).",
       "Region A verified on the YesAsia retailer page.",
-      "Streaming (JustWatch, Nov 2026): Crunchyroll and Crunchyroll Amazon Channel in the US, Canada, and Mexico. Digital buy on the Apple TV Store in the US only — not listed in Canada or Mexico."
+      "Streaming (JustWatch, Nov 2026): Crunchyroll and Crunchyroll Amazon Channel in the US, Canada, and Mexico. Digital buy on the Apple TV Store in the US only — not listed in Canada or Mexico.",
+      "Live check 17 Nov 2026 resolved the aggregator conflict: the YouTube Movies listing shows 'Video unavailable' with no buy/rent option; Microsoft no longer sells movies online (legacy listing only); Google Play and Fandango at Home pages are geo-blocked from Canada and could not be confirmed. The Apple TV Store (US) remains the only verified digital buy option."
     ],
     "unverified": [
       "Street date conflict: retailer page says 24 Sep 2024; Crunchyroll press release said 10 Sep 2024.",
       "Format conflict: PR-calendar contrast suggests Blu-ray-only, while YesAsia wording lists 'DVD, Blu-ray' — not listed as a combo.",
       "Distributor credit (Crunchyroll, LLC) UNVERIFIED on a primary page.",
       "In-print status NOT distributor-confirmed; a forum post called it the only Gundam title still in print [UNVERIFIED].",
-      "No exact Crunchyroll / Apple TV title-page URL verified — needs a live-browser check.",
-      "Older aggregator snapshots also list YouTube, Google Play, Fandango at Home, and Microsoft Store for this film, but fresh JustWatch (Nov 2026) does not — UNRESOLVED, do not assert."
+      "Google Play and Fandango at Home listings for this film could not be confirmed from Canada (geo-blocked) — US availability unconfirmed."
     ],
     "coverUrl": "https://mediacdn.aent-m.com/prod-img/500/62/4354362-3197556.jpg"
   },
@@ -130,6 +161,30 @@
         "status": "unknown",
         "reason": "unverifiable",
         "kind": "stream"
+      },
+      {
+        "store": "crunchyroll-stream",
+        "label": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/series/GJ0H7QG5M/mobile-suit-gundam-seed-freedom",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
+      },
+      {
+        "store": "apple-tv",
+        "label": "Apple TV",
+        "url": "https://tv.apple.com/us/movie/mobile-suit-gundam-seed-freedom/umc.cmc.415oz2t7zcn7c9sq1o6q1898m",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "digital"
+      },
+      {
+        "store": "prime-video",
+        "label": "Prime Video",
+        "url": "https://www.primevideo.com/detail/0ISL9XR81DEFQZFTT28ARAEUTE",
+        "status": "unknown",
+        "reason": "unverifiable",
+        "kind": "stream"
       }
     ],
     "availability": "unknown",
@@ -140,15 +195,15 @@
       "The only North American 4K Gundam release found.",
       "Backordered at ImportCDs on a live fetch, 16 Nov 2026 (backorder is not out-of-print).",
       "Orderable at the Crunchyroll Store on a live check, Nov 2026 (Add to cart button; no explicit in-stock wording).",
-      "Streaming (JustWatch, Nov 2026): Netflix and Crunchyroll (plus Crunchyroll Amazon Channel) in the US and Canada; Hulu in the US only; no streaming options listed in Mexico. Digital buy/rent on the Apple TV Store and Amazon Video in the US only."
+      "Streaming (JustWatch, Nov 2026): Netflix and Crunchyroll (plus Crunchyroll Amazon Channel) in the US and Canada; Hulu in the US only; no streaming options listed in Mexico. Digital buy/rent on the Apple TV Store and Amazon Video in the US only.",
+      "A second Prime Video detail page for this title shows 'currently unavailable' and is not linked; the linked Prime Video page is the Crunchyroll Channel offer."
     ],
     "unverified": [
       "4K-only with no standard Blu-ray is UNVERIFIED (forum correction of the initial '4K & Blu-ray' listing).",
       "Date conflict: 14 Apr 2026 (press/retailers) vs 13 Apr (one forum schedule).",
       "Region-free status UNVERIFIED (blu-ray.com).",
       "The UK Anime Limited 4K edition is a different product — do not confuse.",
-      "No exact Hulu / Crunchyroll / Apple TV / Amazon Video title-page URL verified — needs a live-browser check.",
-      "Netflix title page (id 81747912) corroborated by catalog sources but not fetched directly (login wall) — live confirmation recommended."
+      "Hulu (US) title page could not be page-confirmed — Hulu redirects Canadian visitors to Disney+; a search-derived URL exists but is unverified."
     ],
     "coverUrl": "https://mediacdn.aent-m.com/prod-img/500/01/4488701-3516778.jpg?ae=4621895150"
   }
