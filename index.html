@@ -367,7 +367,6 @@
   <section id="view-landing" class="flex-1 px-4 lg:px-8 py-8">
     <div class="text-center mb-8">
       <h2 id="landingHeading" class="text-3xl sm:text-4xl font-bold text-white tracking-tight leading-tight">Every Gundam story. One hub.</h2>
-      <p id="landingSubtext" class="text-slate-400 mt-3 max-w-xl mx-auto text-sm">Manga, video games, and discs you can actually buy online in the USA, Canada, and Mexico. Pick a shelf.</p>
     </div>
 
     <div id="hubCard" class="hub-card" role="group" aria-label="Media types">
@@ -390,8 +389,6 @@
         </span>
       </button>
     </div>
-
-    <p id="landingFootnote" class="text-center text-xs text-slate-500 mt-6">Buy links verified daily &middot; Only in-stock and upcoming items are shown &middot; An item disappears only after two consecutive daily checks find it unavailable everywhere</p>
   </section>
 
   <!-- BROWSER VIEW -->
@@ -454,7 +451,7 @@
   <!-- FOOTER -->
   <footer class="mt-auto border-t border-white/5 py-8 px-4 flex items-center justify-center text-center">
     <p id="footerText" class="text-xs text-slate-400 font-medium tracking-wide">
-      Gundam Media Hub · Buyable Gundam media across North America · Buy links verified daily
+      Gundam Media Hub
     </p>
   </footer>
 
@@ -637,7 +634,6 @@
       if (syncBtn) syncBtn.title = tr('header.liveSyncTooltip', 'Check for the latest catalog data');
       renderSyncButton();
       setText('landingHeading', tr('landing.heading', 'Every Gundam story. One hub.'));
-      setText('landingSubtext', tr('landing.subtext', 'Manga, video games, and discs you can actually buy online in the USA, Canada, and Mexico. Pick a shelf.'));
       const hubCard = document.getElementById('hubCard');
       if (hubCard) hubCard.setAttribute('aria-label', tr('landing.mediaTypesAria', 'Media types'));
       const strips = [
@@ -653,11 +649,10 @@
           if (labelEl) labelEl.textContent = tr(labelKey, labelFallback);
         }
       }
-      setText('landingFootnote', tr('landing.footnote', 'Buy links verified daily · Only in-stock and upcoming items are shown · An item disappears only after two consecutive daily checks find it unavailable everywhere'));
       setText('backLink', tr('browser.backLink', '← All media'));
       const searchInput = document.getElementById('searchInput');
       if (searchInput) searchInput.placeholder = tr('search.placeholder', 'Search titles, creators, publishers...');
-      setText('footerText', tr('footer.text', 'Gundam Media Hub · Buyable Gundam media across North America · Buy links verified daily'));
+      setText('footerText', tr('footer.text', 'Gundam Media Hub'));
       const closeX = document.getElementById('modalCloseX');
       if (closeX) closeX.setAttribute('aria-label', tr('modal.close', 'Close'));
       renderStatusButtons();
