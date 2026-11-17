@@ -76,6 +76,25 @@
     ]
   },
   {
+    "id": "watch-gundam-live-action",
+    "title": "Gundam",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Upcoming",
+    "mediaType": "Film",
+    "links": [],
+    "countries": {
+      "us": "unknown",
+      "ca": "unknown",
+      "mx": "unknown"
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Live-action film expected on Netflix in 2027 (no date set). Written and directed by Jim Mickle, starring Sydney Sweeney and Noah Centineo as rival mech pilots on opposite sides of a war between Earth and its former space colonies. Filming wrapped in July 2026."
+    ]
+  },
+  {
     "id": "watch-build-divers",
     "title": "Gundam Build Divers",
     "coverUrl": "https://image.tmdb.org/t/p/w220_and_h330_face/xncxq5xi391TNVdo9wMRWruY0C.jpg",
@@ -835,6 +854,26 @@
     ]
   },
   {
+    "id": "watch-rg-xarx-zero",
+    "title": "Mobile Suit Gundam RG XARX-ZERO",
+    "coverUrl": "https://i.ytimg.com/vi/-OE2vLKjJZc/maxresdefault.jpg",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Upcoming",
+    "mediaType": "TV series",
+    "links": [],
+    "countries": {
+      "us": "unknown",
+      "ca": "unknown",
+      "mx": "unknown"
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "TV series coming in 2027 — no exact date or streaming platform announced yet. Directed by Kenji Kamiyama, animated by SOLA ANIMATION. Set in A.A. 45, roughly 100 years before the game Gundam Rogue Orbit: war orphan Ray Azumi pilots the Gundam Zero after the alien Apocalypse drives humanity from Earth. Announced at San Diego Comic-Con 2026."
+    ]
+  },
+  {
     "id": "watch-seed",
     "title": "Mobile Suit Gundam SEED",
     "coverUrl": "https://thumb.wikimedia.org/wikipedia/en/thumb/a/a1/MobileSuitGundamSEEDPoster.jpg/250px-MobileSuitGundamSEEDPoster.jpg",
@@ -1089,6 +1128,26 @@
       "Runtime variant: 125 min vs 2h 4m (124 min) on the Prime Video page — recorded, not resolved."
     ],
     "coverUrl": "https://mediacdn.aent-m.com/prod-img/500/01/4488701-3516778.jpg?ae=4621895150"
+  },
+  {
+    "id": "watch-seed-freedom-zero",
+    "title": "Mobile Suit Gundam SEED FREEDOM ZERO",
+    "coverUrl": "https://i.ytimg.com/vi/FEeahlHaGyk/maxresdefault.jpg",
+    "type": "stream",
+    "format": "Streaming",
+    "status": "Upcoming",
+    "mediaType": "Film",
+    "links": [],
+    "countries": {
+      "us": "unknown",
+      "ca": "unknown",
+      "mx": "unknown"
+    },
+    "availability": "unknown",
+    "unavailableStreak": 0,
+    "notes": [
+      "Film coming to North American theatres in February 2027 (exact date to be announced). Prequel to Mobile Suit Gundam SEED FREEDOM, set between SEED DESTINY and SEED FREEDOM. Directed by Mitsuo Fukuda; English dub stars Matthew Erickson as Shinn Asuka, Matt Hill as Kira Yamato, and Sam Vincent as Athrun Zala. Announced at New York Comic Con 2026."
+    ]
   },
   {
     "id": "watch-unicorn-re0096",
