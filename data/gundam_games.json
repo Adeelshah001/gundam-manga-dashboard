@@ -29,7 +29,8 @@
     ],
     "unverified": [
       "Canada launch UNVERIFIED — the English network test covers residents of the US and England only; Canada was not listed."
-    ]
+    ],
+    "coverUrl": "https://gundam-blitzorder.ggame.jp/images/localized/en/ogp.jpg"
   },
   {
     "id": "breaker-4",
@@ -182,7 +183,8 @@
     "unverified": [
       "Release date reported as both 28 and 29 Sep 2017 (UNVERIFIED which is canonical).",
       "Online server status UNVERIFIED — no shutdown found and no 2026 liveness proof; versus modes are online-only on console."
-    ]
+    ],
+    "coverUrl": "https://image.api.playstation.com/cdn/UP0700/CUSA08790_00/M7yhDEE3OpagZox4mevaMrmiSsWStIne.png"
   },
   {
     "id": "seed-battle-destiny-remastered",
@@ -277,7 +279,8 @@
     "unverified": [
       "Worldwide-version date (17 Oct 2023) is UNVERIFIED.",
       "Canada store presence UNVERIFIED."
-    ]
+    ],
+    "coverUrl": "https://play-lh.googleusercontent.com/8-wxMnTOhi11pghfbSIt0pwGkVl80a1IXs6YxTGmWTnRkQKIeMsPt2ZITyW5VwvFTicttv7RMJq7qRVZ9pu9bw=w1052-h592"
   },
   {
     "id": "battle-operation-2",
@@ -374,7 +377,8 @@
     ],
     "unverified": [
       "North American launch UNVERIFIED — no launch-country list announced; Battle Operation 2 took ~14 months to reach NA after Japan."
-    ]
+    ],
+    "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2303000/a5a86be4fc6b62ecfe4969fd836cbbc4180f286c/header.jpg"
   },
   {
     "id": "code-fairy",
@@ -452,7 +456,8 @@
     "unverified": [
       "No explicit publisher 'digital-only in the West' statement was found — strong retailer/blog evidence only.",
       "Online matchmaking status UNVERIFIED — no shutdown found; offline play against CPU available regardless."
-    ]
+    ],
+    "coverUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202006/0913/TeXq1rCfgUpptXglhNL9rLC8.png"
   },
   {
     "id": "silver-phantom",
@@ -493,7 +498,8 @@
       "Release date reported as 3/4 Oct 2024 (timezone artifact).",
       "Meta Quest 3S support UNVERIFIED.",
       "English + Japanese audio UNVERIFIED."
-    ]
+    ],
+    "coverUrl": "https://gundam-official.com/media/i/gundaminfo/jp/news/2024/03/240322_SilverPhantom/thumbnail.jpg"
   },
   {
     "id": "new-gundam-breaker",
@@ -688,7 +694,8 @@
     "unverified": [
       "Canada App Store / Google Play presence not separately verified per title.",
       "Google Play Games for PC availability (from 16 Oct 2025) rests on a single source — UNVERIFIED."
-    ]
+    ],
+    "coverUrl": "https://play-lh.googleusercontent.com/8gvHIJI39Ei6vCTdWaI4UIKgMLzGuWI5eI29empk9EoBVEhfaaat3Bj9mLlXMZpzCkpos7qmJ936yiv5_edSew=s0-br30"
   },
   {
     "id": "srw-30",
