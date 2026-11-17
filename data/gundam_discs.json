@@ -1034,7 +1034,8 @@
         "url": "https://tv.apple.com/us/movie/mobile-suit-gundam-seed-freedom/umc.cmc.415oz2t7zcn7c9sq1o6q1898m",
         "status": "unknown",
         "reason": "unverifiable",
-        "kind": "rentbuy"
+        "kind": "rentbuy",
+        "offer": "rent+buy"
       },
       {
         "store": "amazon-video",
@@ -1043,7 +1044,8 @@
         "status": "unknown",
         "reason": "unverifiable",
         "kind": "rentbuy",
-        "unverified": true
+        "unverified": true,
+        "offer": "rent+buy"
       }
     ],
     "countries": {
@@ -1308,7 +1310,8 @@
         "url": "https://tv.apple.com/us/movie/mobile-suit-gundam-cucuruz-doans-island/umc.cmc.5zb9mopv7r5x4pa879kw1gbil",
         "status": "unknown",
         "reason": "unverifiable",
-        "kind": "rentbuy"
+        "kind": "rentbuy",
+        "offer": "buy"
       }
     ],
     "countries": {
@@ -1385,7 +1388,8 @@
         "url": "https://tv.apple.com/us/show/mobile-suit-gundam-iron-blooded-orphans/umc.cmc.3k465cqw0yntvfzahn7kzzx26",
         "status": "unknown",
         "reason": "unverifiable",
-        "kind": "rentbuy"
+        "kind": "rentbuy",
+        "offer": "buy"
       }
     ],
     "countries": {
@@ -1498,7 +1502,8 @@
         "status": "unknown",
         "reason": "unverifiable",
         "kind": "rentbuy",
-        "unverified": true
+        "unverified": true,
+        "offer": "buy"
       },
       {
         "store": "apple-tv",
@@ -1506,7 +1511,8 @@
         "url": "https://tv.apple.com/us/show/mobile-suit-gundam-the-witch-from-mercury/umc.cmc.4eur3ov9tcbcfz060ijh3ytrr",
         "status": "unknown",
         "reason": "unverifiable",
-        "kind": "rentbuy"
+        "kind": "rentbuy",
+        "offer": "buy"
       }
     ],
     "countries": {

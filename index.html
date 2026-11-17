@@ -788,13 +788,24 @@ One hub.</h2>
         ],
         defaultSort: 'release-desc',
         emptyMessage: 'No discs matching your filter criteria. No DVD title is currently verified in stock, so the DVD shelf is empty — it fills automatically when the daily check confirms one.',
-        stats: data => ([
-          { label: tr('stats.totalWatch', 'Total'), value: data.length, valueClass: 'text-white', icon: '💿', iconClass: 'bg-red-500/20 text-red-400' },
-          { label: tr('format.streaming', 'Streaming'), value: data.filter(c => c.format === 'Streaming').length, valueClass: 'text-violet-400', icon: '▶️', iconClass: 'bg-violet-500/20 text-violet-400' },
-          { label: tr('format.bluray', 'Blu-ray'), value: data.filter(c => c.format === 'Blu-ray').length, valueClass: 'text-blue-400', icon: '<svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 6.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z"/></svg>', iconClass: 'bg-blue-500/20 text-blue-400' },
-          { label: tr('format.dvd', 'DVD'), value: data.filter(c => c.format === 'DVD').length, valueClass: 'text-emerald-400', icon: '📀', iconClass: 'bg-emerald-500/20 text-emerald-400' },
-          { label: tr('format.ultraHd', '4K Ultra HD'), value: data.filter(c => c.format === '4K Ultra HD').length, valueClass: 'text-sky-400', icon: '✨', iconClass: 'bg-sky-500/20 text-sky-400' },
-        ]),
+        // Watch tiles count entries by how they can be watched: a title
+        // counts in every category it offers. Unavailable links never
+        // count (mirrors the modal, which hides them).
+        stats: data => {
+          const hasLink = (c, pred) => (c.links || []).some(l => l.status !== 'unavailable' && pred(l));
+          const counts = {
+            buy: data.filter(c => hasLink(c, l => (l.kind || 'buy') === 'buy' || l.kind === 'rentbuy')).length,
+            rent: data.filter(c => hasLink(c, l => l.kind === 'rentbuy' && (l.offer || '').includes('rent'))).length,
+            stream: data.filter(c => hasLink(c, l => l.kind === 'stream')).length,
+            discs: data.filter(c => c.type === 'disc').length,
+          };
+          return [
+            { label: tr('stats.buy', 'Buy'), value: counts.buy, valueClass: 'text-amber-400', icon: '🛒', iconClass: 'bg-amber-500/20 text-amber-400' },
+            { label: tr('stats.rent', 'Rent'), value: counts.rent, valueClass: 'text-rose-400', icon: '🎟️', iconClass: 'bg-rose-500/20 text-rose-400' },
+            { label: tr('format.streaming', 'Streaming'), value: counts.stream, valueClass: 'text-violet-400', icon: '▶️', iconClass: 'bg-violet-500/20 text-violet-400' },
+            { label: tr('stats.discs', 'Discs'), value: counts.discs, valueClass: 'text-red-400', icon: '💿', iconClass: 'bg-red-500/20 text-red-400' },
+          ];
+        },
       },
     };
 
