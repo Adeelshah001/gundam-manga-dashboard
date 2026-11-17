@@ -457,8 +457,8 @@
   </footer>
 
   <!-- DETAIL MODAL SLIDEOUT -->
-  <div id="detailModal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden flex items-center justify-center p-4">
-    <div class="space-glass max-w-xl w-full rounded-3xl p-6 relative shadow-2xl border border-white/20" style="overflow:hidden">
+  <div id="detailModal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden flex overflow-y-auto overscroll-contain p-4" onclick="if(event.target===this)closeModal()">
+    <div class="space-glass max-w-xl w-full m-auto rounded-3xl p-6 relative shadow-2xl border border-white/20" style="overflow:hidden">
       <button onclick="closeModal()" style="z-index:1" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg">✕</button>
       <div id="modalContent"></div>
     </div>
