@@ -1103,6 +1103,8 @@ One hub.</h2>
       });
 
       const byDate = (a, b, desc) => {
+        const ua = a.status === 'Upcoming' ? 0 : 1, ub = b.status === 'Upcoming' ? 0 : 1;
+        if (ua !== ub) return desc ? ua - ub : ub - ua;
         const da = a.releaseDate || '', db = b.releaseDate || '';
         if (!da && !db) return 0;
         if (!da) return desc ? -1 : 1;
