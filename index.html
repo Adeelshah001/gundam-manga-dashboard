@@ -1241,6 +1241,8 @@ One hub.</h2>
       container.innerHTML = items.map(c => {
         const brief = briefInfo(c);
         const badge = c.status === 'Upcoming' ? `<span class="item-card__badge">${escapeHtml(tr('status.upcoming', 'Upcoming'))}</span>` : '';
+        // Hint must not promise links the entry doesn't have.
+        const hasLinks = getBuyLinks(c).length > 0;
         return `
         <div class="item-card" role="button" tabindex="0" aria-label="${escapeHtml(brief.title)}"
             onclick="showDetail('${c.id}')"
@@ -1250,7 +1252,7 @@ One hub.</h2>
           <div class="item-card__content">
             <p class="item-card__title">${escapeHtml(brief.title)}</p>
             ${brief.lines.filter(Boolean).map(l => `<p class="item-card__description">${escapeHtml(l)}</p>`).join('')}
-            <p class="item-card__hint">${escapeHtml(c.type === 'stream' ? tr('card.hintWatch', 'Select for details & watch links') : tr('card.hint', 'Select for details & buy links'))}</p>
+            <p class="item-card__hint">${escapeHtml(!hasLinks ? tr('card.hintDetails', 'Select for details') : c.type === 'stream' ? tr('card.hintWatch', 'Select for details & watch links') : tr('card.hint', 'Select for details & buy links'))}</p>
           </div>
         </div>`;
       }).join('');
